@@ -82,6 +82,11 @@ exp_shift = np.exp(large-large.max(1,keepdims=True))
 stable = exp_shift/exp_shift.sum(1,keepdims=True)
 assert np.isfinite(stable).all()
 np.testing.assert_allclose(stable.sum(1),1)
+target = 3  # Its probability underflows to zero; logits-based CE stays finite.
+logsumexp = large.max(1) + np.log(exp_shift.sum(1))
+stable_ce = float(logsumexp[0]-large[0,target])
+tf_ce = float(tf.nn.sparse_softmax_cross_entropy_with_logits(labels=[target],logits=large)[0])
+np.testing.assert_allclose(stable_ce,tf_ce,atol=1e-12)
 result = {"timestamp_utc":datetime.now(timezone.utc).isoformat(),
  "control_type":"Deliberately constructed numerical and gradient controls, not HAR training incidents",
  "relu_network":{"architecture":"3 -> 4 ReLU -> 6 logits", "batch_size":8,
@@ -94,6 +99,8 @@ result = {"timestamp_utc":datetime.now(timezone.utc).isoformat(),
  "relu_kink":{"x":0,"tf_selected_subgradient":kink_auto,"central_difference":kink_numeric,
    "qualification":"No unique derivative exists at zero. This is a checker-design limitation, not a TF bug."},
  "softmax":{"naive_nonfinite_count":int((~np.isfinite(naive)).sum()),"stable_probabilities":stable.tolist(),
-   "stable_sum":float(stable.sum()),"argmax":int(stable.argmax()),"all_finite":True}}
+   "stable_sum":float(stable.sum()),"argmax":int(stable.argmax()),"all_finite":True,
+   "underflow_target":target,"target_probability":float(stable[0,target]),
+   "logsumexp_cross_entropy":stable_ce,"tensorflow_logits_cross_entropy":tf_ce}}
 (OUT/'math_controls.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n',encoding='utf8')
 print(json.dumps(result,indent=2))

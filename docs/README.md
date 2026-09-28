@@ -4,6 +4,7 @@
 
 | 문서 | 용도 |
 |---|---|
+| [최신 심화 보고서와 PPT](process-report/README.md) | 실제 결함 수정, 24회 학습, 21쪽 Word, 20장 PPT, 질의응답 34개 |
 | [이봉헌 담당 업무 정리](BONGHEON_WORK_SUMMARY.md) | 완료한 일·실제 결과·담당 파일·남은 공동 작업 |
 | [개인 보고서와 PPT](personal-report/README.md) | 17쪽 Word 보고서, 17장 PPT, MD 원문, 장별 발표 원고 |
 | [시작 안내](../START_HERE_KO.md) | 환경 준비, 실행, 저장 모델 사용 |

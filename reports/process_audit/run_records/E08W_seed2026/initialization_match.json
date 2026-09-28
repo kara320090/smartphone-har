@@ -1,0 +1,9 @@
+{
+  "seed": 2026,
+  "timestamp_utc": "2026-09-28T16:09:45.933649+00:00",
+  "control": "E08W: Dropout 0.3 with every Dense weight/bias copied from E02 initialization",
+  "all_dense_parameters_initially_identical": true,
+  "initial_dense_weights_sha256": "729777d6e205c992857bc0061714c1ce42d5141f9834becba793ccfd738f8ba8",
+  "plan_sha256": "c6a8681edac4db21ecf264639675adcfdbc7637f13cc4547fad770cf3cb7df91",
+  "remaining_difference": "Dropout layers and their training masks; different training trajectories and early stopping remain expected."
+}

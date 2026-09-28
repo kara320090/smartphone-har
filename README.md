@@ -2,16 +2,25 @@
 
 스마트폰 센서 구간으로 걷기·계단 오르기·계단 내려가기·앉기·서기·눕기를 분류하는 팀 프로젝트다. 현재 저장소에는 **이봉헌 담당 ② 기준모델 구현·공통 학습·조건 비교**와 실제 실행 결과를 정리했다.
 
-**MLP 2종 · 실험 7개 · 테스트 8개 통과 · 실행된 노트북 3개**
+**MLP 2종 · 후속 학습 24회 · 테스트 24개 통과 · 실행된 노트북 3개**
 
-> 측정 결과는 학습에 사용하지 않은 검증 5명, 1,775개 구간에 대한 seed 2026 결과다. 공식 시험 평가와 전체 팀 모델의 비교는 후속 단계다.
+> 최신 보강은 기존 7조건×3seed와 초기값 일치 Dropout 대조 3회다. 검증 5명, 1,775개 구간을 고정했다. 공식 시험 평가와 전체 팀 모델의 비교는 후속 단계다. 아래 원래 결과 표는 v1의 seed 2026 기록이다.
+
+## 최신 심화 검증
+
+잘못된 분할 인덱스의 묵시적 변환과 원본 검증 입력의 정렬 누락을 재현하고 수정했다. 같은 seed에서도 Dropout 모델의 초기 Dense 가중치가 달라지는 것을 확인하여 초기값을 복사한 E08W 대조를 추가했다. 실제 결함과 의도적인 수학 오류 주입을 구분한다.
+
+[**21쪽 심화 보고서·20장 PPT·MD·질의응답 34개**](docs/process-report/README.md) · [전체 실험 근거](reports/process_audit/) · [코드·학습 모델·문서 v2 릴리스](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-process-v2)
+
+E02의 3seed 검증 Macro F1은 **0.9046 ± 0.0123 (표본 SD)**이다. seed마다 최고 조건이 달라졌다. SD는 고정 사람 분할의 학습 변동이며 새 사람 모집단의 신뢰구간이 아니다.
 
 ## 먼저 볼 문서
 
 | 목적 | 문서 |
 |---|---|
 | 담당 업무와 완료 내역 확인 | [이봉헌 담당 업무 정리](docs/BONGHEON_WORK_SUMMARY.md) |
-| 보고서 제출과 PPT 발표 | [17쪽 Word·17장 PPT·MD 원문·발표 원고](docs/personal-report/README.md) |
+| 최신 심화 보고서와 PPT | [21쪽 Word·20장 PPT·질의응답·작업 과정](docs/process-report/README.md) |
+| 최초 구현 설명과 보고서 | [v1 Word·PPT·MD 원문](docs/personal-report/README.md) |
 | 처음 실행하기 | [시작 안내](START_HERE_KO.md) · [상세 설치와 실행](docs/RUN_GUIDE_KO.md) |
 | 실제 점수와 학습 곡선 확인 | [실험 결과](reports/RESULTS_KO.md) · [가설과 해석](docs/EXPERIMENT_NOTES_KO.md) |
 | 팀원 코드와 연결하기 | [입력 계약과 인계](docs/HANDOFF_KO.md) |
@@ -33,7 +42,7 @@ py -3.11 -m venv .venv
 
 마지막 명령은 실제 학습 60개·검증 30개로 2 epoch를 실행하는 연결 검사다. 정식 7개 실험의 실행·검증 명령과 노트북 사용법은 [상세 안내](docs/RUN_GUIDE_KO.md)에 있다. 기존 실행 폴더는 덮어쓰지 않으므로 재실행 시 새 `--runs-dir`을 지정한다.
 
-## 실험 결과
+## 최초 단일 seed 실험 결과
 
 | ID | 조건 | 검증 Accuracy | 검증 Macro F1 |
 |---|---|---:|---:|
@@ -69,7 +78,7 @@ docs/         담당 업무, 상세 실행, 팀 인계, 해석, 발표
 
 ## 검증과 다음 연결
 
-테스트 8개, 노트북 3개, TFRecord 200개 표본 왕복, 새 프로세스의 모델 7개 예측 재현을 확인했다. [검증 요약](reports/VERIFICATION_KO.md)과 [원시 확인 기록](reports/delivery_audit.json)을 제공한다.
+최초 검증은 테스트 8개, 노트북 3개, TFRecord 200개 표본 왕복, 모델 7개 예측 재현이다. 후속 보강에서는 테스트 24개, 작은 ReLU 네트워크 수치미분 138회, 기존 7조건 재학습 예측 일치, 새 모델 24개 재로딩을 확인했다. [최초 기록](reports/VERIFICATION_KO.md)과 [후속 기록](reports/process_audit/summary.json)을 구분해 제공한다.
 
 ①의 데이터 모듈, ③의 비교 모델, ④의 반복·시험 평가, ⑤의 추론·시연은 [공통 계약](docs/HANDOFF_KO.md)에 맞춰 연결한다. 실제 팀원 환경에서의 실행 확인은 공동 작업표에 남겨두었다.
 

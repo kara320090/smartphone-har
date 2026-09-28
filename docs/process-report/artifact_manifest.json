@@ -1,0 +1,42 @@
+{
+  "report_pages": 21,
+  "presentation_slides": 20,
+  "speaker_notes": 20,
+  "native_tables": 7,
+  "native_charts": 2,
+  "embedded_workbooks": 2,
+  "regression_tests_passed": 24,
+  "new_training_runs": 24,
+  "original_runs_replayed": 7,
+  "reloaded_models": 24,
+  "official_test_evaluated": false,
+  "training_code_hashes": [
+    "303acf0c446fe52e96030fabefa99eb69a89ab320b798603263c72882892e85d"
+  ],
+  "files": {
+    "bongheon-process-report.docx": {
+      "bytes": 109829,
+      "sha256": "175b1c6c44d14f9c0aefd0c5d27b4be1c5ecaf6be79f91fc1163050844c8df5e"
+    },
+    "bongheon-process-presentation.pptx": {
+      "bytes": 91609,
+      "sha256": "cf3b2c872cede0d3542221ed86a19593c84dbaa87bf31d659e2e81b36ce8a49d"
+    },
+    "bongheon-process-report.md": {
+      "bytes": 35557,
+      "sha256": "855b0da2ac0c2f26220f9e0d3f5c802cbc5f111337818508c8508f73d84fbbe3"
+    },
+    "speaker-notes.md": {
+      "bytes": 15187,
+      "sha256": "b20867e1d9dc42228a39a188f70a86d5a4d11c79f74e07cba4af94a94fb31919"
+    },
+    "DEFENSE_QA_KO.md": {
+      "bytes": 16734,
+      "sha256": "bc42d6a700889596f874f53ae9f78a75cb2e6d83e59024880a0ce3d521af8634"
+    },
+    "PROCESS_LEARNING_LOG_KO.md": {
+      "bytes": 5566,
+      "sha256": "64b5aeedcf1e0d3870dad0e71d069dc492ef7f04328b645143f2bae27f5d69ef"
+    }
+  }
+}

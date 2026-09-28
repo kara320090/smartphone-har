@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "sample_count": 30,
+  "rtol": 1e-05,
+  "atol": 1e-06,
+  "max_absolute_difference": 4.1600830336108174e-08,
+  "compared": "probabilities"
+}

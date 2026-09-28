@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "E08W_seed2028",
+  "experiment_id": "E08W",
+  "task_type": "classification",
+  "input_kind": "features",
+  "model_input_shape": [
+    561
+  ],
+  "output_shape": [
+    6
+  ],
+  "channels": [
+    "body_acc_x",
+    "body_acc_y",
+    "body_acc_z",
+    "body_gyro_x",
+    "body_gyro_y",
+    "body_gyro_z",
+    "total_acc_x",
+    "total_acc_y",
+    "total_acc_z"
+  ],
+  "classes": [
+    "WALKING",
+    "WALKING_UPSTAIRS",
+    "WALKING_DOWNSTAIRS",
+    "SITTING",
+    "STANDING",
+    "LAYING"
+  ],
+  "split_id": "uci-har-subject-v1-val-1-6-14-21-23",
+  "label_offset_from_original": -1,
+  "sample_row_number_base": 1,
+  "preprocessing": "reference_npz_v1",
+  "model_sha256": "9cee87310dbed8100a95c0f6939fbb8787fa16502b72a82c978b5df8b5418f92",
+  "preprocess_sha256": "0baec6175fa82331c9d539865cee5a22ba953bc77ea2c808ce2e6d39c323f735",
+  "optimizer_included": true,
+  "checkpoint_purpose": "evaluation; optimizer state is not an exact best-epoch resume checkpoint",
+  "timing_scope": "model.fit including tracing, cache, validation and callbacks",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "numpy": "2.2.6",
+    "scikit_learn": "1.7.2",
+    "code_sha256": "303acf0c446fe52e96030fabefa99eb69a89ab320b798603263c72882892e85d",
+    "git_commit": "aaa5d3fb0e5cc5b237278a286d2148e7d0f481fe",
+    "devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ],
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "deterministic_ops": true
+  }
+}

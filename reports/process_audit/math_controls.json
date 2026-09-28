@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-09-28T15:56:38.325030+00:00",
+  "timestamp_utc": "2026-09-28T15:59:20.503754+00:00",
   "control_type": "Deliberately constructed numerical and gradient controls, not HAR training incidents",
   "relu_network": {
     "architecture": "3 -> 4 ReLU -> 6 logits",
@@ -40,6 +40,10 @@
     ],
     "stable_sum": 1.0,
     "argmax": 5,
-    "all_finite": true
+    "all_finite": true,
+    "underflow_target": 3,
+    "target_probability": 0.0,
+    "logsumexp_cross_entropy": 2002.4401896985612,
+    "tensorflow_logits_cross_entropy": 2002.4401896985612
   }
 }

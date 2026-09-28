@@ -1,0 +1,167 @@
+{
+  "started_utc": "2026-09-28T15:57:07.845093+00:00",
+  "prespecified_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "prespecified_experiments": [
+    "E02",
+    "E03",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11"
+  ],
+  "official_test_evaluated": false,
+  "runs": [
+    {
+      "run_id": "E02_seed2026",
+      "seed": 2026,
+      "experiment": "E02",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:57:26.225373+00:00"
+    },
+    {
+      "run_id": "E03_seed2026",
+      "seed": 2026,
+      "experiment": "E03",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:57:47.373360+00:00"
+    },
+    {
+      "run_id": "E07_seed2026",
+      "seed": 2026,
+      "experiment": "E07",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:58:06.159384+00:00"
+    },
+    {
+      "run_id": "E08_seed2026",
+      "seed": 2026,
+      "experiment": "E08",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:58:25.652085+00:00"
+    },
+    {
+      "run_id": "E09_seed2026",
+      "seed": 2026,
+      "experiment": "E09",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:58:44.261280+00:00"
+    },
+    {
+      "run_id": "E10_seed2026",
+      "seed": 2026,
+      "experiment": "E10",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:59:01.151804+00:00"
+    },
+    {
+      "run_id": "E11_seed2026",
+      "seed": 2026,
+      "experiment": "E11",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:59:22.550727+00:00"
+    },
+    {
+      "run_id": "E02_seed2027",
+      "seed": 2027,
+      "experiment": "E02",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T15:59:45.321462+00:00"
+    },
+    {
+      "run_id": "E03_seed2027",
+      "seed": 2027,
+      "experiment": "E03",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:00:08.065281+00:00"
+    },
+    {
+      "run_id": "E07_seed2027",
+      "seed": 2027,
+      "experiment": "E07",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:00:30.599131+00:00"
+    },
+    {
+      "run_id": "E08_seed2027",
+      "seed": 2027,
+      "experiment": "E08",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:00:50.442896+00:00"
+    },
+    {
+      "run_id": "E09_seed2027",
+      "seed": 2027,
+      "experiment": "E09",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:01:10.277326+00:00"
+    },
+    {
+      "run_id": "E10_seed2027",
+      "seed": 2027,
+      "experiment": "E10",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:01:29.642937+00:00"
+    },
+    {
+      "run_id": "E11_seed2027",
+      "seed": 2027,
+      "experiment": "E11",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:01:49.564827+00:00"
+    },
+    {
+      "run_id": "E02_seed2028",
+      "seed": 2028,
+      "experiment": "E02",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:02:08.545523+00:00"
+    },
+    {
+      "run_id": "E03_seed2028",
+      "seed": 2028,
+      "experiment": "E03",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:02:27.291370+00:00"
+    },
+    {
+      "run_id": "E07_seed2028",
+      "seed": 2028,
+      "experiment": "E07",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:02:48.685361+00:00"
+    },
+    {
+      "run_id": "E08_seed2028",
+      "seed": 2028,
+      "experiment": "E08",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:03:07.071261+00:00"
+    },
+    {
+      "run_id": "E09_seed2028",
+      "seed": 2028,
+      "experiment": "E09",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:03:27.792109+00:00"
+    },
+    {
+      "run_id": "E10_seed2028",
+      "seed": 2028,
+      "experiment": "E10",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:03:45.192306+00:00"
+    },
+    {
+      "run_id": "E11_seed2028",
+      "seed": 2028,
+      "experiment": "E11",
+      "returncode": 0,
+      "finished_utc": "2026-09-28T16:04:03.968204+00:00"
+    }
+  ]
+}

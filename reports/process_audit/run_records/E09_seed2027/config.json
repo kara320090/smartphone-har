@@ -1,0 +1,23 @@
+{
+  "model_key": "mlp",
+  "task_type": "classification",
+  "input_kind": "features",
+  "standardize": true,
+  "pca_variance": null,
+  "dropout": 0.0,
+  "learning_rate": 0.0003,
+  "batch_size": 64,
+  "epochs": 40,
+  "patience": 6,
+  "seed": 2027,
+  "threads": 4,
+  "experiment_id": "E09",
+  "run_directory": "C:\\Users\\soma\\Documents\\Codex\\2026-09-28\\https-github-com-kara320090-smartphone-har\\outputs\\smartphone-har\\runs\\process_repeats\\E09_seed2027",
+  "optimizer": "Adam",
+  "beta_1": 0.9,
+  "beta_2": 0.999,
+  "epsilon": 1e-07,
+  "monitor": "val_loss",
+  "restore_best_weights": true,
+  "smoke": false
+}
