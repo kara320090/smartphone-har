@@ -5,6 +5,7 @@
 | 문서 | 용도 |
 |---|---|
 | [이봉헌 담당 업무 정리](BONGHEON_WORK_SUMMARY.md) | 완료한 일·실제 결과·담당 파일·남은 공동 작업 |
+| [개인 보고서와 PPT](personal-report/README.md) | 17쪽 Word 보고서, 17장 PPT, MD 원문, 장별 발표 원고 |
 | [시작 안내](../START_HERE_KO.md) | 환경 준비, 실행, 저장 모델 사용 |
 | [설치와 실행 상세 안내](RUN_GUIDE_KO.md) | 명령어, 데이터 계약, 설정, 저장 형식 |
 | [실험 결과](../reports/RESULTS_KO.md) | 7개 실험 점수, 학습 곡선, 한계 |

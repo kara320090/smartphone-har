@@ -11,6 +11,7 @@
 | 목적 | 문서 |
 |---|---|
 | 담당 업무와 완료 내역 확인 | [이봉헌 담당 업무 정리](docs/BONGHEON_WORK_SUMMARY.md) |
+| 보고서 제출과 PPT 발표 | [17쪽 Word·17장 PPT·MD 원문·발표 원고](docs/personal-report/README.md) |
 | 처음 실행하기 | [시작 안내](START_HERE_KO.md) · [상세 설치와 실행](docs/RUN_GUIDE_KO.md) |
 | 실제 점수와 학습 곡선 확인 | [실험 결과](reports/RESULTS_KO.md) · [가설과 해석](docs/EXPERIMENT_NOTES_KO.md) |
 | 팀원 코드와 연결하기 | [입력 계약과 인계](docs/HANDOFF_KO.md) |

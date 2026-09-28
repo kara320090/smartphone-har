@@ -1,0 +1,34 @@
+{
+  "report_pages_verified_in_word": 17,
+  "presentation_slides": 17,
+  "speaker_notes_slides": 17,
+  "editable_charts": 3,
+  "embedded_chart_workbooks": 3,
+  "editable_tables": 7,
+  "visual_review": "All 17 Word pages and all 17 PowerPoint slides reviewed; title and configuration-reference fixes rechecked.",
+  "presentation_checks": "Package integrity, geometry, font policy and first-party import passed without findings.",
+  "training_source_commit": "704885df8776dcf594e65d19f0695991202b4eab",
+  "training_scope": "Fixed person validation split, seed 2026. Official test not evaluated.",
+  "files": [
+    {
+      "name": "bongheon-report.docx",
+      "bytes": 156118,
+      "sha256": "859e136501072c4fb7cbaf27e09459439e48a0013c7afd0f8987eb2f1bcb0059"
+    },
+    {
+      "name": "bongheon-presentation.pptx",
+      "bytes": 83650,
+      "sha256": "03a051704d10f51ab7b47b3da90d323ad93b1203b966c82a70d599ff3f987a31"
+    },
+    {
+      "name": "REPORT_KO.md",
+      "bytes": 30142,
+      "sha256": "7b5b5377a2a1a29d786d38dd3c84906178bef3e0182b3b8b00d38b6c43c649c4"
+    },
+    {
+      "name": "SPEAKER_NOTES_KO.md",
+      "bytes": 13698,
+      "sha256": "17f283cfe5722185a5fe918f7039245831195bc220f879ff536e21773e277823"
+    }
+  ]
+}
