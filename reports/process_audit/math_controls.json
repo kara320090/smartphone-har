@@ -1,0 +1,45 @@
+{
+  "timestamp_utc": "2026-09-28T15:56:38.325030+00:00",
+  "control_type": "Deliberately constructed numerical and gradient controls, not HAR training incidents",
+  "relu_network": {
+    "architecture": "3 -> 4 ReLU -> 6 logits",
+    "batch_size": 8,
+    "parameters": 46,
+    "loss": 1.7255517320167142,
+    "minimum_absolute_hidden_preactivation": 0.03958005361994017,
+    "max_numpy_tf_absolute_error": 4.163336342344337e-17,
+    "max_relative_error_by_h": {
+      "0.001": 1.4878247616961847e-06,
+      "0.0001": 1.4873930252568348e-08,
+      "1e-05": 5.7939083389309166e-09
+    },
+    "finite_difference_checks": 138
+  },
+  "omitted_batch_mean": {
+    "detected": true,
+    "gradient_norm_ratio": 8.0,
+    "qualification": "Wrong only because forward loss is a mean; a consistently summed loss has a different valid gradient."
+  },
+  "relu_kink": {
+    "x": 0,
+    "tf_selected_subgradient": 0.0,
+    "central_difference": 0.5,
+    "qualification": "No unique derivative exists at zero. This is a checker-design limitation, not a TF bug."
+  },
+  "softmax": {
+    "naive_nonfinite_count": 4,
+    "stable_probabilities": [
+      [
+        0.08714431874203257,
+        0.23688281808991013,
+        0.03205860328008499,
+        0.0,
+        0.0,
+        0.6439142598879724
+      ]
+    ],
+    "stable_sum": 1.0,
+    "argmax": 5,
+    "all_finite": true
+  }
+}

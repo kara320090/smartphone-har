@@ -1,0 +1,71 @@
+{
+  "phase": "after",
+  "timestamp_utc": "2026-09-28T15:55:06.006947+00:00",
+  "git_commit": "7aec3ace542c8d915abae83b462531dc9a68cdf4",
+  "fixture": "Synthetic 18-row adapter fixture, not HAR performance data",
+  "cases": [
+    {
+      "case": "valid_control",
+      "accepted": true,
+      "selected_fit_ids": [
+        "fixture:0",
+        "fixture:1",
+        "fixture:2",
+        "fixture:3",
+        "fixture:4",
+        "fixture:5"
+      ],
+      "raw_to_prepared_max_difference": 0.0
+    },
+    {
+      "case": "fractional_fit_indices",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Fit indices must be a nonempty integer vector"
+    },
+    {
+      "case": "negative_fit_indices",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Fit row indices must be in [0, 18)"
+    },
+    {
+      "case": "boolean_fit_indices",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Fit indices must be a nonempty integer vector"
+    },
+    {
+      "case": "duplicate_fit_indices",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Fit row indices contain duplicates"
+    },
+    {
+      "case": "out_of_range_fit_indices",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Fit row indices must be in [0, 18)"
+    },
+    {
+      "case": "empty_fit_indices",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Fit indices must be a nonempty integer vector"
+    },
+    {
+      "case": "reordered_raw_validation",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Raw validation and prepared input disagree under the saved preprocessing state"
+    },
+    {
+      "case": "fractional_subject_ids",
+      "accepted": false,
+      "exception": "ValueError",
+      "message": "Subject IDs must be aligned positive integer vectors"
+    }
+  ],
+  "contracts_sha256": "e1945bc0b85089fc48946dd4a9e20ca4455f56e1262b2d3c7c0556eb4d449d74",
+  "source_state": "7aec3ac with uncommitted src/contracts.py repair, identified by contracts_sha256"
+}
