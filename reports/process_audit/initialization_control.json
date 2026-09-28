@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-28T15:59:30.503432+00:00",
+  "purpose": "Check initial weights only; no matched-weight training experiment is claimed.",
+  "results": [
+    {
+      "seed": 2026,
+      "dense_layers": [
+        {
+          "name": "hidden_1",
+          "identical": true,
+          "max_weight_difference": 0.0
+        },
+        {
+          "name": "hidden_2",
+          "identical": false,
+          "max_weight_difference": 0.3486730754375458
+        },
+        {
+          "name": "logits",
+          "identical": false,
+          "max_weight_difference": 0.5518790483474731
+        }
+      ]
+    },
+    {
+      "seed": 2027,
+      "dense_layers": [
+        {
+          "name": "hidden_1",
+          "identical": true,
+          "max_weight_difference": 0.0
+        },
+        {
+          "name": "hidden_2",
+          "identical": false,
+          "max_weight_difference": 0.3496732711791992
+        },
+        {
+          "name": "logits",
+          "identical": false,
+          "max_weight_difference": 0.5589902400970459
+        }
+      ]
+    },
+    {
+      "seed": 2028,
+      "dense_layers": [
+        {
+          "name": "hidden_1",
+          "identical": true,
+          "max_weight_difference": 0.0
+        },
+        {
+          "name": "hidden_2",
+          "identical": false,
+          "max_weight_difference": 0.3516545295715332
+        },
+        {
+          "name": "logits",
+          "identical": false,
+          "max_weight_difference": 0.5680688619613647
+        }
+      ]
+    }
+  ]
+}
