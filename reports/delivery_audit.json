@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "source_sha256": "9aa444e74ce35f91cbc93e51dcb44e81ce99de5f4c49cccde4e04cfdff9f64e5",
+  "formal_runs": [
+    {
+      "experiment": "E02",
+      "passed": true
+    },
+    {
+      "experiment": "E03",
+      "passed": true
+    },
+    {
+      "experiment": "E07",
+      "passed": true
+    },
+    {
+      "experiment": "E08",
+      "passed": true
+    },
+    {
+      "experiment": "E09",
+      "passed": true
+    },
+    {
+      "experiment": "E10",
+      "passed": true
+    },
+    {
+      "experiment": "E11",
+      "passed": true
+    }
+  ],
+  "tests_passed": 8,
+  "notebooks_executed": 3,
+  "fresh_process_runs_verified": 7,
+  "tfrecord_rows_verified": 200,
+  "official_test_evaluated": false
+}

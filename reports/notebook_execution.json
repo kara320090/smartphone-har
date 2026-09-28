@@ -1,0 +1,20 @@
+[
+  {
+    "notebook": "01_backprop_validation.ipynb",
+    "passed": true,
+    "executed_cells": 4,
+    "seconds": 19.413847499999974
+  },
+  {
+    "notebook": "02_training_walkthrough.ipynb",
+    "passed": true,
+    "executed_cells": 5,
+    "seconds": 19.476655200000096
+  },
+  {
+    "notebook": "03_condition_comparison.ipynb",
+    "passed": true,
+    "executed_cells": 4,
+    "seconds": 1.9792079999970156
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "dtype": "float64",
+  "architecture": "2 -> 3 tanh -> 2 logits",
+  "parameter_count": 17,
+  "loss": 0.6718458139214565,
+  "max_relative_error_by_h": {
+    "0.001": 8.137703184921284e-07,
+    "0.0001": 8.655004280915248e-09,
+    "1e-05": 6.2529506532382655e-09
+  },
+  "max_autodiff_absolute_error": 5.551115123125783e-17,
+  "scalar_example": {
+    "prediction": 7.0,
+    "loss": 4.5,
+    "gradient_w": -6.0,
+    "gradient_b": -3.0,
+    "autodiff": [
+      -6.0,
+      -3.0
+    ],
+    "updated_loss_by_learning_rate": {
+      "0.1": 1.125,
+      "0.5": 10.125
+    },
+    "composition_f_x_y_z": {
+      "input": [
+        -2,
+        5,
+        4
+      ],
+      "f": 12.0,
+      "gradients": [
+        4.0,
+        4.0,
+        3.0
+      ]
+    }
+  }
+}

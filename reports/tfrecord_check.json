@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "count": 200,
+  "fields": [
+    "X_seq",
+    "X_features",
+    "y",
+    "subject",
+    "sample_id"
+  ],
+  "comparison": "exact equality of values, shapes, labels, IDs and subjects",
+  "source_split": "fit",
+  "file_sha256": "fb200e64080c2a2cbe25b08285f7751669ad1bd76f3d772c389d5b458b3b4e05"
+}

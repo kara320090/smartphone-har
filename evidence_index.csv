@@ -1,0 +1,10 @@
+﻿concept,question,owner,evidence,experiments,status
+MLP,How do input representations change classification?,이봉헌,src/models/mlp.py; reports/RESULTS_KO.md,E02 E03,executed
+Backpropagation,"Do hand, NumPy, numerical and autodiff gradients agree?",이봉헌,notebooks/01_backprop_validation.ipynb; reports/math/gradient_checks.json,,verified
+Optimization,"How do scaling, dropout and learning rate affect validation?",이봉헌,configs/; reports/learning_curves.png; docs/EXPERIMENT_NOTES_KO.md,E07 E08 E09 E10,executed
+PCA input comparison,Does variance-preserving compression retain class information?,이봉헌,reports/experiment_summary.csv; docs/EXPERIMENT_NOTES_KO.md,E11,executed with reference adapter
+Data API,"How do shuffle, cache, batch and prefetch work?",이봉헌,src/train.py; notebooks/02_training_walkthrough.ipynb,,executed
+TFRecord,Are 200 original fit records preserved exactly?,이봉헌,reports/tfrecord_check.json,,verified
+Preprocessing consistency,Can saved model and preprocessing reproduce predictions?,이봉헌,reports/fresh_process_verification.json,E02 E03 E07 E08 E09 E10 E11,verified
+Reproducible environment,Are library versions and run settings recorded?,이봉헌,requirements.lock.txt; runs/formal/*/metadata.json,,recorded
+Team integration,Can teammates execute their modules with this trainer?,이봉헌 및 팀원,docs/HANDOFF_KO.md; docs/TEAM_TASKS_KO.md,,requires actual team confirmation
