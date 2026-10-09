@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-09",
+  "scope": "LSTM contribution only; incomplete team paper",
+  "canonical_metrics_source": "reports/lstm/summary.csv",
+  "metrics_match_source": true,
+  "parameter_count_checked": 21222,
+  "main_figure": {
+    "pixels": [
+      1890,
+      675
+    ],
+    "dpi": 600,
+    "width_mm": 80,
+    "svg_parseable": true,
+    "structure_matches_L01": true
+  },
+  "auxiliary_plot_matches_report": true,
+  "documents": {
+    "compact": {
+      "file": "LSTM_논문삽입용_본문그림.hwp",
+      "native_hwp": true,
+      "reloaded": true,
+      "pages": 1,
+      "body_chars_with_spaces": 222,
+      "pictures": 1,
+      "tables": 0,
+      "figure_width_mm": 79.999,
+      "figure_height_mm": 28.571,
+      "column_width_mm": 80.998,
+      "one_column_content": true,
+      "image_source_bytes_preserved": true,
+      "caption_centered_9pt": true,
+      "full_text_preserved": true,
+      "native_preview_reviewed": true,
+      "preview_resolution": [
+        724,
+        1024
+      ],
+      "preview_limitation": "Native first-page preview; both fragments have exactly one page. Reviewed for layout and paired with source PNG inspection and structural checks.",
+      "sha256": "31aa663ae33e1861043f074889fde22ddf2b008b071cc2c2772565618bb129cc"
+    },
+    "reference": {
+      "file": "LSTM_설정포함_참고원고.hwp",
+      "native_hwp": true,
+      "reloaded": true,
+      "pages": 1,
+      "body_chars_with_spaces": 381,
+      "pictures": 1,
+      "tables": 1,
+      "figure_width_mm": 79.999,
+      "figure_height_mm": 28.571,
+      "column_width_mm": 80.998,
+      "one_column_content": true,
+      "image_source_bytes_preserved": true,
+      "caption_centered_9pt": true,
+      "full_text_preserved": true,
+      "native_preview_reviewed": true,
+      "preview_resolution": [
+        724,
+        1024
+      ],
+      "preview_limitation": "Native first-page preview; both fragments have exactly one page. Reviewed for layout and paired with source PNG inspection and structural checks.",
+      "sha256": "fd73eb5c3fbc3e8dd0e1847f9b19d155a68a261352efbc10901cfc9fc12641d4"
+    }
+  },
+  "evaluation": "development validation; official test not evaluated",
+  "remaining_team_work": [
+    "Teammate model/results intake",
+    "Combine figures and results table",
+    "Confirm authors, affiliations and references",
+    "Render final complete 1-2-page paper before submission"
+  ]
+}

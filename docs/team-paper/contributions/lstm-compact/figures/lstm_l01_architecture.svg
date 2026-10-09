@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="28.5714mm" viewBox="0 0 840 300">
+<title>L01 LSTM architecture</title>
+<desc>128 by 9 input, LSTM 64, Dense 32 ReLU and Dropout zero, Dense 6 logits. Independent zero states, final hidden state, 21222 parameters.</desc>
+<rect width="840" height="300" fill="white"/>
+<rect x="18" y="30" width="162" height="165" fill="white" stroke="black" stroke-width="2"/>
+<text x="99.0" y="68" font-family="Malgun Gothic, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central">입력</text>
+<text x="99.0" y="113" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">128×9</text>
+<text x="99.0" y="158" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">시점×채널</text>
+<rect x="215" y="30" width="180" height="165" fill="#f4f4f4" stroke="black" stroke-width="2"/>
+<text x="305.0" y="68" font-family="Malgun Gothic, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central">LSTM 64</text>
+<text x="305.0" y="113" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">마지막 h128</text>
+<text x="305.0" y="158" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">상태 초기화</text>
+<rect x="430" y="30" width="200" height="165" fill="white" stroke="black" stroke-width="2"/>
+<text x="530.0" y="68" font-family="Malgun Gothic, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central">Dense 32</text>
+<text x="530.0" y="113" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">ReLU</text>
+<text x="530.0" y="158" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">Dropout 0</text>
+<rect x="665" y="30" width="157" height="165" fill="white" stroke="black" stroke-width="2"/>
+<text x="743.5" y="68" font-family="Malgun Gothic, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central">Dense 6</text>
+<text x="743.5" y="113" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">logits</text>
+<text x="743.5" y="158" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">6개 활동</text>
+<path d="M180,112 H202" stroke="black" stroke-width="2"/><path d="M211,112 l-11,-6 v12 z" fill="black"/>
+<path d="M395,112 H417" stroke="black" stroke-width="2"/><path d="M426,112 l-11,-6 v12 z" fill="black"/>
+<path d="M630,112 H652" stroke="black" stroke-width="2"/><path d="M661,112 l-11,-6 v12 z" fill="black"/>
+<text x="420" y="235" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">구간별 h0=c0=0 · 마지막 은닉 상태 사용</text>
+<text x="420" y="278" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" dominant-baseline="central">학습 출력: logits · 총 파라미터: 21,222</text>
+</svg>

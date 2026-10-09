@@ -6,6 +6,8 @@
 
 ## 수업 발표와 공동 논문 준비
 
+**공동 논문 전체 1~2쪽 취합에는 [LSTM 압축 원고·실제 구조 그림·결과 한 행](docs/team-paper/contributions/lstm-compact/README.md)을 우선 사용한다.** 222자 본문과 그림을 넣은 HWP 및 381자 설정 포함 참고 HWP를 제공한다. 기존 2쪽 HWP는 상세 검토 초안이며, 팀원 결과를 모두 담은 최종 제출본은 취합 후 작성한다.
+
 [**강의자료에 맞춘 LSTM 수업 PPT 20장과 발표 원고**](docs/course-and-paper/README.md) · [커리큘럼 연결](docs/course-and-paper/COURSE_MAPPING_KO.md) · [공동 논문 취합 초안 MD](docs/course-and-paper/TEAM_PAPER_DRAFT_KO.md) · [팀 전달 안내](docs/course-and-paper/TEAM_INTEGRATION_KO.md) · [저장 모델 시연](docs/course-and-paper/RUN_DEMO_KO.md)
 
 [PPT·Word·MD 묶음 다운로드](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-course-paper-v1)

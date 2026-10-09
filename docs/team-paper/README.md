@@ -6,6 +6,8 @@
 
 각자 코드·실험 근거와 본인이 수행한 내용을 설명하는 논문 원고를 제출한다. 이봉헌은 LSTM 원고까지 포함해 하나의 연구 질문에 맞춰 취합하고, 전원이 최종 검토한 뒤 **팀 공동 논문 1편**으로 제출한다.
 
+**최종 지면은 팀 전체 1~2쪽이다.** 이봉헌의 최종 삽입 자료는 [222자 HWP·LSTM 구조 그림·통합 표 한 행](contributions/lstm-compact/README.md)으로 압축했다. [지면 배분과 역할별 취합 기준](contributions/lstm-compact/TEAM_PAGE_BUDGET_KO.md)에 따라 공통 조건은 한 번만 적고, 기존 긴 개인 원고·상세 HWP는 내부 검토 근거로 활용한다.
+
 [단체방 공지문](TEAM_NOTICE_KO.md) · [공통 원고 양식](CONTRIBUTION_TEMPLATE_KO.md) · [역할별 양식](templates/) · [논문 취합 골격](PAPER_OUTLINE_KO.md)
 
 **LSTM 완료 자료:** [이봉헌 실제 기여 원고와 표](contributions/05_lstm_bongheon.md), [보고서·PPT·근거](../lstm-report/README.md), [공통 입력·결과 규격](../lstm-report/HANDOFF_LSTM_KO.md). L01 세 seed의 validation Macro F1은 0.8813 ± 0.0195다. 다른 담당자 결과와 공식 test 평가가 모인 뒤 공동 논문의 비교·결론을 작성한다.

@@ -4,6 +4,7 @@
 
 | 문서 | 용도 |
 |---|---|
+| [LSTM 압축 HWP·구조 그림·결과 한 행](team-paper/contributions/lstm-compact/README.md) | 공동 논문 전체 1~2쪽에 넣을 222자 기여 본문, 80 mm 그림 PNG·SVG, 비교표 CSV, 설정 포함 참고 HWP |
 | [공식 대학생 HWP 취합 초안](dcs-student-paper/README.md) | 사용자 제공 양식의 2쪽 한글 파일·수정용 MD·제출 확인표·배치와 수치 검증 |
 | [현재 LSTM 완료 자료](lstm-report/README.md) | 9회 실험, 22쪽 Word·PDF·MD, 20장 PPT, 질의응답 32개, 재현·추론 명령 |
 | [LSTM 실제 논문 기여 원고](team-paper/contributions/05_lstm_bongheon.md) | 방법·조건·수치·한계, 구조표와 세 seed 결과표 |

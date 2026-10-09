@@ -1,0 +1,2 @@
+model,repetitions,parameters,accuracy_mean,accuracy_sample_sd,macro_f1_mean,macro_f1_sample_sd,evaluation_split
+LSTM L01,3,21222,0.8831924882629107,0.019396433928526368,0.8812711970867758,0.01949949659907746,development validation
