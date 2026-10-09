@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "release_url": "https://github.com/kara320090/smartphone-har/releases/tag/bongheon-lstm-v1",
+  "release_source_commit": "3fe8398c7c6504692e5f06f0528ecc08721fb873",
+  "remote_assets": [
+    {
+      "name": "bongheon-lstm-presentation.pptx",
+      "sha256_verified": true,
+      "bytes": 94423,
+      "url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-lstm-v1/bongheon-lstm-presentation.pptx"
+    },
+    {
+      "name": "bongheon-lstm-report.docx",
+      "sha256_verified": true,
+      "bytes": 270035,
+      "url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-lstm-v1/bongheon-lstm-report.docx"
+    },
+    {
+      "name": "bongheon-lstm-report.pdf",
+      "sha256_verified": true,
+      "bytes": 787331,
+      "url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-lstm-v1/bongheon-lstm-report.pdf"
+    },
+    {
+      "name": "bongheon-lstm-v1-full.zip",
+      "sha256_verified": true,
+      "bytes": 12168251,
+      "url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-lstm-v1/bongheon-lstm-v1-full.zip"
+    },
+    {
+      "name": "LSTM_RELEASE_MANIFEST.json",
+      "sha256_verified": true,
+      "bytes": 96671,
+      "url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-lstm-v1/LSTM_RELEASE_MANIFEST.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "sha256_verified": true,
+      "bytes": 377,
+      "url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-lstm-v1/SHA256SUMS.txt"
+    }
+  ],
+  "official_test_evaluated": false
+}

@@ -53,6 +53,7 @@
 | 결과 분석 후 | 오류 ID에 9채널 평균·SD·RMS와 원본 행 대조 재현 명령 추가 | 관찰 가능한 오류 근거와 재현성 보강; 학습 조건 변경 없음 |
 | 문서 작성 후 | 약 20쪽 목표를 실제 22쪽으로 조정 | 전체 9회 결과·수학·오류 표본·한계를 읽기 좋은 배치로 보존 |
 | 문서 검증 | 기본 Word 렌더러 부재로 Word PDF·Poppler 사용, PPT native 표·차트 검사 및 전 페이지 시각 검토 | 현재 Windows에서 실제 표시를 확인; 검증 방법 명시 |
+| GitHub 게시 완료 | main에 코드·문서·요약 게시, bongheon-lstm-v1 Release와 6개 첨부 파일 게시 | 원격 commit 및 GitHub가 제공한 모든 첨부 SHA256을 로컬 파일과 대조 |
 
 ## 진행 체크
 
@@ -61,6 +62,8 @@
 - [x] 정식 9회 학습
 - [x] 전체 재로딩·지표 재계산·시간 측정
 - [x] 보고서·PPT·원고·질의응답
-- [ ] GitHub·Release 게시
+- [x] GitHub·Release 게시
+
+[공개 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-lstm-v1). 정식 학습 코드는 95422e0, Release에 묶은 소스·문서는 3fe8398이다. 이후 게시 완료 체크와 검증 기록만 추가했다. 749개 파일의 ZIP 내부 해시와 9개 정식 모델 수를 확인했으며, 원격 첨부 6개도 각각 해시가 일치한다.
 
 출처: [UCI HAR](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones), [Keras LSTM](https://keras.io/api/layers/recurrent_layers/lstm/).
