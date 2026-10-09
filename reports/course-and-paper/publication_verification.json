@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "url": "https://github.com/kara320090/smartphone-har/releases/tag/bongheon-course-paper-v1",
+  "tag": "bongheon-course-paper-v1",
+  "target_commit": "c0def379d4e0aed14b143a1834f4b832dec8c921",
+  "published": true,
+  "assets": [
+    {
+      "name": "course-lstm-presentation.pptx",
+      "size": 95869,
+      "digest": "sha256:f724a277e5cd845739ed9fbc681dded98c3a8662cd43311669682b0355a58d57",
+      "verified": true,
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-course-paper-v1/course-lstm-presentation.pptx"
+    },
+    {
+      "name": "team-paper-working-draft.docx",
+      "size": 43436,
+      "digest": "sha256:7c25edd0cf214e44cdba76500cc3db5e530ffb1b9cbe208ef55ecf36a4bbd774",
+      "verified": true,
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-course-paper-v1/team-paper-working-draft.docx"
+    },
+    {
+      "name": "bongheon-course-paper-v1.zip",
+      "size": 161274,
+      "digest": "sha256:355e54a0554b5a31e53a7fa461b1d9fb140affdfbb793e9e2c1c37294d6468de",
+      "verified": true,
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-course-paper-v1/bongheon-course-paper-v1.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 290,
+      "digest": "sha256:91a682b48c4372ebe0fe2c7d42800d419092632affb56f96691f312c0942aefd",
+      "verified": true,
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/bongheon-course-paper-v1/SHA256SUMS.txt"
+    }
+  ],
+  "scope": "course deck and team working draft only; official test and conference submission not performed"
+}
