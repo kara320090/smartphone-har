@@ -1,0 +1,19 @@
+{
+  "model_key": "lstm",
+  "task_type": "classification",
+  "input_kind": "sequence",
+  "standardize": true,
+  "pca_variance": null,
+  "units": 32,
+  "dropout": 0.0,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "epochs": 40,
+  "patience": 6,
+  "seed": 2026,
+  "threads": 4,
+  "experiment_id": "L02",
+  "require_matched_initialization": false,
+  "expected_data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+  "expected_stats_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2"
+}

@@ -14,7 +14,7 @@ import tensorflow as tf
 from tensorflow import keras
 from .adapters.uci_reference import CHANNELS, CLASSES, load_dataset
 from .contracts import TrainingData, prepare_data
-from .models import build_mlp
+from .models import build_model
 from .runtime import configure_runtime, environment_info, file_sha256, write_json
 from .training_metrics import classification_metrics, softmax
 
@@ -98,6 +98,9 @@ def train_model(model, data: TrainingData, train_config):
     learning_rate = float(config.get("learning_rate", 0.001))
     if min(epochs, batch_size, threads) < 1 or patience < 0 or learning_rate <= 0:
         raise ValueError("Invalid training hyperparameters")
+    initial_source = config.get("initial_weights_from")
+    if config.get("require_matched_initialization") and not initial_source:
+        raise ValueError("This condition requires L01 initial weights, not a trained checkpoint")
     out = Path(config["run_directory"])
     out.mkdir(parents=True, exist_ok=False)
     # Write the effective defaults, rather than depending on library defaults.
@@ -109,6 +112,26 @@ def train_model(model, data: TrainingData, train_config):
     write_json(out / "config.json", config)
     write_json(out / "status.json", {"status": "running"})
     try:
+        if config.get("model_key") == "lstm":
+            initialization = {"seed": seed, "source": "fresh", "matched": False,
+                              "trainable_parameters": int(model.count_params())}
+            if initial_source:
+                source = Path(initial_source)
+                source_config = json.loads((source / "config.json").read_text(encoding="utf-8"))
+                if (source_config.get("experiment_id") != "L01" or
+                        source_config.get("seed") != seed or source_config.get("units") != config.get("units")):
+                    raise ValueError("Initial weights must come from same-seed, same-width L01")
+                with np.load(source / "initial_weights.npz", allow_pickle=False) as z:
+                    weights = [z[f"weight_{i}"] for i in range(len(model.get_weights()))]
+                model.set_weights(weights)
+                for expected, actual in zip(weights, model.get_weights()):
+                    np.testing.assert_array_equal(expected, actual)
+                initialization.update(source=source.name, matched=True,
+                    source_initial_sha256=file_sha256(source / "initial_weights.npz"))
+            np.savez_compressed(out / "initial_weights.npz",
+                                **{f"weight_{i}": w for i, w in enumerate(model.get_weights())})
+            initialization["initial_weights_sha256"] = file_sha256(out / "initial_weights.npz")
+            write_json(out / "initialization.json", initialization)
         data.preprocessor.save(out / "preprocess.npz")
         write_json(out / "split.json", {
             "split_id": data.split_id, "fit_ids": data.fit_ids.tolist(),
@@ -153,8 +176,9 @@ def train_model(model, data: TrainingData, train_config):
         outputs = predict_batches(model, data.x_validation)
         model.save(out / "model.keras")
         restored = keras.models.load_model(out / "model.keras", compile=False)
-        before = outputs[:30]
-        after = predict_batches(restored, data.x_validation[:30])
+        reload_count = len(outputs) if config.get("model_key") == "lstm" else min(30, len(outputs))
+        before = outputs[:reload_count]
+        after = predict_batches(restored, data.x_validation[:reload_count])
         if task_type == "classification":
             before, after = softmax(before), softmax(after)
         np.testing.assert_allclose(before, after, rtol=1e-5, atol=1e-6)
@@ -182,8 +206,11 @@ def train_model(model, data: TrainingData, train_config):
             "task_type": task_type, "input_kind": data.preprocessor.input_kind,
             "model_input_shape": list(data.x_fit.shape[1:]), "output_shape": list(expected_output),
             "channels": CHANNELS, "classes": CLASSES, "split_id": data.split_id,
-            "label_offset_from_original": -1, "sample_row_number_base": 1,
-            "preprocessing": "reference_npz_v1", "model_sha256": file_sha256(out / "model.keras"),
+            "label_offset_from_original": -1,
+            "sample_row_number_base": data.provenance.get("sample_row_number_base", 1),
+            "preprocessing": data.provenance.get("preprocessing", "reference_npz_v1"),
+            "data_provenance": data.provenance,
+            "model_sha256": file_sha256(out / "model.keras"),
             "preprocess_sha256": file_sha256(out / "preprocess.npz"),
             "optimizer_included": True,
             "checkpoint_purpose": "evaluation; optimizer state is not an exact best-epoch resume checkpoint",
@@ -203,6 +230,9 @@ def main():
     parser.add_argument("--runs-dir", type=Path, default=Path("runs"))
     parser.add_argument("--smoke", action="store_true")
     parser.add_argument("--seed", type=int)
+    parser.add_argument("--processed-data", type=Path)
+    parser.add_argument("--preprocess-stats", type=Path)
+    parser.add_argument("--initial-weights-from", type=Path)
     args = parser.parse_args()
     config = json.loads(args.config.read_text(encoding="utf-8"))
     if args.seed is not None:
@@ -210,9 +240,23 @@ def main():
     if args.smoke:
         config["epochs"] = 2
     configure_runtime(config["seed"], config["threads"])
-    samples, indices = load_dataset(args.data_root)
-    data = prepare_data(samples, indices, config, smoke=args.smoke)
-    model = build_mlp(data.x_fit.shape[1:], config["dropout"])
+    if args.processed_data:
+        if not args.preprocess_stats:
+            parser.error("--processed-data requires --preprocess-stats")
+        if config["input_kind"] != "sequence" or not config["standardize"] or config.get("pca_variance"):
+            parser.error("Team cache path requires standardized sequence input without PCA")
+        from .adapters.processed_npz import load_processed_data
+        data = load_processed_data(args.processed_data, args.preprocess_stats, smoke=args.smoke,
+            expected_data_sha256=config.get("expected_data_sha256"),
+            expected_stats_sha256=config.get("expected_stats_sha256"))
+    else:
+        if args.preprocess_stats:
+            parser.error("--preprocess-stats requires --processed-data")
+        samples, indices = load_dataset(args.data_root)
+        data = prepare_data(samples, indices, config, smoke=args.smoke)
+    model = build_model(data.x_fit.shape[1:], config)
+    if args.initial_weights_from:
+        config["initial_weights_from"] = str(args.initial_weights_from)
     suffix = "_smoke" if args.smoke else ""
     config["run_directory"] = str(args.runs_dir / f"{config['experiment_id']}_seed{config['seed']}{suffix}")
     print(f"{config['experiment_id']}: fit={len(data.x_fit)}, val={len(data.x_validation)}, shape={data.x_fit.shape[1:]}", flush=True)

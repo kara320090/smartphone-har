@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "precision": "float64",
+  "batch": 2,
+  "timesteps": 3,
+  "input_features": 2,
+  "units": 2,
+  "classes": 6,
+  "parameter_count": 58,
+  "central_difference_checks": 174,
+  "max_numerical_absolute_error": 2.481167450316124e-10,
+  "max_autodiff_absolute_error": 2.7755575615628914e-17,
+  "negative_control": {
+    "kind": "intentional mutation",
+    "description": "omit forget gate sigmoid derivative",
+    "detected": true,
+    "max_autodiff_difference": 0.013947165946870229
+  },
+  "scope": "tiny educational example; production HAR training uses Keras autodiff"
+}

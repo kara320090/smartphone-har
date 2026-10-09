@@ -1,5 +1,6 @@
 """Training accepts arrays from any loader that obeys this documented contract."""
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+import hashlib
 from typing import Any
 import numpy as np
 from .adapters.preprocessing_reference import Preprocessor
@@ -27,6 +28,16 @@ def _row_indices(values, count, name):
     return values.astype(np.int64, copy=False)
 
 
+def row_binding_digest(*arrays):
+    """Bind array rows, labels, IDs and subjects without converting ID bases."""
+    digest = hashlib.sha256()
+    for value in arrays:
+        value = np.asarray(value)
+        digest.update(str((value.shape, value.dtype.str)).encode())
+        digest.update(np.ascontiguousarray(value).tobytes())
+    return digest.hexdigest()
+
+
 @dataclass
 class TrainingData:
     x_fit: np.ndarray
@@ -41,6 +52,7 @@ class TrainingData:
     raw_validation: np.ndarray
     split_id: str = SPLIT_ID
     smoke: bool = False
+    provenance: dict = field(default_factory=dict)
 
     def validate(self):
         for x, y, ids, subjects in (
@@ -70,6 +82,14 @@ class TrainingData:
         if (replay.shape != self.x_validation.shape or not np.isfinite(replay).all() or
                 not np.allclose(replay, self.x_validation, rtol=1e-5, atol=1e-6)):
             raise ValueError("Raw validation and prepared input disagree under the saved preprocessing state")
+        for part, arrays in (
+            ("fit", (self.x_fit, self.y_fit, self.fit_ids, self.fit_subjects)),
+            ("validation", (self.raw_validation, self.y_validation,
+                            self.validation_ids, self.validation_subjects)),
+        ):
+            expected = self.provenance.get(f"{part}_row_binding_sha256")
+            if expected and row_binding_digest(*arrays) != expected:
+                raise ValueError(f"{part} row binding differs from the loaded source")
 
 
 def prepare_data(samples, split_indices, config, smoke=False):

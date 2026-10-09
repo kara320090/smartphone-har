@@ -1,7 +1,6 @@
 """Independent fresh-process verification of saved preprocessing and model.
 
-This supplies the training handoff evidence; a user-facing inference system is
-still owned by part 05. Uses validation only, and never computes test metrics.
+This supplies training handoff evidence. Uses validation only, never test metrics.
 """
 import argparse
 import csv
@@ -27,7 +26,16 @@ def verify_bundle(run_directory, samples, indices):
         raise ValueError("Model checksum differs")
     if file_sha256(out / "preprocess.npz") != metadata["preprocess_sha256"]:
         raise ValueError("Preprocessing checksum differs")
-    pre = Preprocessor.load(out / "preprocess.npz")
+    if metadata.get("preprocessing") == "team_sequence_npz_v1":
+        from .adapters.processed_npz import TeamSequencePreprocessor
+        pre = TeamSequencePreprocessor.load(out / "preprocess.npz")
+        for field in ("data_sha256", "source_stats_sha256"):
+            if metadata["data_provenance"][field] != samples["provenance"][field]:
+                raise ValueError(f"Source {field} differs")
+    elif metadata.get("preprocessing") == "reference_npz_v1":
+        pre = Preprocessor.load(out / "preprocess.npz")
+    else:
+        raise ValueError("Unknown saved preprocessing format")
     model = keras.models.load_model(out / "model.keras", compile=False)
     split = json.loads((out / "split.json").read_text(encoding="utf-8"))
     by_id = {sample_id: i for i, sample_id in enumerate(samples["sample_id"])}
@@ -60,16 +68,36 @@ def verify_bundle(run_directory, samples, indices):
             "test_evaluated": False}
 
 
+def processed_verification_samples(cache, stats, smoke=False):
+    from .adapters.processed_npz import load_processed_data
+    data = load_processed_data(cache, stats, smoke=smoke)
+    samples = {"X_seq": data.raw_validation, "y": data.y_validation,
+               "sample_id": data.validation_ids, "subject": data.validation_subjects,
+               "provenance": data.provenance}
+    return samples, {"validation": np.arange(len(data.y_validation))}
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data-root", required=True, type=Path)
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--data-root", type=Path)
+    group.add_argument("--processed-data", type=Path)
+    parser.add_argument("--preprocess-stats", type=Path)
+    parser.add_argument("--run-directory", type=Path)
+    parser.add_argument("--smoke", action="store_true")
     parser.add_argument("--runs-dir", type=Path, default=Path("runs/formal"))
     parser.add_argument("--report", type=Path, default=Path("reports/fresh_process_verification.json"))
     args = parser.parse_args()
     configure_runtime()
-    samples, indices = load_dataset(args.data_root)
+    if args.processed_data:
+        if not args.preprocess_stats:
+            parser.error("--preprocess-stats is required")
+        samples, indices = processed_verification_samples(args.processed_data, args.preprocess_stats, args.smoke)
+    else:
+        samples, indices = load_dataset(args.data_root)
+    paths = [args.run_directory] if args.run_directory else sorted(args.runs_dir.iterdir())
     results = [verify_bundle(path, samples, indices)
-               for path in sorted(args.runs_dir.iterdir()) if (path / "metadata.json").exists()]
+               for path in paths if (path / "metadata.json").exists()]
     if not results:
         raise ValueError("No completed runs found")
     args.report.parent.mkdir(parents=True, exist_ok=True)
