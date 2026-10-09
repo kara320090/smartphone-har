@@ -1,0 +1,79 @@
+{
+  "data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+  "test_arrays_loaded": false,
+  "parts": {
+    "fit": {
+      "count": 5577,
+      "subjects": [
+        3,
+        5,
+        7,
+        8,
+        11,
+        15,
+        16,
+        17,
+        19,
+        22,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "class_counts": [
+        904,
+        817,
+        745,
+        977,
+        1047,
+        1087
+      ],
+      "original_labels_identical": true,
+      "original_subjects_identical": true
+    },
+    "val": {
+      "count": 1775,
+      "subjects": [
+        1,
+        6,
+        14,
+        21,
+        23
+      ],
+      "class_counts": [
+        322,
+        256,
+        241,
+        309,
+        327,
+        320
+      ],
+      "original_labels_identical": true,
+      "original_subjects_identical": true
+    }
+  },
+  "source_row_base": 0,
+  "channels": [
+    "body_acc_x",
+    "body_acc_y",
+    "body_acc_z",
+    "body_gyro_x",
+    "body_gyro_y",
+    "body_gyro_z",
+    "total_acc_x",
+    "total_acc_y",
+    "total_acc_z"
+  ],
+  "original_all_sequence_values_identical": true,
+  "max_original_absolute_difference": 0.0,
+  "fit_stats_mean_identical": true,
+  "fit_stats_std_identical": true,
+  "legacy_float64_vs_team_float32_max_input_difference": 0.0068511962890625,
+  "double_standardization_max_input_difference": 109.33331298828125,
+  "legacy_stats_loader_expected_key": "schema_version",
+  "legacy_stats_loader_key_present": false,
+  "standardization_source": "saved team fit statistics; one transform; no refit",
+  "audit_scope": "all 7352 official train windows, all nine channels, labels and subjects; no test array access"
+}

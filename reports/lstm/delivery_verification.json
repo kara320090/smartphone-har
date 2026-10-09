@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "formal_runs": 9,
+  "fresh_process_validation_count_per_run": 1775,
+  "training_commit": "95422e0993935be59db21248742f83c5fdf5453d",
+  "training_code_sha256": "87e237eb18ec7e9f36a45c853ac966d5b8731aa278b0e0916437f24bc3532a45",
+  "word_pages_rendered_and_visually_inspected": 22,
+  "ppt_slides_rendered_and_visually_inspected": 20,
+  "native_document_nine_run_table_matches": true,
+  "native_slide17_nine_run_table_matches": true,
+  "native_chart_caches_match_results_and_history": true,
+  "inference_cli_demo_count": 5,
+  "inference_cli_max_probability_difference": 6.60508706618046e-08,
+  "test_evaluated": false,
+  "render_scope": "Word COM PDF and Poppler pages; Artifact Tool finalized PPTX imported and rendered; visual inspection of every page and slide",
+  "renderer_limitation": "canonical render_docx.py unavailable because bundled soffice.exe absent; Word PDF fallback used",
+  "artifact_sha256": {
+    "bongheon-lstm-presentation.pptx": "aab5d65ecbb3c0c3033db13827897627a05da60279104ee7eeb82900e5b0662f",
+    "bongheon-lstm-report.docx": "b7c4cef402ad660cf3eaed1e94af0801d816b92aed4d1af7624e2cd702fdf6f0",
+    "bongheon-lstm-report.pdf": "6be461cb995bde7f6487b7146dae83ce718b00e6331d45a8cb02347810995568"
+  }
+}

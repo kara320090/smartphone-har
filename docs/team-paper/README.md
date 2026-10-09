@@ -8,6 +8,8 @@
 
 [단체방 공지문](TEAM_NOTICE_KO.md) · [공통 원고 양식](CONTRIBUTION_TEMPLATE_KO.md) · [역할별 양식](templates/) · [논문 취합 골격](PAPER_OUTLINE_KO.md)
 
+**LSTM 완료 자료:** [이봉헌 실제 기여 원고와 표](contributions/05_lstm_bongheon.md), [보고서·PPT·근거](../lstm-report/README.md), [공통 입력·결과 규격](../lstm-report/HANDOFF_LSTM_KO.md). L01 세 seed의 validation Macro F1은 0.8813 ± 0.0195다. 다른 담당자 결과와 공식 test 평가가 모인 뒤 공동 논문의 비교·결론을 작성한다.
+
 ## 1 주제와 비교 범위
 
 가제는 **스마트폰 센서 기반 MLP·CNN·RNN·LSTM의 사용자 독립 행동 인식 성능 비교**다. 동일한 센서 구간과 사람 분할에서 네 모델의 분류 성능, 학습 seed에 따른 변동, 모델 규모를 비교한다. RNN은 LSTM과 구분되는 기본 순환신경망인 **SimpleRNN**을 뜻하며 실제 구현을 명시한다.

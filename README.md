@@ -1,8 +1,18 @@
 # Smartphone HAR
 
-스마트폰 센서 구간으로 걷기·계단 오르기·계단 내려가기·앉기·서기·눕기를 분류하는 팀 프로젝트다. 기존 MLP 기준모델·공통 학습·조건 비교의 실제 결과를 보관한다.
+스마트폰 센서 구간으로 걷기·계단 오르기·계단 내려가기·앉기·서기·눕기를 분류하는 팀 프로젝트다. LSTM 구현·검증·9회 실험과 이전 MLP 수행 기록을 보관한다.
 
 **현재 배정: 데이터 정회서 / MLP 한윤섭 / CNN 최승빈 / RNN 유재윤 / LSTM 이봉헌. 전처리 완료.** 최신 작업·원고 기준은 [공동 논문 안내](docs/team-paper/README.md)를 따른다. 아래 MLP 실험·보고서는 이봉헌이 이전에 수행한 기록이며 새 LSTM 결과를 뜻하지 않는다.
+
+## 이봉헌 LSTM 완료 자료 · 2026년 10월 9일
+
+기본·소형·Dropout 조건을 seed 2026·2027·2028에서 **총 9회** 학습했다. 공동 비교에 제공할 L01의 validation Macro F1은 **0.8813 ± 0.0195 (seed 표본 SD)**, Accuracy 평균은 **88.32%**다. 39개 코드 테스트와 작은 LSTM의 174회 수치미분 검사를 통과했고, 각 모델을 새 프로세스에서 불러와 validation 1,775개 전체의 예측을 대조했다. 공식 test는 미평가다.
+
+[**22쪽 Word·PDF·MD와 20장 PPT**](docs/lstm-report/README.md) · [팀 논문용 원고·구조표·결과표](docs/team-paper/contributions/05_lstm_bongheon.md) · [재현·검증·추론 명령](docs/lstm-report/RUN_GUIDE_LSTM_KO.md) · [원자료](reports/lstm/) · [9개 모델과 상세 근거 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-lstm-v1)
+
+L02·L03은 개인 심화 분석이다. 결과 후 공동 비교용 L01을 교체하지 않았다. 같은 seed의 L01·L03 **학습 전** 가중치 일치를 확인했다. 아래 MLP 결과는 이전 역할의 실험 기록이다.
+
+## 이전 MLP 수행 기록
 
 **MLP 2종 · 후속 학습 24회 · 테스트 24개 통과 · 실행된 노트북 3개**
 
@@ -22,7 +32,8 @@ E02의 3seed 검증 Macro F1은 **0.9046 ± 0.0123 (표본 SD)**이다. seed마�
 |---|---|
 | 팀 공동 논문 준비와 개인 원고 작성 | [역할별 작업·결과물·작성 양식·취합 절차](docs/team-paper/README.md) |
 | 이전 MLP 작업과 완료 내역 확인 | [이봉헌 담당 업무 정리](docs/BONGHEON_WORK_SUMMARY.md) |
-| 최신 심화 보고서와 PPT | [21쪽 Word·20장 PPT·질의응답·작업 과정](docs/process-report/README.md) |
+| 현재 LSTM 보고서와 PPT | [22쪽 Word·20장 PPT·질의응답·원고](docs/lstm-report/README.md) |
+| 이전 MLP 심화 보고서와 PPT | [21쪽 Word·20장 PPT·질의응답·작업 과정](docs/process-report/README.md) |
 | 최초 구현 설명과 보고서 | [v1 Word·PPT·MD 원문](docs/personal-report/README.md) |
 | 처음 실행하기 | [시작 안내](START_HERE_KO.md) · [상세 설치와 실행](docs/RUN_GUIDE_KO.md) |
 | 실제 점수와 학습 곡선 확인 | [실험 결과](reports/RESULTS_KO.md) · [가설과 해석](docs/EXPERIMENT_NOTES_KO.md) |
