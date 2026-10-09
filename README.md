@@ -4,6 +4,14 @@
 
 **현재 배정: 데이터 정회서 / MLP 한윤섭 / CNN 최승빈 / RNN 유재윤 / LSTM 이봉헌. 전처리 완료.** 최신 작업·원고 기준은 [공동 논문 안내](docs/team-paper/README.md)를 따른다. 아래 MLP 실험·보고서는 이봉헌이 이전에 수행한 기록이며 새 LSTM 결과를 뜻하지 않는다.
 
+## 수업 발표와 공동 논문 준비
+
+[**강의자료에 맞춘 LSTM 수업 PPT 20장과 발표 원고**](docs/course-and-paper/README.md) · [커리큘럼 연결](docs/course-and-paper/COURSE_MAPPING_KO.md) · [공동 논문 취합 초안 MD](docs/course-and-paper/TEAM_PAPER_DRAFT_KO.md) · [팀 전달 안내](docs/course-and-paper/TEAM_INTEGRATION_KO.md) · [저장 모델 시연](docs/course-and-paper/RUN_DEMO_KO.md)
+
+[PPT·Word·MD 묶음 다운로드](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-course-paper-v1)
+
+수업 발표는 LSTM 원리·구현·검증 과정을, 학술 발표는 팀의 네 모델 비교를 중심으로 준비한다. 새 Word는 확인된 LSTM 결과를 채운 **내부 취합 초안**이며 다른 모델 결과·최종 test·공식 1~2쪽 제출본은 대기 중이다. 강의자료 원본은 배포하지 않는다.
+
 ## 이봉헌 LSTM 완료 자료 · 2026년 10월 9일
 
 기본·소형·Dropout 조건을 seed 2026·2027·2028에서 **총 9회** 학습했다. 공동 비교에 제공할 L01의 validation Macro F1은 **0.8813 ± 0.0195 (seed 표본 SD)**, Accuracy 평균은 **88.32%**다. 39개 코드 테스트와 작은 LSTM의 174회 수치미분 검사를 통과했고, 각 모델을 새 프로세스에서 불러와 validation 1,775개 전체의 예측을 대조했다. 공식 test는 미평가다.

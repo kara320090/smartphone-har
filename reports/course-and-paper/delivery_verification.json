@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "date": "2026-10-09",
+  "scope": "new presentation and integration manuscript; training code and nine formal runs unchanged",
+  "presentation_slides": 20,
+  "presentation_notes": 20,
+  "native_charts": 3,
+  "embedded_workbooks": 3,
+  "manuscript_pages": 4,
+  "numbers_checked": {
+    "ppt_all_nine_run_table": true,
+    "ppt_seed_f1_chart": true,
+    "ppt_loss_chart": true,
+    "ppt_subject_f1_chart": true,
+    "word_baseline_and_supplementary_tables": true
+  },
+  "demo_count": 5,
+  "demo_class_equality": true,
+  "demo_probability_max_absolute_difference": 6.60508706618046e-08,
+  "manual_visual_review": {
+    "all_twenty_slides": true,
+    "all_four_manuscript_pages": true,
+    "word_native_equation_and_table_borders": true
+  },
+  "rendering": {
+    "canonical_docx_renderer": "unavailable soffice.exe; diagnostic preserved",
+    "fallback": "hidden Word read-only PDF export, bundled Poppler"
+  },
+  "deferred": [
+    "other model results",
+    "official test",
+    "official submission format",
+    "full prior-work and text-similarity review",
+    "external conference submission"
+  ],
+  "artifact_sha256": {
+    "course-lstm-presentation.pptx": "f724a277e5cd845739ed9fbc681dded98c3a8662cd43311669682b0355a58d57",
+    "COURSE_MAPPING_KO.md": "a4f708569bc903713febf1304a8a3872a883006326e3648c4c70ca3943fdbc8b",
+    "COURSE_SPEAKER_NOTES_KO.md": "868726cca86c4912202b32434c884775fda05449a2e82eef15e03bfbaf6d7748",
+    "demo_predictions.json": "fc18b4b489735f0bb8a7dcbbf57f16c3d98e9c994c86b482925928d1ad276c09",
+    "README.md": "1c147cf9edfa35c67eb6a81fc0e5db9b3b59883dcb45153f3a88f84f2502e910",
+    "RUN_DEMO_KO.md": "33e9599faf385899ce46617ed12526ce013940174012c94e56c251d3e32fdb65",
+    "team-paper-working-draft.docx": "7c25edd0cf214e44cdba76500cc3db5e530ffb1b9cbe208ef55ecf36a4bbd774",
+    "TEAM_INTEGRATION_KO.md": "31f1675adf8010f5280c15da4ed3f105634b18879d202514d8eaf71f3cbc01d8",
+    "TEAM_PAPER_DRAFT_KO.md": "384b44a5322814bca8aba6e6b5c9fb7d72a580629949a3da621762d49c74ff06"
+  }
+}
