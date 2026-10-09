@@ -7,6 +7,6 @@
 - TEAM_INTEGRATION_KO.md: 팀원 제출물, 비교 규약, 논문·포스터 완성 순서.
 - RUN_DEMO_KO.md / demo_predictions.json: 저장 모델로 validation 다섯 구간을 분류한 오프라인 시연.
 
-공동 논문 초안은 대학생 공식 2단 1~2쪽 제출본이 아니다. 학술 포스터는 팀 결과 취합 후 작성한다. 공식 test 평가와 외부 학회 제출은 이번 작업에서 수행하지 않았다. 기존 LSTM 상세 보고서와 9회 근거는 [기존 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-lstm-v1)에 보존한다.
+이 폴더의 Word·MD 공동 논문 초안은 상세 취합용이며, 후속 작업에서 사용자 제공 대학생 공식 양식을 적용한 [2쪽 HWP 취합 초안](../dcs-student-paper/README.md)을 별도로 준비했다. 저자 정보와 다른 모델 결과는 아직 미확정이다. 학술 포스터는 팀 결과 취합 후 작성한다. 공식 test 평가와 외부 학회 제출은 수행하지 않았다. 기존 LSTM 상세 보고서와 9회 근거는 [기존 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-lstm-v1)에 보존한다.
 
 [수업 발표와 논문 준비 자료 다운로드](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-course-paper-v1)

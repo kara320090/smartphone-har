@@ -1,0 +1,27 @@
+{
+  "native_hwp_reload": true,
+  "native_page_count": 2,
+  "all_expected_text_preserved": true,
+  "canonical_metric_tables_preserved": true,
+  "official_page_size_and_margins_preserved": true,
+  "columns": [
+    1,
+    2
+  ],
+  "tables_treat_as_char": true,
+  "caption_font": "휴먼명조 9 pt, centered, ordinary paragraph",
+  "footer_page_numbers": false,
+  "unknown_authorship_fields": "확인 필요",
+  "visual_qa": "passed: both native Hancom preview pages inspected",
+  "hwp_sha256": "e0b0e6e917e56b7f59248b97378017706951ae71e2ecba354293b621ed67d4ea",
+  "bytes": 61952,
+  "application_version": "13, 0, 0, 711",
+  "visual_qa_method": "Hancom native embedded previews; page 2 rendered from a temporary in-memory copy with identical styles, page size, margins, columns and even-page header",
+  "page2_root_paragraphs_compared": 17,
+  "page2_line_geometry_exact_match": true,
+  "page2_table_cell_geometry_exact_match": true,
+  "visual_qa_pages": 2,
+  "hwp_page_image_api": "CreatePageImage blocked on file confirmation; not used for completed QA",
+  "summary_csv_sha256": "5589e3aca196129e2aca2cb06115b24064c204a3b5078b8c3d9c592a9e995ee0",
+  "student_template_sha256": "97c51ca165ebe3ded4eccdc6c4b8ea385e2c93689d3cd3c7029849faeeed06ce"
+}

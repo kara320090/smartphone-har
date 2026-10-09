@@ -4,6 +4,7 @@
 
 | 문서 | 용도 |
 |---|---|
+| [공식 대학생 HWP 취합 초안](dcs-student-paper/README.md) | 사용자 제공 양식의 2쪽 한글 파일·수정용 MD·제출 확인표·배치와 수치 검증 |
 | [현재 LSTM 완료 자료](lstm-report/README.md) | 9회 실험, 22쪽 Word·PDF·MD, 20장 PPT, 질의응답 32개, 재현·추론 명령 |
 | [LSTM 실제 논문 기여 원고](team-paper/contributions/05_lstm_bongheon.md) | 방법·조건·수치·한계, 구조표와 세 seed 결과표 |
 | [팀 공동 논문 역할과 작성 안내](team-paper/README.md) | 5인 역할별 작업·결과물·원고 양식, 공동 실험 규칙, 1편 취합 절차와 내부 일정 제안 |
