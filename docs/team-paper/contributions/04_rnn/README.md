@@ -1,6 +1,6 @@
 # 유재윤 RNN 팀 인계 자료
 
-담당자: 유재윤. 영문명이 필요한 경우 **Yu jaeyun**을 사용한다.
+담당자: 유재윤
 
 - contribution.md: 개인 기여 원고 7문단
 - STRUCTURE_KO.md: 층별 구조·파라미터·상태 정책

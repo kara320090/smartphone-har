@@ -1,6 +1,6 @@
 # 유재윤 RNN 실행·업로드 안내
 
-영문 이름이 필요한 경우 **Yu jaeyun**을 사용한다. 설명·원고·그래프는 한글 중심으로 작성했다. 게시 범위는 R01·R02·R03 × 세 seed의 RNN 9회다.
+실험 범위는 R01·R02·R03 × 세 seed의 RNN 9회다.
 
 ## 게시 위치와 구성
 
@@ -9,7 +9,7 @@
 - Git: RNN 코드·설정·실행 노트북·원고·그래프·CSV·9회 원자료
 - Release ZIP: RNN 전용 실행 코드·데이터·전처리 통계·9개 저장 모델·초기 가중치·원자료·보고서
 
-팀 인계 자료는 docs/team-paper/contributions/04_rnn/, 보고서·대본·질의응답은 docs/rnn-report/다. 현재 main에 있는 다른 담당자의 모델 자료를 유지하고 RNN 전용 진입점을 추가했다. 원고는 한글 이름을 사용한다.
+팀 인계 자료는 docs/team-paper/contributions/04_rnn/, 보고서·대본·질의응답은 docs/rnn-report/다.
 
 ## 검증 지표 재계산(Git만 필요)
 
