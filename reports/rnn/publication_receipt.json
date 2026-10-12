@@ -15,25 +15,25 @@
   "release_published": true,
   "assets": [
     {
-      "name": "yu-jaeyun-rnn-v1-full.zip",
-      "id": 634308093,
-      "size": 52588999,
-      "digest": "sha256:f5525b27c73b7a800a0aeb540a66fb08479d6006b370f53d6d393990b4f6062a",
-      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yu-jaeyun-rnn-v1/yu-jaeyun-rnn-v1-full.zip"
-    },
-    {
       "name": "RNN_RELEASE_MANIFEST.json",
-      "id": 634308321,
-      "size": 76847,
-      "digest": "sha256:593a19a1a73f0b1ff32f226940948c8d684d7a11c7099941c308b808b60f8000",
+      "id": 634357499,
+      "size": 77007,
+      "digest": "sha256:ab3d8990053802f0426e1bf4253ec0d23d99a89ef48fc7bddeeace85ae76542e",
       "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yu-jaeyun-rnn-v1/RNN_RELEASE_MANIFEST.json"
     },
     {
       "name": "SHA256SUMS.txt",
-      "id": 634308350,
+      "id": 634357524,
       "size": 186,
-      "digest": "sha256:8476a04f115f5682bb9a71e150a78dc2e9ff126d55d7db4f5c0bcc3884603911",
+      "digest": "sha256:882bcdd1252330e5622c45b63fd9ed50aacd53d153f65b0ecc13a2a4727c87fe",
       "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yu-jaeyun-rnn-v1/SHA256SUMS.txt"
+    },
+    {
+      "name": "yu-jaeyun-rnn-v1-full.zip",
+      "id": 634357309,
+      "size": 52588681,
+      "digest": "sha256:b526242d50dd140be516de024b0bb22fc462f0b32ea87d412f134f3033056721",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yu-jaeyun-rnn-v1/yu-jaeyun-rnn-v1-full.zip"
     }
   ],
   "superseded_upload": {
@@ -43,5 +43,15 @@
     "old_tag_deleted": true,
     "old_branch_deleted": true,
     "local_original_preserved": true
+  },
+  "final_pushed_commit": "3de8faa11bae3a52d595a46049d9e9a57085dd0d",
+  "changed_files": 214,
+  "remote_verified": true,
+  "pr_mergeable": true,
+  "documentation_revision_commit": "3de8faa11bae3a52d595a46049d9e9a57085dd0d",
+  "documentation_cleanup": {
+    "files_changed": 16,
+    "model_data_and_metrics_unchanged": true,
+    "notebook_code_cells_unchanged": true
   }
 }
