@@ -4,7 +4,7 @@
 
 | 주장·결과 | 근거 |
 |---|---|
-| 상태 초기화·32/64 은닉·출력 구조 | src/models/rnn.py, tests/test_rnn.py, STRUCTURE_KO.md |
+| 상태 초기화·32/64 은닉·출력 구조 | src/models/rnn.py, tests/test_rnn.py, docs/team-paper/contributions/04_rnn/STRUCTURE_KO.md |
 | 데이터·한 번 표준화·피험자 분할 | src/adapters/processed_npz.py, reports/rnn/dataset_audit.json, run_evidence 각 metadata·split |
 | 공통 조건·9회 설정·R03 초기 가중치 | docs/RNN_TRAINING_PROTOCOL_KO.md, configs/R01~R03.json, run_evidence 각 config·initialization |
 | 3개 조건의 평균·표본 표준편차 | reports/rnn/summary.csv, runs.csv, analysis.json |
