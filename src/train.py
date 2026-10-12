@@ -176,7 +176,7 @@ def train_model(model, data: TrainingData, train_config):
         outputs = predict_batches(model, data.x_validation)
         model.save(out / "model.keras")
         restored = keras.models.load_model(out / "model.keras", compile=False)
-        reload_count = len(outputs) if config.get("model_key") == "lstm" else min(30, len(outputs))
+        reload_count = len(outputs) if config.get("model_key") in ("lstm", "cnn") else min(30, len(outputs))
         before = outputs[:reload_count]
         after = predict_batches(restored, data.x_validation[:reload_count])
         if task_type == "classification":

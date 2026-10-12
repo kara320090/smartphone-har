@@ -1,0 +1,115 @@
+{
+  "model": "cnn",
+  "experiment_id": "C01",
+  "split": "validation_s0",
+  "test_evaluated": false,
+  "official_tensorflow_run": true,
+  "backend": "tensorflow",
+  "seed_count": 3,
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "validation_count_per_seed": 1775,
+  "accuracy_mean": 0.8888262910798121,
+  "accuracy_sample_sd": 0.011632586415736031,
+  "macro_f1_mean": 0.8888645736006948,
+  "macro_f1_sample_sd": 0.012727173056464135,
+  "parameters": 85574,
+  "runs": [
+    {
+      "run_id": "C01_seed2026",
+      "seed": 2026,
+      "validation_count": 1775,
+      "accuracy": 0.8754929577464788,
+      "macro_f1": 0.8742166390602287,
+      "epochs_ran": 8,
+      "best_epoch": 2,
+      "parameters": 85574,
+      "train_seconds": 15.41254459999982,
+      "fresh_process_verified": true,
+      "model_reload_verified": true,
+      "backend": "tensorflow"
+    },
+    {
+      "run_id": "C01_seed2027",
+      "seed": 2027,
+      "validation_count": 1775,
+      "accuracy": 0.8969014084507042,
+      "macro_f1": 0.897217833969541,
+      "epochs_ran": 7,
+      "best_epoch": 1,
+      "parameters": 85574,
+      "train_seconds": 13.75462239999979,
+      "fresh_process_verified": true,
+      "model_reload_verified": true,
+      "backend": "tensorflow"
+    },
+    {
+      "run_id": "C01_seed2028",
+      "seed": 2028,
+      "validation_count": 1775,
+      "accuracy": 0.8940845070422535,
+      "macro_f1": 0.8951592477723146,
+      "epochs_ran": 10,
+      "best_epoch": 4,
+      "parameters": 85574,
+      "train_seconds": 12.427869799999826,
+      "fresh_process_verified": true,
+      "model_reload_verified": true,
+      "backend": "tensorflow"
+    }
+  ],
+  "confusion_matrix_pooled_seeds": [
+    [
+      806,
+      160,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      19,
+      745,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      26,
+      16,
+      681,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      583,
+      342,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      21,
+      958,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      960
+    ]
+  ],
+  "interpretation": "Sample SD describes fixed-split training-seed variability, not confidence about unseen people."
+}

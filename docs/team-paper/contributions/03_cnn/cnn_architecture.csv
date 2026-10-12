@@ -1,0 +1,12 @@
+layer,configuration,output_shape,parameters
+Input,"128 time, 9 channels","(128,9)",0
+Conv1D_1,"64 filters, kernel5, stride1, same, relu","(128,64)",2944
+MaxPooling1D_1,"pool2, stride2","(64,64)",0
+Conv1D_2,"128 filters, kernel3, stride1, same, relu","(64,128)",24704
+MaxPooling1D_2,"pool2, stride2","(32,128)",0
+Conv1D_3,"128 filters, kernel3, stride1, same, relu","(32,128)",49280
+GlobalAveragePooling1D,"mean over time","(128)",0
+Dense_1,"64, relu","(64)",8256
+Dropout,"rate0.3","(64)",0
+Dense_logits,"6, linear","(6)",390
+TOTAL,,,85574
