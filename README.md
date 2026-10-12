@@ -123,3 +123,7 @@ docs/         담당 업무, 상세 실행, 팀 인계, 해석, 발표
 [RNN 원고·구조표·참고문헌·결과 한 행](docs/team-paper/contributions/04_rnn/README.md) · [전체 보고서](docs/rnn-report/REPORT_KO.md) · [업로드·실행 안내](RNN_START_HERE_KO.md) · [seed별 원자료](reports/rnn/run_evidence/README.md)
 
 SimpleRNN R01~R03을 세 seed에서 총 9회 실행했다. 공동 기준 R01의 validation Macro F1은 **0.7191 ± 0.0586**, 개인 튜닝 선택 R02는 **0.7715 ± 0.0675**다. 기준 4모델 비교용 보조 9회와 함께 저장 모델 전체 검증 재로딩을 확인했다. 공식 test는 미평가다. 비교용 CNN은 14,054개 파라미터의 계획서 구조이며 현재 main CNN 담당자의 구조·결과와 구분한다. 당시 학습 코드는 reports/rnn/frozen_source에 보존했다. 최신 main의 CNN·MLP 코드와 설정은 유지하고 RNN 전용 학습 진입점을 추가했다.
+
+[**RNN 모델·공유 데이터·당시 코드·전체 결과 다운로드**](https://github.com/kara320090/smartphone-har/releases/tag/jaeyoon-rnn-v1) · [Main 반영 PR #2](https://github.com/kara320090/smartphone-har/pull/2)
+
+2026년 10월 13일 RNN 브랜치와 개발 Pre-release로 게시했다. 공식 test는 미평가이며 main 반영은 PR 검토 단계다.

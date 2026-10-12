@@ -4,7 +4,7 @@
 
 ## 파일을 받는 방법
 
-Git에는 코드·문서·노트북·그림·CSV·18회 숫자 증빙을 보관한다. 전체 모델·초기 가중치·통계·데이터·정확한 당시 코드·smoke 기록은 `jaeyoon-rnn-v1-full.zip` RNN Release 자산이다. 게시자는 main 반영 후 tag `jaeyoon-rnn-v1`로 Release를 생성해 해당 ZIP과 SHA256SUMS.txt를 첨부한다. 이 안내 작성 시점에는 RNN Release가 아직 게시되지 않았다.
+Git에는 코드·문서·노트북·그림·CSV·18회 숫자 증빙을 보관한다. 전체 모델·초기 가중치·통계·데이터·정확한 당시 코드·smoke 기록은 `jaeyoon-rnn-v1-full.zip` RNN Release 자산이다. 2026년 10월 13일 [RNN 개발 Pre-release](https://github.com/kara320090/smartphone-har/releases/tag/jaeyoon-rnn-v1)에 전체 ZIP·manifest·SHA256SUMS.txt를 게시했다. [Main 반영 PR #2](https://github.com/kara320090/smartphone-har/pull/2)는 검토 단계이며 공식 test는 미평가다.
 
 ## 현재 main에서 RNN을 새로 학습
 

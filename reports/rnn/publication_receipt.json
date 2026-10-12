@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-13",
+  "repository": "https://github.com/kara320090/smartphone-har",
+  "branch": "feat/jaeyoon-rnn-results",
+  "branch_url": "https://github.com/kara320090/smartphone-har/tree/feat/jaeyoon-rnn-results",
+  "initial_pushed_commit": "5b671f2739ea33177552e22d20333ad928e8b033",
+  "pull_request_url": "https://github.com/kara320090/smartphone-har/pull/2",
+  "pull_request_number": 2,
+  "remote_pushed": true,
+  "main_merged": false,
+  "release_tag": "jaeyoon-rnn-v1",
+  "release_url": "https://github.com/kara320090/smartphone-har/releases/tag/jaeyoon-rnn-v1",
+  "release_published": true,
+  "release_assets": [
+    {
+      "name": "jaeyoon-rnn-v1-full.zip",
+      "size": 59532798,
+      "sha256": "7de8a6213be094a2ae56744fb1f4cc77f4408339c765ff2d09b6830f9a040ffc",
+      "github_digest": "sha256:7de8a6213be094a2ae56744fb1f4cc77f4408339c765ff2d09b6830f9a040ffc",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/jaeyoon-rnn-v1/jaeyoon-rnn-v1-full.zip"
+    },
+    {
+      "name": "RNN_RELEASE_MANIFEST.json",
+      "size": 82699,
+      "sha256": "25fda2e0c23e0967b77d70b2d1cd6df7dd08feb58029016e1af5624d483dab1b",
+      "github_digest": "sha256:25fda2e0c23e0967b77d70b2d1cd6df7dd08feb58029016e1af5624d483dab1b",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/jaeyoon-rnn-v1/RNN_RELEASE_MANIFEST.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 184,
+      "sha256": "41e342242d10f39c046921ce63efa161166b206826051d12636d4bbff1b24b39",
+      "github_digest": "sha256:41e342242d10f39c046921ce63efa161166b206826051d12636d4bbff1b24b39",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/jaeyoon-rnn-v1/SHA256SUMS.txt"
+    }
+  ],
+  "release_prerelease": true,
+  "release_assets_checked_after_publication": true
+}
