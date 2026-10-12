@@ -1,0 +1,4 @@
+run_id,seed,validation_count,accuracy,macro_f1,epochs_ran,best_epoch,parameters,train_seconds,fresh_process_verified,model_reload_verified,backend
+C01_seed2026,2026,1775,0.8754929577464788,0.8742166390602287,8,2,85574,15.41254459999982,True,True,tensorflow
+C01_seed2027,2027,1775,0.8969014084507042,0.897217833969541,7,1,85574,13.75462239999979,True,True,tensorflow
+C01_seed2028,2028,1775,0.8940845070422535,0.8951592477723146,10,4,85574,12.427869799999826,True,True,tensorflow
