@@ -1,0 +1,19 @@
+M01: fit=5577, val=1775, shape=(128, 9)
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Epoch 1/40
+88/88 - 1s - 12ms/step - accuracy: 0.8392 - loss: 0.4753 - val_accuracy: 0.8496 - val_loss: 0.4532 - val_macro_f1: 0.8477
+Epoch 2/40
+88/88 - 0s - 3ms/step - accuracy: 0.9432 - loss: 0.1429 - val_accuracy: 0.8687 - val_loss: 0.4062 - val_macro_f1: 0.8676
+Epoch 3/40
+88/88 - 0s - 3ms/step - accuracy: 0.9523 - loss: 0.1088 - val_accuracy: 0.8614 - val_loss: 0.4250 - val_macro_f1: 0.8592
+Epoch 4/40
+88/88 - 0s - 3ms/step - accuracy: 0.9564 - loss: 0.1030 - val_accuracy: 0.8625 - val_loss: 0.4234 - val_macro_f1: 0.8650
+Epoch 5/40
+88/88 - 0s - 3ms/step - accuracy: 0.9561 - loss: 0.0993 - val_accuracy: 0.8946 - val_loss: 0.4532 - val_macro_f1: 0.8944
+Epoch 6/40
+88/88 - 0s - 3ms/step - accuracy: 0.9588 - loss: 0.0903 - val_accuracy: 0.8890 - val_loss: 0.4424 - val_macro_f1: 0.8889
+Epoch 7/40
+88/88 - 0s - 3ms/step - accuracy: 0.9595 - loss: 0.0844 - val_accuracy: 0.9110 - val_loss: 0.4825 - val_macro_f1: 0.9104
+Epoch 8/40
+88/88 - 0s - 3ms/step - accuracy: 0.9616 - loss: 0.0796 - val_accuracy: 0.8637 - val_loss: 0.5148 - val_macro_f1: 0.8631
+C:\Users\2022A00520\Desktop\팀공동논문_역할별작성안내_20261009\smartphone-har\runs\mlp_yoonseop\M01_seed2027

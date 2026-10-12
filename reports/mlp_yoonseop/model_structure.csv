@@ -1,0 +1,5 @@
+layer,type,output_shape,parameters
+flatten_sequence,Flatten,"(None, 1152)",0
+hidden_1,Dense,"(None, 128)",147584
+hidden_2,Dense,"(None, 64)",8256
+logits,Dense,"(None, 6)",390

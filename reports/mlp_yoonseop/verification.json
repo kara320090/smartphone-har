@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "run_id": "M01_seed2026",
+      "full_validation_recomputed": true,
+      "evaluation_mode_deterministic": true,
+      "count": 1775,
+      "max_probability_difference": 0.0
+    },
+    {
+      "run_id": "M01_seed2027",
+      "full_validation_recomputed": true,
+      "evaluation_mode_deterministic": true,
+      "count": 1775,
+      "max_probability_difference": 0.0
+    },
+    {
+      "run_id": "M01_seed2028",
+      "full_validation_recomputed": true,
+      "evaluation_mode_deterministic": true,
+      "count": 1775,
+      "max_probability_difference": 0.0
+    }
+  ],
+  "invalid_inputs_rejected": {
+    "wrong_time_axis": "Expected nonempty float32 (N,128,9) unstandardized input",
+    "wrong_channels": "Expected nonempty float32 (N,128,9) unstandardized input",
+    "flattened": "Expected nonempty float32 (N,128,9) unstandardized input",
+    "empty": "Expected nonempty float32 (N,128,9) unstandardized input",
+    "float64": "Expected nonempty float32 (N,128,9) unstandardized input",
+    "NaN": "Input contains NaN or Inf",
+    "Inf": "Input contains NaN or Inf"
+  },
+  "test_evaluated": false,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "numpy": "2.2.6",
+    "scikit_learn": "1.7.2",
+    "code_sha256": "39152401b2cbf1ac4db720ed6401e901def0b3ea4690e84536b6450a2a1b15a0",
+    "git_commit": "5f760c3d681505f21b3a34b03a4f909f13c13e81",
+    "devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ],
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "deterministic_ops": true
+  }
+}

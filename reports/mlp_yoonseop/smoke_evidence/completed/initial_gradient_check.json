@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "batch_size": 60,
+  "loss": 1.9627195596694946,
+  "gradient_global_norm": 5.947256565093994,
+  "trainable_tensor_count": 6,
+  "training_mode": false
+}

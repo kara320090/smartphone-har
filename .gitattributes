@@ -10,3 +10,14 @@ scripts/*.py -text
 *.ps1 text eol=crlf
 *.png binary
 *.ipynb text
+
+# Preserve the checksums of the frozen MLP source and published run evidence.
+reports/mlp_yoonseop/frozen_source/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/mlp_yoonseop/run_evidence/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/mlp_yoonseop/smoke_evidence/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/mlp_yoonseop/*.csv -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+reports/mlp_yoonseop/*.svg -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+reports/mlp_yoonseop/*.json -text
+reports/mlp_yoonseop/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/mlp_yoonseop/*.xml -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/mlp_yoonseop/requirements-resolved.txt -text

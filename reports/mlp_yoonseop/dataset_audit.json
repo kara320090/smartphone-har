@@ -1,0 +1,81 @@
+{
+  "data_provenance": {
+    "preprocessing": "team_sequence_npz_v1",
+    "sample_row_number_base": 0,
+    "data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+    "source_stats_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+    "data_filename": "processed_data.npz",
+    "source_stats_filename": "preprocess.npz",
+    "input_state": "unstandardized",
+    "standardization_applications": 1,
+    "statistics_refitted": false,
+    "statistics_match_full_fit": true,
+    "loaded_array_keys": [
+      "fit_Xs",
+      "fit_y",
+      "fit_subject",
+      "fit_sample_id",
+      "val_Xs",
+      "val_y",
+      "val_subject",
+      "val_sample_id"
+    ],
+    "test_arrays_loaded": false,
+    "fit_row_binding_sha256": "211711f96549daf6f1fa20a8064158a3116628e22a9a5bfaab753d62e06d94f2",
+    "validation_row_binding_sha256": "5a05b4e2a736990867d8e30f5373be6aae885d9f38c5ab90bd8cdcb2a201fceb"
+  },
+  "fit_count": 5577,
+  "validation_count": 1775,
+  "fit_subjects": [
+    3,
+    5,
+    7,
+    8,
+    11,
+    15,
+    16,
+    17,
+    19,
+    22,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "validation_subjects": [
+    1,
+    6,
+    14,
+    21,
+    23
+  ],
+  "input_shape": [
+    128,
+    9
+  ],
+  "channels": [
+    "body_acc_x",
+    "body_acc_y",
+    "body_acc_z",
+    "body_gyro_x",
+    "body_gyro_y",
+    "body_gyro_z",
+    "total_acc_x",
+    "total_acc_y",
+    "total_acc_z"
+  ],
+  "classes": [
+    "WALKING",
+    "WALKING_UPSTAIRS",
+    "WALKING_DOWNSTAIRS",
+    "SITTING",
+    "STANDING",
+    "LAYING"
+  ],
+  "Xf_used": false,
+  "PCA_used": false,
+  "test_evaluated": false,
+  "preliminary_inspection": "All NPZ array shapes/dtypes and test subject IDs were inspected before training; no test metrics or model selection used test data."
+}

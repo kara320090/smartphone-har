@@ -1,0 +1,2 @@
+model,config_id,contributor,seeds,split,repetitions,parameters,accuracy_mean,accuracy_sample_sd,macro_f1_mean,macro_f1_sample_sd,test_evaluated,scope
+Sequence MLP,M01,한윤섭,"[2026, 2027, 2028]",validation,3,156230,0.8666666666666667,0.011687029395306407,0.8646071631966787,0.012469865805345993,False,three training seeds on one fixed subject split

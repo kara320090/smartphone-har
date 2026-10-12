@@ -1,0 +1,73 @@
+{
+  "split": "validation",
+  "task_type": "classification",
+  "fit_count": 60,
+  "validation_count": 30,
+  "epochs_ran": 2,
+  "best_epoch": 2,
+  "best_val_loss": 1.3959563970565796,
+  "train_seconds": 0.7922104999888688,
+  "parameters": 156230,
+  "test_evaluated": false,
+  "smoke": true,
+  "accuracy": 0.5,
+  "macro_f1": 0.4779040404040404,
+  "recall_per_class": [
+    0.2,
+    0.0,
+    0.6,
+    1.0,
+    0.2,
+    1.0
+  ],
+  "confusion_matrix": [
+    [
+      1,
+      0,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      3,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+    ]
+  ]
+}

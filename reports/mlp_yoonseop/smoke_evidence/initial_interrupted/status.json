@@ -1,0 +1,5 @@
+{
+  "status": "interrupted",
+  "reason": "Interrupted during serialization after training; sandbox default temporary directory was inaccessible. A fresh smoke directory passed after relocating TEMP/TMP to the workspace.",
+  "excluded_from_formal_summary": true
+}

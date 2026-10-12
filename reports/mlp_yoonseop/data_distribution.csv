@@ -1,0 +1,13 @@
+split,label,class,count
+fit,0,WALKING,904
+fit,1,WALKING_UPSTAIRS,817
+fit,2,WALKING_DOWNSTAIRS,745
+fit,3,SITTING,977
+fit,4,STANDING,1047
+fit,5,LAYING,1087
+validation,0,WALKING,322
+validation,1,WALKING_UPSTAIRS,256
+validation,2,WALKING_DOWNSTAIRS,241
+validation,3,SITTING,309
+validation,4,STANDING,327
+validation,5,LAYING,320

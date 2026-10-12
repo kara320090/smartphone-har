@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "code_sha256": "39152401b2cbf1ac4db720ed6401e901def0b3ea4690e84536b6450a2a1b15a0",
+  "frozen_source_files_checked": 45,
+  "pytest_passed": 48,
+  "completed_formal_models": 3,
+  "validation_windows_per_model": 1775,
+  "input_data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+  "original_stats_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+  "local_document_links_checked": 49,
+  "prediction_cli_demo_count": 5,
+  "figures_visually_inspected": [
+    "architecture.png",
+    "learning_curves.png",
+    "confusion_matrices.png",
+    "class_subject_f1.png"
+  ],
+  "test_evaluated": false,
+  "remote_mutations_performed": false
+}

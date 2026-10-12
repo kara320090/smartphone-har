@@ -1,0 +1,19 @@
+{
+  "model": "Sequence MLP",
+  "config_id": "M01",
+  "contributor": "한윤섭",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "split": "validation",
+  "repetitions": 3,
+  "parameters": 156230,
+  "accuracy_mean": 0.8666666666666667,
+  "accuracy_sample_sd": 0.011687029395306407,
+  "macro_f1_mean": 0.8646071631966787,
+  "macro_f1_sample_sd": 0.012469865805345993,
+  "test_evaluated": false,
+  "scope": "three training seeds on one fixed subject split"
+}

@@ -1,0 +1,45 @@
+{
+  "date_korea": "2026-10-12",
+  "stage": "prepublication_review",
+  "passed": true,
+  "training_code_sha256": "39152401b2cbf1ac4db720ed6401e901def0b3ea4690e84536b6450a2a1b15a0",
+  "unchanged_training_snapshot_files": 45,
+  "pytest_passed": 48,
+  "runs": [
+    {
+      "run_id": "M01_seed2026",
+      "validation_count": 1775,
+      "accuracy": 0.8771830985915493,
+      "macro_f1": 0.8753130388858367,
+      "max_probability_reload_difference": 0.0,
+      "model_sha256": "909c150960937b6e0ad385e79e9b9012b8c5a3f3392073450b2e9a20a47b2a13",
+      "all_saved_metrics_recomputed": true
+    },
+    {
+      "run_id": "M01_seed2027",
+      "validation_count": 1775,
+      "accuracy": 0.8687323943661972,
+      "macro_f1": 0.8675930335702784,
+      "max_probability_reload_difference": 0.0,
+      "model_sha256": "73f06e33a8ebd5ad8e507bd10135ddaec00f8309c3e8b1259a7164d79bfd62df",
+      "all_saved_metrics_recomputed": true
+    },
+    {
+      "run_id": "M01_seed2028",
+      "validation_count": 1775,
+      "accuracy": 0.8540845070422535,
+      "macro_f1": 0.8509154171339215,
+      "max_probability_reload_difference": 0.0,
+      "model_sha256": "e727a60643ec08b255c112b3d6cd6a2301e4a70a3825cf0fdb7a7d1cbf59c1ba",
+      "all_saved_metrics_recomputed": true
+    }
+  ],
+  "summary_recomputed": true,
+  "class_and_subject_metrics_recomputed": true,
+  "consensus_error_windows": 173,
+  "data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+  "original_statistics_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+  "models_or_results_changed_for_publication": false,
+  "test_evaluated": false,
+  "local_document_links_checked": 65
+}

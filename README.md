@@ -4,6 +4,14 @@
 
 **현재 배정: 데이터 정회서 / MLP 한윤섭 / CNN 최승빈 / RNN 유재윤 / LSTM 이봉헌. 전처리 완료.** 최신 작업·원고 기준은 [공동 논문 안내](docs/team-paper/README.md)를 따른다. 아래 MLP 실험·보고서는 이봉헌이 이전에 수행한 기록이며 새 LSTM 결과를 뜻하지 않는다.
 
+## 한윤섭 MLP 완료 자료 · 2026년 10월 12일
+
+**[MLP 원고·압축 문단·실행 안내](docs/team-paper/contributions/02_mlp/README.md)** · [3seed 원자료](reports/mlp_yoonseop/summary.json)
+
+동일한 첨부 시계열 캐시와 기존 fit 통계로 M01 seed 2026·2027·2028을 새로 실행했다. validation Macro F1은 **0.8646 ± 0.0125**, Accuracy 평균은 **86.67%**이며 156,230 파라미터다. 48개 코드 검사와 모델별 validation 1,775개 전체의 별도 프로세스 재로딩을 통과했다. 기존 이봉헌 MLP 점수와 분리된 이번 한윤섭 담당 결과다. 공식 test는 미평가다.
+
+[**모델 3개·데이터·통계·전체 예측·코드가 포함된 Release ZIP**](https://github.com/kara320090/smartphone-har/releases/tag/yoonseop-mlp-v1) · [저장소에서 바로 보는 seed별 증빙](reports/mlp_yoonseop/run_evidence/) · [배포 전 내용 점검](reports/mlp_yoonseop/publication_audit.json)
+
 ## 수업 발표와 공동 논문 준비
 
 **공동 논문 전체 1~2쪽 취합에는 [LSTM 압축 원고·실제 구조 그림·결과 한 행](docs/team-paper/contributions/lstm-compact/README.md)을 우선 사용한다.** 222자 본문과 그림을 넣은 HWP 및 381자 설정 포함 참고 HWP를 제공한다. 기존 2쪽 HWP는 상세 검토 초안이며, 팀원 결과를 모두 담은 최종 제출본은 취합 후 작성한다.

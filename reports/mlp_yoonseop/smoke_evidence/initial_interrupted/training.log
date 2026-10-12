@@ -1,0 +1,7 @@
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\2022A00520\\.matplotlib\\fontlist-v390.json.matplotlib-lock'
+M01: fit=60, val=30, shape=(128, 9)
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Epoch 1/2
+1/1 - 1s - 893ms/step - accuracy: 0.1500 - loss: 1.9627 - val_accuracy: 0.4000 - val_loss: 1.5284 - val_macro_f1: 0.3737
+Epoch 2/2
+1/1 - 0s - 24ms/step - accuracy: 0.7333 - loss: 0.9883 - val_accuracy: 0.5000 - val_loss: 1.3960 - val_macro_f1: 0.4779

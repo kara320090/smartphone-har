@@ -1,0 +1,197 @@
+{
+  "date_korea": "2026-10-12",
+  "stage": "before_formal_training",
+  "contributor": "한윤섭",
+  "base_commit": "5f760c3d681505f21b3a34b03a4f909f13c13e81",
+  "local_uncommitted_changes_in_snapshot": true,
+  "code_sha256": "39152401b2cbf1ac4db720ed6401e901def0b3ea4690e84536b6450a2a1b15a0",
+  "config_id": "M01",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "test_evaluated": false,
+  "files": [
+    {
+      "path": "src/__init__.py",
+      "sha256": "c58779d0733d3e16e0cfedb7305938f1f0344eb13876fc6b82c04cbc65d717ef"
+    },
+    {
+      "path": "src/adapters/__init__.py",
+      "sha256": "39758943004bde48b93a97ab18fd9b1074237d1fb15087a4aac6d939bb97cab5"
+    },
+    {
+      "path": "src/adapters/preprocessing_reference.py",
+      "sha256": "588ef07bf2e1a274373b95d2adf1a2f902cde1246f7a6fdea04491562ffbb647"
+    },
+    {
+      "path": "src/adapters/processed_npz.py",
+      "sha256": "3516a8dab0e9ecc6bc6703223e440bb2d5937a41ad6a75d5029a74cf5a410e89"
+    },
+    {
+      "path": "src/adapters/uci_reference.py",
+      "sha256": "920f6bdafb61aca26ce80094330137c67f794c477297e72c5efd7a93df5de893"
+    },
+    {
+      "path": "src/contracts.py",
+      "sha256": "b354f50b38fd8b2c42005c8ed7f486623885028c07d7c9b7e3104bcb4da69893"
+    },
+    {
+      "path": "src/experiments.py",
+      "sha256": "15f6daf312247643a2ed627a57745cc55d788057b3aff104750d57c35e4798c9"
+    },
+    {
+      "path": "src/lstm_analysis.py",
+      "sha256": "fd1ce39d6c947debcb2eb5e33c031e1f0e9aff8db21cdd3e1367cdf33286486b"
+    },
+    {
+      "path": "src/lstm_math_checks.py",
+      "sha256": "51a8778bdf9efbd8b530e540ffb30a368ccf9088c77fc7e52593627802a9628f"
+    },
+    {
+      "path": "src/math_checks.py",
+      "sha256": "cc8abaeef601d346c3ebb6469620e4cf9e71ebc6e269790e9e93c0a7f6a20a00"
+    },
+    {
+      "path": "src/mlp_analysis.py",
+      "sha256": "5ee487725cb89b8af6fc844544106b1909a58e50c99db4ca9263b50e43d8bfed"
+    },
+    {
+      "path": "src/mlp_inference.py",
+      "sha256": "2afaca1ce2b77986ce7ea3296eb7143540dfe8bf564e5abc5727f1a56c43314e"
+    },
+    {
+      "path": "src/models/__init__.py",
+      "sha256": "94b708aea3cb6640419e50ef542cdfb40822b0f146313b296507b8c195944b75"
+    },
+    {
+      "path": "src/models/lstm.py",
+      "sha256": "10b8bc50ff58659abf3f0bd4972fe89acc2a72737ce29bcdb272017713ff04dc"
+    },
+    {
+      "path": "src/models/mlp.py",
+      "sha256": "e3ecb25caa1e0ceb3818c65626b59d39abc1a731c29dae521d8009e83fe8ff79"
+    },
+    {
+      "path": "src/report.py",
+      "sha256": "03e82aed3c885dc7bf207e25deef460a9f9be12e67ab18e28ed04b5a20b43bb1"
+    },
+    {
+      "path": "src/runtime.py",
+      "sha256": "b2b250ffb96151350b82c36da2df3e2eb15b7d52198cd3a97d361a56733b28e5"
+    },
+    {
+      "path": "src/tfrecord_check.py",
+      "sha256": "df1136255d3ac2b604bb46963260522365a2d02dc5ab44f6ba90b9c0d8f2d18c"
+    },
+    {
+      "path": "src/train.py",
+      "sha256": "a867b08c440bac18f50743b55e263dfa19ebc7ee76d96a8d51075ed1db58b6da"
+    },
+    {
+      "path": "src/training_metrics.py",
+      "sha256": "7b604212cf3e1dcae9c12aa581ceb955c6538de86b7f794e1665beab73dcd739"
+    },
+    {
+      "path": "src/verify_bundle.py",
+      "sha256": "f9ad207374c01a50ecf50685ff10fef6e1987abab385bde08dfdeb02f4614fc6"
+    },
+    {
+      "path": "configs/E02.json",
+      "sha256": "5d1ccecb279d1e5e9309e572e8c155ab8111ba44c23b012355414c2f2d6ed798"
+    },
+    {
+      "path": "configs/E03.json",
+      "sha256": "b7ac2af1cb750c44400fd617c9cafa69fdfd0ca71430a33715d344e2496527ef"
+    },
+    {
+      "path": "configs/E07.json",
+      "sha256": "582b012b2cb770ed68b9f2deb1a79c7d489c232a64f2dc13b618e7fe2900b1e0"
+    },
+    {
+      "path": "configs/E08.json",
+      "sha256": "7640ca209677098889f596e34244e0fc631f2b0c82e47553974c3925e77e94f5"
+    },
+    {
+      "path": "configs/E09.json",
+      "sha256": "88399ace8babd957838b7e58f63e1ebabd1a9837cfe062f2fcb3dfb2cdd5c9e2"
+    },
+    {
+      "path": "configs/E10.json",
+      "sha256": "7fba3fcfb48635af23740f0bc6665655c8fe5316762da28baa3adb31382a010f"
+    },
+    {
+      "path": "configs/E11.json",
+      "sha256": "c1008a070df887c38623f054a16ee1535b32260325d41e8ad66556b17d6331c9"
+    },
+    {
+      "path": "configs/L01.json",
+      "sha256": "fdec16d539ce1c4e2cbca4e015d46c11f477ec8355b2d4af0eb546bc58483634"
+    },
+    {
+      "path": "configs/L02.json",
+      "sha256": "635ff565cd073053e07c4eec55f563a1754a1ad859d68fa6074daaaa89fa9f69"
+    },
+    {
+      "path": "configs/L03.json",
+      "sha256": "55f8e3440421606bba716936510ee2bb95595cfaa51c9a97a36cda55241c7dd0"
+    },
+    {
+      "path": "configs/M01.json",
+      "sha256": "5df3c1644358d08ad432782b9dc0a3393e72ef7caa9721b8818fcc20f850f758"
+    },
+    {
+      "path": "scripts/build_notebooks.py",
+      "sha256": "31ab33f0b070688fa99d0a3a2b4d660f1d737f06fd025a2f744fdc775ba2f64a"
+    },
+    {
+      "path": "scripts/download_data.py",
+      "sha256": "e6beb96436f76688c3cde01b7aca632f2ee39b57f1bdd2ec6880b7e1826278ca"
+    },
+    {
+      "path": "scripts/freeze_mlp_sources.py",
+      "sha256": "ff794fb45578e9ac25ff9cc5cb1e4c0871537546babae69bd452a24bb6e55b1f"
+    },
+    {
+      "path": "scripts/prepare_mlp_inputs.py",
+      "sha256": "f97df11972741313a35a3c999f518695c3f953ccf4144d425f2d0480e59454f2"
+    },
+    {
+      "path": "scripts/run_lstm_suite.py",
+      "sha256": "461943cb1779f3f6df303b34ea1307c275db606f316873bf2c5f3f8c76cec4f7"
+    },
+    {
+      "path": "scripts/run_mlp_suite.py",
+      "sha256": "1f25a512b40a69157d1fa24414fec028f3358b0a25c508183f1ece64c39fc0dd"
+    },
+    {
+      "path": "tests/test_contract_regressions.py",
+      "sha256": "148ffd2f5dfa37647ec4a6b3cd6782a613c18668fae661e8b442f89231527e4d"
+    },
+    {
+      "path": "tests/test_lstm.py",
+      "sha256": "5b2c5bb5d1fb4bde671f241c6f7a19c848b9b9bfbb187f55781f87937259523f"
+    },
+    {
+      "path": "tests/test_mlp_handoff.py",
+      "sha256": "c74bfb27d748d1b49b70c28252d61f90e323b1273ff61f70a8ff6eb334bd1c8a"
+    },
+    {
+      "path": "tests/test_training.py",
+      "sha256": "cba84584a221f07b4f9aac6d02b133375c70c4696a78d6aafb3e929b0a2e19ac"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "cceb11a2293ffe342f70ee959e06fb77ac8fc0cf8be2fe5c50c6b018e7cb70b3"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1ba50d73977ae3e557ca5f4169d0065c4dbdbe8dfe475e2c3c97163c52a136cd"
+    },
+    {
+      "path": "docs/team-paper/contributions/02_mlp/training_protocol.md",
+      "sha256": "5c20330055267461150038b7dc5868f7a00029fb6d84b45fe8633904b8ada7f1"
+    }
+  ]
+}
