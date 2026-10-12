@@ -21,3 +21,12 @@ reports/mlp_yoonseop/*.json -text
 reports/mlp_yoonseop/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 reports/mlp_yoonseop/*.xml -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 reports/mlp_yoonseop/requirements-resolved.txt -text
+
+# Preserve the measured RNN source and numeric evidence byte-for-byte.
+reports/rnn/frozen_source/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/rnn/run_evidence/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/rnn/*.csv -text
+reports/rnn/*.json -text
+reports/rnn/*.log -text
+reports/rnn/*.xml -text
+reports/rnn/integration_smoke/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

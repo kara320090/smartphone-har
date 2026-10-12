@@ -1,0 +1,36 @@
+{
+  "run_id": "R02_seed2026",
+  "selection": "first three original IDs in largest directed confusion; equal number of correctly classified matches",
+  "cases": [
+    {
+      "pair": 1,
+      "error_sample_id": "train:000082",
+      "success_sample_id": "train:000078",
+      "error_subject": 1,
+      "success_subject": 1,
+      "true_class": 0,
+      "error_predicted_class": 1,
+      "matching": "same subject and true class"
+    },
+    {
+      "pair": 2,
+      "error_sample_id": "train:000086",
+      "success_sample_id": "train:000080",
+      "error_subject": 1,
+      "success_subject": 1,
+      "true_class": 0,
+      "error_predicted_class": 1,
+      "matching": "same subject and true class"
+    },
+    {
+      "pair": 3,
+      "error_sample_id": "train:000090",
+      "success_sample_id": "train:000083",
+      "error_subject": 1,
+      "success_subject": 1,
+      "true_class": 0,
+      "error_predicted_class": 1,
+      "matching": "same subject and true class"
+    }
+  ]
+}

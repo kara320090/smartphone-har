@@ -1,0 +1,32 @@
+{
+  "scope": "fixed first fit batch before first five updates; training=False; no probe update",
+  "clipping": null,
+  "batch_size": 64,
+  "rows": [
+    {
+      "update_index": 0,
+      "loss": 1.6116597652435303,
+      "global_norm": 3.3556671142578125
+    },
+    {
+      "update_index": 1,
+      "loss": 1.5456453561782837,
+      "global_norm": 3.2263288497924805
+    },
+    {
+      "update_index": 2,
+      "loss": 1.483718752861023,
+      "global_norm": 3.137141227722168
+    },
+    {
+      "update_index": 3,
+      "loss": 1.4210457801818848,
+      "global_norm": 3.1293201446533203
+    },
+    {
+      "update_index": 4,
+      "loss": 1.3570845127105713,
+      "global_norm": 3.105280637741089
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+L01: fit=5577, val=1775, shape=(128, 9)
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Epoch 1/40
+88/88 - 11s - 125ms/step - accuracy: 0.6148 - loss: 1.0990 - val_accuracy: 0.6946 - val_loss: 0.7575 - val_macro_f1: 0.6661
+Epoch 2/40
+88/88 - 9s - 105ms/step - accuracy: 0.8230 - loss: 0.5015 - val_accuracy: 0.8315 - val_loss: 0.4429 - val_macro_f1: 0.8258
+Epoch 3/40
+WARNING:tensorflow:5 out of the last 15 calls to <function predict_batches.<locals>.<lambda> at 0x0000010BC7C9BA60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+88/88 - 9s - 107ms/step - accuracy: 0.9134 - loss: 0.2453 - val_accuracy: 0.8986 - val_loss: 0.3764 - val_macro_f1: 0.8952
+Epoch 4/40
+WARNING:tensorflow:5 out of the last 15 calls to <function predict_batches.<locals>.<lambda> at 0x0000010BC7C9BA60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+88/88 - 10s - 109ms/step - accuracy: 0.9374 - loss: 0.1578 - val_accuracy: 0.8473 - val_loss: 0.4058 - val_macro_f1: 0.8442
+Epoch 5/40
+88/88 - 9s - 98ms/step - accuracy: 0.9372 - loss: 0.1553 - val_accuracy: 0.8670 - val_loss: 0.3860 - val_macro_f1: 0.8653
+Epoch 6/40
+88/88 - 8s - 89ms/step - accuracy: 0.9476 - loss: 0.1211 - val_accuracy: 0.8851 - val_loss: 0.3817 - val_macro_f1: 0.8849
+Epoch 7/40
+88/88 - 8s - 86ms/step - accuracy: 0.9482 - loss: 0.1332 - val_accuracy: 0.8952 - val_loss: 0.4053 - val_macro_f1: 0.8970
+Epoch 8/40
+88/88 - 8s - 87ms/step - accuracy: 0.9489 - loss: 0.1270 - val_accuracy: 0.8794 - val_loss: 0.4096 - val_macro_f1: 0.8794
+Epoch 9/40
+88/88 - 8s - 89ms/step - accuracy: 0.9458 - loss: 0.1211 - val_accuracy: 0.8637 - val_loss: 0.4825 - val_macro_f1: 0.8601
+runs\rnn\L01_seed2027

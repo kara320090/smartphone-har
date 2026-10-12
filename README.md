@@ -117,3 +117,9 @@ docs/         담당 업무, 상세 실행, 팀 인계, 해석, 발표
 ## 데이터 출처
 
 [UCI Human Activity Recognition Using Smartphones](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones), Reyes-Ortiz 외, DOI **10.24432/C54S4K**, **CC BY 4.0**. 학습·분할·실험 구성은 제공된 10주 프로젝트 상세계획서를 따른다. 라이브러리 문서와 재현 조건은 [상세 안내](docs/RUN_GUIDE_KO.md)에 정리했다.
+
+## 유재윤 RNN 개발 결과 · 2026년 10월 12일
+
+[RNN 원고·구조표·참고문헌·결과 한 행](docs/team-paper/contributions/04_rnn/README.md) · [전체 보고서](docs/rnn-report/REPORT_KO.md) · [업로드·실행 안내](RNN_START_HERE_KO.md) · [seed별 원자료](reports/rnn/run_evidence/README.md)
+
+SimpleRNN R01~R03을 세 seed에서 총 9회 실행했다. 공동 기준 R01의 validation Macro F1은 **0.7191 ± 0.0586**, 개인 튜닝 선택 R02는 **0.7715 ± 0.0675**다. 기준 4모델 비교용 보조 9회와 함께 저장 모델 전체 검증 재로딩을 확인했다. 공식 test는 미평가다. 비교용 CNN은 14,054개 파라미터의 계획서 구조이며 현재 main CNN 담당자의 구조·결과와 구분한다. 당시 학습 코드는 reports/rnn/frozen_source에 보존했다. 최신 main의 CNN·MLP 코드와 설정은 유지하고 RNN 전용 학습 진입점을 추가했다.

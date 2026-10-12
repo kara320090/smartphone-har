@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "formal_runs": 18,
+  "rnn_runs": 9,
+  "four_model_baseline_runs": 12,
+  "tests_passed": 50,
+  "full_validation_reload_count_per_run": 1775,
+  "maximum_reload_probability_difference": 1.2763279322314247e-10,
+  "single_code_sha256": "8b3c4c3d0a2eee0c9bd609c412ba02bbe71b2412a7859fd3d1fbda78a2274a51",
+  "rnn_dropout_initialization_matched": true,
+  "notebook_executed": true,
+  "unique_error_success_pairs": 3,
+  "test_evaluated": false,
+  "github_published": false
+}

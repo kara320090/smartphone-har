@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "run_id": "M01_seed2026",
+  "experiment_id": "M01",
+  "task_type": "classification",
+  "input_kind": "sequence",
+  "model_input_shape": [
+    128,
+    9
+  ],
+  "output_shape": [
+    6
+  ],
+  "channels": [
+    "body_acc_x",
+    "body_acc_y",
+    "body_acc_z",
+    "body_gyro_x",
+    "body_gyro_y",
+    "body_gyro_z",
+    "total_acc_x",
+    "total_acc_y",
+    "total_acc_z"
+  ],
+  "classes": [
+    "WALKING",
+    "WALKING_UPSTAIRS",
+    "WALKING_DOWNSTAIRS",
+    "SITTING",
+    "STANDING",
+    "LAYING"
+  ],
+  "split_id": "team_s0_val_1_6_14_21_23",
+  "label_offset_from_original": -1,
+  "sample_row_number_base": 0,
+  "preprocessing": "team_sequence_npz_v1",
+  "data_provenance": {
+    "preprocessing": "team_sequence_npz_v1",
+    "sample_row_number_base": 0,
+    "data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+    "source_stats_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+    "data_filename": "processed_data.npz",
+    "source_stats_filename": "preprocess.npz",
+    "input_state": "unstandardized",
+    "standardization_applications": 1,
+    "statistics_refitted": false,
+    "statistics_match_full_fit": true,
+    "loaded_array_keys": [
+      "fit_Xs",
+      "fit_y",
+      "fit_subject",
+      "fit_sample_id",
+      "val_Xs",
+      "val_y",
+      "val_subject",
+      "val_sample_id"
+    ],
+    "test_arrays_loaded": false,
+    "fit_row_binding_sha256": "211711f96549daf6f1fa20a8064158a3116628e22a9a5bfaab753d62e06d94f2",
+    "validation_row_binding_sha256": "5a05b4e2a736990867d8e30f5373be6aae885d9f38c5ab90bd8cdcb2a201fceb"
+  },
+  "model_sha256": "ec970f590300837e70de5c66b039ebca0d3831f7f181bfeae09c12458452a473",
+  "preprocess_sha256": "fb142d1f1d3910b61e9ef044aa6981de06b7762d669b37136f5aea4324ee3f22",
+  "optimizer_included": true,
+  "checkpoint_purpose": "evaluation; optimizer state is not an exact best-epoch resume checkpoint",
+  "timing_scope": "model.fit including tracing, cache, validation and callbacks",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "numpy": "2.2.6",
+    "scikit_learn": "1.7.2",
+    "code_sha256": "8b3c4c3d0a2eee0c9bd609c412ba02bbe71b2412a7859fd3d1fbda78a2274a51",
+    "git_commit": null,
+    "devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ],
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "deterministic_ops": true
+  }
+}

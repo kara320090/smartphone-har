@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-12",
+  "team_paper_path": "C:\\Users\\USER\\Desktop\\대학교\\26-2학기\\인공지능공학\\프로젝트\\team-paper",
+  "inventory": [
+    {
+      "path": "CONTRIBUTION_TEMPLATE_KO.md",
+      "bytes": 3278,
+      "sha256": "b7d7507f2563cfbb4cb8d25fb839be9dc6d83ee951306f14e62249e94adf94c7"
+    },
+    {
+      "path": "PAPER_OUTLINE_KO.md",
+      "bytes": 4241,
+      "sha256": "387a53ce45d45d92e19cde3ca0a160d74a6c69e831cc940a2db3e1c5b0e33fa2"
+    },
+    {
+      "path": "processed_data.npz",
+      "bytes": 43492286,
+      "sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459"
+    },
+    {
+      "path": "README.md",
+      "bytes": 20390,
+      "sha256": "422e574ff7d9dea56b895ce58b2e54dcbb9fc8e9493a371b364942c013945e44"
+    },
+    {
+      "path": "TEAM_NOTICE_KO.md",
+      "bytes": 2781,
+      "sha256": "a40370f2a149c0a768d52d420e6cf5b0658fc4778c7bec716a52bace1d1598f8"
+    },
+    {
+      "path": "templates\\01_data_contribution.md",
+      "bytes": 3993,
+      "sha256": "cb76d0caa17fae4020561a0e94acf0919721b4fd3e26bdf91bfae3d5d93bcddc"
+    },
+    {
+      "path": "templates\\02_mlp_contribution.md",
+      "bytes": 3924,
+      "sha256": "5e23870265a92fce6f3c5abbd7c68e7bdd1a24eefd96a22f06ea9185b4ae067c"
+    },
+    {
+      "path": "templates\\03_cnn_contribution.md",
+      "bytes": 3951,
+      "sha256": "7ed6145024af6b932e860f115ed670a5b3d0dda31293f233a5d754b525c04142"
+    },
+    {
+      "path": "templates\\04_rnn_contribution.md",
+      "bytes": 3943,
+      "sha256": "2db615f1b7d519e7b708187459ab6f1163fbebb65efd659a631e269fd344960e"
+    },
+    {
+      "path": "templates\\05_lstm_contribution.md",
+      "bytes": 4039,
+      "sha256": "ddee935f8d190ccb638426897c00cf08d5589cb375b15eab2658c835697ff084"
+    }
+  ],
+  "all_nine_requirement_markdown_files_read": true,
+  "supplied_npz_hash_matches": true,
+  "formal_runs_checked": 18,
+  "prior_passing_tests_checked": 50,
+  "all_run_model_hashes_match": true,
+  "current_code_matches_all_runs": true,
+  "fresh_process_verification_records_checked": 18,
+  "test_evaluated": false,
+  "team_agreement_verified": false,
+  "teammate_results_intake_completed": false,
+  "final_paper_completed": false,
+  "github_published": false,
+  "handoff_folder_added": "docs/team-paper/contributions/04_rnn",
+  "scope": "Requirement audit and existing artifact integrity checks; no training or test evaluation rerun"
+}

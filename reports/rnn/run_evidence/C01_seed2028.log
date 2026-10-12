@@ -1,0 +1,25 @@
+C01: fit=5577, val=1775, shape=(128, 9)
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Epoch 1/40
+88/88 - 3s - 33ms/step - accuracy: 0.6737 - loss: 0.9269 - val_accuracy: 0.8096 - val_loss: 0.4998 - val_macro_f1: 0.8011
+Epoch 2/40
+88/88 - 2s - 20ms/step - accuracy: 0.9182 - loss: 0.2489 - val_accuracy: 0.8834 - val_loss: 0.3401 - val_macro_f1: 0.8826
+Epoch 3/40
+WARNING:tensorflow:5 out of the last 15 calls to <function predict_batches.<locals>.<lambda> at 0x0000026A0750A020> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+88/88 - 2s - 20ms/step - accuracy: 0.9389 - loss: 0.1650 - val_accuracy: 0.8901 - val_loss: 0.3347 - val_macro_f1: 0.8900
+Epoch 4/40
+WARNING:tensorflow:5 out of the last 15 calls to <function predict_batches.<locals>.<lambda> at 0x0000026A0750A020> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+88/88 - 2s - 20ms/step - accuracy: 0.9426 - loss: 0.1412 - val_accuracy: 0.8789 - val_loss: 0.3273 - val_macro_f1: 0.8782
+Epoch 5/40
+88/88 - 2s - 18ms/step - accuracy: 0.9496 - loss: 0.1314 - val_accuracy: 0.8597 - val_loss: 0.3876 - val_macro_f1: 0.8565
+Epoch 6/40
+88/88 - 2s - 19ms/step - accuracy: 0.9473 - loss: 0.1212 - val_accuracy: 0.8761 - val_loss: 0.3889 - val_macro_f1: 0.8750
+Epoch 7/40
+88/88 - 2s - 20ms/step - accuracy: 0.9487 - loss: 0.1149 - val_accuracy: 0.8823 - val_loss: 0.3517 - val_macro_f1: 0.8807
+Epoch 8/40
+88/88 - 2s - 18ms/step - accuracy: 0.9519 - loss: 0.1132 - val_accuracy: 0.8682 - val_loss: 0.3887 - val_macro_f1: 0.8663
+Epoch 9/40
+88/88 - 2s - 21ms/step - accuracy: 0.9525 - loss: 0.1059 - val_accuracy: 0.8924 - val_loss: 0.3337 - val_macro_f1: 0.8926
+Epoch 10/40
+88/88 - 2s - 23ms/step - accuracy: 0.9480 - loss: 0.1114 - val_accuracy: 0.8699 - val_loss: 0.4225 - val_macro_f1: 0.8679
+runs\rnn\C01_seed2028

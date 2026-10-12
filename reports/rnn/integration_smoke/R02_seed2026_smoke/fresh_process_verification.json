@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "run_id": "R02_seed2026_smoke",
+      "passed": true,
+      "count": 30,
+      "max_probability_difference": 0.0,
+      "labels_identical": true,
+      "metrics_recomputed": {
+        "accuracy": 0.3333333333333333,
+        "macro_f1": 0.2626262626262626,
+        "recall_per_class": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            1,
+            1,
+            1,
+            2,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ]
+        ]
+      },
+      "test_evaluated": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-13",
+  "base_main_commit": "0a7095191e4def7fb1fa1f1e1157080c3bdfa3ca",
+  "current_main_integration_tests_passed": 67,
+  "integration_smoke_runs": [
+    {
+      "run_id": "R01_seed2026_smoke",
+      "fresh_reload_passed": true,
+      "validation_count": 30
+    },
+    {
+      "run_id": "R02_seed2026_smoke",
+      "fresh_reload_passed": true,
+      "validation_count": 30
+    },
+    {
+      "run_id": "R03_seed2026_smoke",
+      "fresh_reload_passed": true,
+      "validation_count": 30
+    }
+  ],
+  "integration_matched_r02_r03_initialization": true,
+  "published_18_run_summary_recomputed_without_models": true,
+  "original_18_model_hashes_checked_in_release": true,
+  "frozen_source_sha256": "8b3c4c3d0a2eee0c9bd609c412ba02bbe71b2412a7859fd3d1fbda78a2274a51",
+  "protected_existing_files": [
+    "src/train.py",
+    "src/models/cnn.py",
+    "src/models/mlp.py",
+    "src/models/lstm.py",
+    "configs/C01.json",
+    "configs/M01.json"
+  ],
+  "current_main_cnn_parameters": 85574,
+  "supplementary_archived_cnn_parameters": 14054,
+  "test_evaluated": false,
+  "remote_pushed": false,
+  "release_published": false,
+  "scope": "Integration unit tests and 60-fit/30-validation, two-epoch smoke; original formal metrics preserved"
+}

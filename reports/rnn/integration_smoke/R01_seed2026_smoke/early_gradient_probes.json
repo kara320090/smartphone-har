@@ -1,0 +1,17 @@
+{
+  "scope": "fixed first fit batch before first five updates; training=False; no probe update",
+  "clipping": null,
+  "batch_size": 60,
+  "rows": [
+    {
+      "update_index": 0,
+      "loss": 2.106916904449463,
+      "global_norm": 2.3946118354797363
+    },
+    {
+      "update_index": 1,
+      "loss": 2.0417795181274414,
+      "global_norm": 2.357196569442749
+    }
+  ]
+}
