@@ -21,3 +21,9 @@ reports/mlp_yoonseop/*.json -text
 reports/mlp_yoonseop/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 reports/mlp_yoonseop/*.xml -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 reports/mlp_yoonseop/requirements-resolved.txt -text
+
+# RNN 원 실행 증빙의 바이트 보존
+reports/rnn/run_evidence/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/rnn/*.csv -text
+reports/rnn/*.json -text
+reports/rnn/*.xml -text

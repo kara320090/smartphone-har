@@ -1,0 +1,57 @@
+{
+  "author": "유재윤",
+  "english_name": "Yu jaeyun",
+  "date": "2026-10-13",
+  "repository": "https://github.com/kara320090/smartphone-har",
+  "branch": "feat/yu-jaeyun-rnn",
+  "initial_pushed_commit": "bc825eb12b6e2edb00b92159afea5a2d0c7cf523",
+  "pull_request_url": "https://github.com/kara320090/smartphone-har/pull/3",
+  "pull_request_number": 3,
+  "remote_pushed": true,
+  "main_merged": false,
+  "test_evaluated": false,
+  "release_id": 410800754,
+  "release_url": "https://github.com/kara320090/smartphone-har/releases/tag/yu-jaeyun-rnn-v1",
+  "release_published": true,
+  "assets": [
+    {
+      "name": "RNN_RELEASE_MANIFEST.json",
+      "id": 634357499,
+      "size": 77007,
+      "digest": "sha256:ab3d8990053802f0426e1bf4253ec0d23d99a89ef48fc7bddeeace85ae76542e",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yu-jaeyun-rnn-v1/RNN_RELEASE_MANIFEST.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 634357524,
+      "size": 186,
+      "digest": "sha256:882bcdd1252330e5622c45b63fd9ed50aacd53d153f65b0ecc13a2a4727c87fe",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yu-jaeyun-rnn-v1/SHA256SUMS.txt"
+    },
+    {
+      "name": "yu-jaeyun-rnn-v1-full.zip",
+      "id": 634357309,
+      "size": 52588681,
+      "digest": "sha256:b526242d50dd140be516de024b0bb22fc462f0b32ea87d412f134f3033056721",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yu-jaeyun-rnn-v1/yu-jaeyun-rnn-v1-full.zip"
+    }
+  ],
+  "superseded_upload": {
+    "pull_request_number": 2,
+    "pull_request_closed": true,
+    "old_release_deleted": true,
+    "old_tag_deleted": true,
+    "old_branch_deleted": true,
+    "local_original_preserved": true
+  },
+  "final_pushed_commit": "3de8faa11bae3a52d595a46049d9e9a57085dd0d",
+  "changed_files": 214,
+  "remote_verified": true,
+  "pr_mergeable": true,
+  "documentation_revision_commit": "3de8faa11bae3a52d595a46049d9e9a57085dd0d",
+  "documentation_cleanup": {
+    "files_changed": 16,
+    "model_data_and_metrics_unchanged": true,
+    "notebook_code_cells_unchanged": true
+  }
+}

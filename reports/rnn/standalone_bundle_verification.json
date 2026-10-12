@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "rnn_tests": 11,
+  "selected_model_validation_count": 1775,
+  "registry_scope": "RNN 전용",
+  "test_evaluated": false
+}

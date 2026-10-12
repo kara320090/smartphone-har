@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checked_parameters": 30,
+  "dtype": "float64",
+  "timesteps": 4,
+  "hidden_units": 3,
+  "classes": 3,
+  "finite_difference_step": 1e-05,
+  "loss": 1.0794872587370854,
+  "max_absolute_error": 1.8750136859813082e-11,
+  "max_relative_error": 6.211167753325299e-09,
+  "scope": "tiny explicit tanh RNN equation; not a long-memory test"
+}

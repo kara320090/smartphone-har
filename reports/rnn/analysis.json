@@ -1,0 +1,156 @@
+{
+  "runs": [
+    {
+      "run_id": "R01_seed2026",
+      "experiment": "R01",
+      "model": "rnn",
+      "seed": 2026,
+      "accuracy": 0.6878873239436619,
+      "macro_f1": 0.6620748189124613,
+      "parameters": 1542,
+      "best_epoch": 7,
+      "epochs_ran": 13,
+      "train_seconds": 20.86751060000097
+    },
+    {
+      "run_id": "R01_seed2027",
+      "experiment": "R01",
+      "model": "rnn",
+      "seed": 2027,
+      "accuracy": 0.731830985915493,
+      "macro_f1": 0.7160429170488939,
+      "parameters": 1542,
+      "best_epoch": 17,
+      "epochs_ran": 23,
+      "train_seconds": 31.637985800000024
+    },
+    {
+      "run_id": "R01_seed2028",
+      "experiment": "R01",
+      "model": "rnn",
+      "seed": 2028,
+      "accuracy": 0.7870422535211268,
+      "macro_f1": 0.7792256398520602,
+      "parameters": 1542,
+      "best_epoch": 22,
+      "epochs_ran": 28,
+      "train_seconds": 40.620460099999036
+    },
+    {
+      "run_id": "R02_seed2026",
+      "experiment": "R02",
+      "model": "rnn",
+      "seed": 2026,
+      "accuracy": 0.7301408450704225,
+      "macro_f1": 0.7063024575949668,
+      "parameters": 5126,
+      "best_epoch": 6,
+      "epochs_ran": 12,
+      "train_seconds": 29.653825999999754
+    },
+    {
+      "run_id": "R02_seed2027",
+      "experiment": "R02",
+      "model": "rnn",
+      "seed": 2027,
+      "accuracy": 0.7763380281690141,
+      "macro_f1": 0.7669738846511818,
+      "parameters": 5126,
+      "best_epoch": 10,
+      "epochs_ran": 16,
+      "train_seconds": 32.21321189999799
+    },
+    {
+      "run_id": "R02_seed2028",
+      "experiment": "R02",
+      "model": "rnn",
+      "seed": 2028,
+      "accuracy": 0.8501408450704225,
+      "macro_f1": 0.8411687047251979,
+      "parameters": 5126,
+      "best_epoch": 11,
+      "epochs_ran": 17,
+      "train_seconds": 37.48886380000113
+    },
+    {
+      "run_id": "R03_seed2026",
+      "experiment": "R03",
+      "model": "rnn",
+      "seed": 2026,
+      "accuracy": 0.6901408450704225,
+      "macro_f1": 0.6626483707333688,
+      "parameters": 5126,
+      "best_epoch": 4,
+      "epochs_ran": 10,
+      "train_seconds": 21.425293199999942
+    },
+    {
+      "run_id": "R03_seed2027",
+      "experiment": "R03",
+      "model": "rnn",
+      "seed": 2027,
+      "accuracy": 0.8185915492957746,
+      "macro_f1": 0.8175142396687028,
+      "parameters": 5126,
+      "best_epoch": 23,
+      "epochs_ran": 29,
+      "train_seconds": 57.00021979999656
+    },
+    {
+      "run_id": "R03_seed2028",
+      "experiment": "R03",
+      "model": "rnn",
+      "seed": 2028,
+      "accuracy": 0.7876056338028169,
+      "macro_f1": 0.7772960817149323,
+      "parameters": 5126,
+      "best_epoch": 11,
+      "epochs_ran": 17,
+      "train_seconds": 31.20446300000185
+    }
+  ],
+  "summary": [
+    {
+      "experiment": "R01",
+      "model": "rnn",
+      "n": 3,
+      "parameters": 1542,
+      "accuracy_mean": 0.7355868544600939,
+      "accuracy_sd": 0.04968405102516547,
+      "macro_f1_mean": 0.7191144586044719,
+      "macro_f1_sd": 0.05863577821902954
+    },
+    {
+      "experiment": "R02",
+      "model": "rnn",
+      "n": 3,
+      "parameters": 5126,
+      "accuracy_mean": 0.7855399061032865,
+      "accuracy_sd": 0.060526902433033325,
+      "macro_f1_mean": 0.7714816823237821,
+      "macro_f1_sd": 0.06754603122050154
+    },
+    {
+      "experiment": "R03",
+      "model": "rnn",
+      "n": 3,
+      "parameters": 5126,
+      "accuracy_mean": 0.7654460093896714,
+      "accuracy_sd": 0.06703120593869678,
+      "macro_f1_mean": 0.752486230705668,
+      "macro_f1_sd": 0.08035860794339605
+    }
+  ],
+  "selected_rnn": "R02",
+  "selection_rule": "highest three-seed validation macro F1 mean; ties: fewer parameters then ID",
+  "test_evaluated": false,
+  "identity": [
+    "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+    "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+    "team_s0_val_1_6_14_21_23",
+    40,
+    64,
+    6
+  ],
+  "sd_scope": "sample SD across training seeds on one fixed subject split"
+}
