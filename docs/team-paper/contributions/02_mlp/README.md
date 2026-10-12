@@ -7,6 +7,8 @@ M01: Flatten → Dense 128/ReLU → Dense 64/ReLU → 6 logits, 파라미터 156
 
 [**전체 ZIP 다운로드**](https://github.com/kara320090/smartphone-har/releases/download/yoonseop-mlp-v1/yoonseop-mlp-v1-full.zip) · [Release와 SHA-256 목록](https://github.com/kara320090/smartphone-har/releases/tag/yoonseop-mlp-v1)
 
+[배포 후 다운로드 검증](../../../../reports/mlp_yoonseop/github_publication.json)에서 태그·커밋·공개 자산 해시와 실제 내려받은 전체 파일의 일치를 확인할 수 있다. Release ZIP은 배포 소스 커밋을 고정하고 이 후속 검증 기록은 Git 저장소에 보관한다.
+
 ZIP에는 코드·문서·그림·전처리 데이터·원본 통계·저장 모델 3개·전체 예측·검증 근거를 함께 담았다. Git clone에는 가상환경·데이터·모델이 포함되지 않으므로 실행 전에 ZIP을 내려받거나 해당 파일을 준비한다. seed별 설정·학습 곡선 원자료·예측·지표·재로딩 기록은 [run_evidence](../../../../reports/mlp_yoonseop/run_evidence/)에서 바로 읽을 수 있다.
 
 | 바로 볼 자료 | 파일 |

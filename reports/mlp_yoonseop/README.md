@@ -2,6 +2,8 @@
 
 M01 seed 2026·2027·2028의 validation 결과는 Macro F1 **0.8646 ± 0.0125**, Accuracy 평균 **86.67%**, Accuracy의 seed 표본 SD **1.17%p**다. 공식 test는 미평가다.
 
+[GitHub 배포·실제 다운로드 대조 기록](github_publication.json): 공개 Release 태그·대상 커밋, Git 파일 491개, ZIP 및 압축 해제 파일 546개와 자산 3개의 해시를 대조하여 모두 일치했다. Release는 소스 커밋 `a431842e0a8b83932f57e475d61f6e7b974316b6`을 고정하며, 이 배포 후 검증 기록은 저장소의 후속 커밋에 추가했다.
+
 | 확인할 내용 | 자료 |
 |---|---|
 | 세 seed 설정·학습 기록·예측·지표·재로딩 | [2026](run_evidence/M01_seed2026/), [2027](run_evidence/M01_seed2027/), [2028](run_evidence/M01_seed2028/) |

@@ -1,0 +1,42 @@
+{
+  "date_korea": "2026-10-12",
+  "passed": true,
+  "repository": "kara320090/smartphone-har",
+  "release_url": "https://github.com/kara320090/smartphone-har/releases/tag/yoonseop-mlp-v1",
+  "release_tag": "yoonseop-mlp-v1",
+  "release_published_at_utc": "2026-10-12T10:54:07Z",
+  "source_commit": "a431842e0a8b83932f57e475d61f6e7b974316b6",
+  "remote_tag_commit": "a431842e0a8b83932f57e475d61f6e7b974316b6",
+  "remote_clone_files_verified": 491,
+  "downloaded_zip_files_verified": 546,
+  "extracted_directory_files_verified": 546,
+  "assets": [
+    {
+      "name": "MLP_RELEASE_MANIFEST.json",
+      "bytes": 102418,
+      "sha256": "d4f8a9f0b66bc5c90fca9d33a039582a5f6987ae0828bb39300ce8235a193b19",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yoonseop-mlp-v1/MLP_RELEASE_MANIFEST.json",
+      "download_matches_local": true,
+      "github_digest_matches": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 185,
+      "sha256": "c28f12278e41ae99b80f5bb880e001caf7a131d5f7469fa9fb7b912ea9e48361",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yoonseop-mlp-v1/SHA256SUMS.txt",
+      "download_matches_local": true,
+      "github_digest_matches": true
+    },
+    {
+      "name": "yoonseop-mlp-v1-full.zip",
+      "bytes": 57376814,
+      "sha256": "19722ba5e84e8f459bb55662aed21aa2fb81f6daacf4221a004fadb92c180928",
+      "download_url": "https://github.com/kara320090/smartphone-har/releases/download/yoonseop-mlp-v1/yoonseop-mlp-v1-full.zip",
+      "download_matches_local": true,
+      "github_digest_matches": true
+    }
+  ],
+  "formal_saved_models": 3,
+  "test_evaluated": false,
+  "verification_scope": "Fresh GitHub main checkout; downloaded assets; every declared file in ZIP and extracted directory"
+}
