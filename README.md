@@ -117,3 +117,9 @@ docs/         담당 업무, 상세 실행, 팀 인계, 해석, 발표
 ## 데이터 출처
 
 [UCI Human Activity Recognition Using Smartphones](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones), Reyes-Ortiz 외, DOI **10.24432/C54S4K**, **CC BY 4.0**. 학습·분할·실험 구성은 제공된 10주 프로젝트 상세계획서를 따른다. 라이브러리 문서와 재현 조건은 [상세 안내](docs/RUN_GUIDE_KO.md)에 정리했다.
+
+## 유재윤 RNN 담당 결과
+
+[실행·업로드 안내](RNN_START_HERE_KO.md) · [담당 보고서](docs/rnn-report/REPORT_KO.md) · [팀 기여 원고](docs/team-paper/contributions/04_rnn/README.md) · [실험 원자료](reports/rnn/run_evidence/README.md)
+
+R01·R02·R03을 세 seed에서 총 9회 수행했다. 기준 R01의 검증 Macro F1은 **0.7191 ± 0.0586**, 튜닝 선택 R02는 **0.7715 ± 0.0675**다. 공식 test는 미평가다. 코드·노트북·문서·지표는 Git에, 9개 저장 모델·초기 가중치·공유 입력 데이터는 [RNN Release](https://github.com/kara320090/smartphone-har/releases/tag/yu-jaeyun-rnn-v1)에 게시한다. 영문 이름이 필요한 경우 **Yu jaeyun**을 사용한다.

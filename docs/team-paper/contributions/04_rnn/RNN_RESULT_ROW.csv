@@ -1,0 +1,2 @@
+﻿experiment,model,n,parameters,accuracy_mean,accuracy_sd,macro_f1_mean,macro_f1_sd
+R01,rnn,3,1542,0.7355868544600939,0.04968405102516547,0.7191144586044719,0.05863577821902954

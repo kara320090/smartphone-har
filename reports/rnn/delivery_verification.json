@@ -1,0 +1,702 @@
+{
+  "author": "유재윤",
+  "english_name": "Yu jaeyun",
+  "rnn_runs": 9,
+  "all_passed": true,
+  "test_evaluated": false,
+  "checks": [
+    {
+      "run_id": "R01_seed2026",
+      "report": "rechecks/R01_seed2026.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R01_seed2026",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.6878873239436619,
+            "macro_f1": 0.6620748189124613,
+            "recall_per_class": [
+              0.5062111801242236,
+              0.65234375,
+              0.26141078838174275,
+              0.6245954692556634,
+              0.963302752293578,
+              1.0
+            ],
+            "confusion_matrix": [
+              [
+                163,
+                142,
+                17,
+                0,
+                0,
+                0
+              ],
+              [
+                71,
+                167,
+                17,
+                0,
+                0,
+                1
+              ],
+              [
+                83,
+                93,
+                63,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                3,
+                1,
+                193,
+                111,
+                0
+              ],
+              [
+                1,
+                3,
+                0,
+                6,
+                315,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                320
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R01_seed2027",
+      "report": "rechecks/R01_seed2027.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R01_seed2027",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.731830985915493,
+            "macro_f1": 0.7160429170488939,
+            "recall_per_class": [
+              0.45962732919254656,
+              0.82421875,
+              0.4190871369294606,
+              0.6343042071197411,
+              0.9877675840978594,
+              1.0
+            ],
+            "confusion_matrix": [
+              [
+                148,
+                169,
+                5,
+                0,
+                0,
+                0
+              ],
+              [
+                19,
+                211,
+                26,
+                0,
+                0,
+                0
+              ],
+              [
+                23,
+                116,
+                101,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                196,
+                111,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                3,
+                323,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                320
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R01_seed2028",
+      "report": "rechecks/R01_seed2028.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R01_seed2028",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.7870422535211268,
+            "macro_f1": 0.7792256398520602,
+            "recall_per_class": [
+              0.453416149068323,
+              0.91796875,
+              0.7634854771784232,
+              0.6084142394822006,
+              0.9908256880733946,
+              1.0
+            ],
+            "confusion_matrix": [
+              [
+                146,
+                155,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                16,
+                235,
+                5,
+                0,
+                0,
+                0
+              ],
+              [
+                14,
+                42,
+                184,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                188,
+                119,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                1,
+                324,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                320
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R02_seed2026",
+      "report": "rechecks/R02_seed2026.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R02_seed2026",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.7301408450704225,
+            "macro_f1": 0.7063024575949668,
+            "recall_per_class": [
+              0.4782608695652174,
+              0.92578125,
+              0.3278008298755187,
+              0.6407766990291263,
+              0.9418960244648318,
+              1.0
+            ],
+            "confusion_matrix": [
+              [
+                154,
+                143,
+                25,
+                0,
+                0,
+                0
+              ],
+              [
+                10,
+                237,
+                9,
+                0,
+                0,
+                0
+              ],
+              [
+                45,
+                116,
+                79,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                198,
+                109,
+                0
+              ],
+              [
+                0,
+                6,
+                0,
+                13,
+                308,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                320
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R02_seed2027",
+      "report": "rechecks/R02_seed2027.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R02_seed2027",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.7763380281690141,
+            "macro_f1": 0.7669738846511818,
+            "recall_per_class": [
+              0.6273291925465838,
+              0.82421875,
+              0.5269709543568465,
+              0.6245954692556634,
+              0.9938837920489296,
+              1.0
+            ],
+            "confusion_matrix": [
+              [
+                202,
+                118,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                38,
+                211,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                22,
+                90,
+                127,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                193,
+                116,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                325,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                320
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R02_seed2028",
+      "report": "rechecks/R02_seed2028.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R02_seed2028",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.8501408450704225,
+            "macro_f1": 0.8411687047251979,
+            "recall_per_class": [
+              0.8136645962732919,
+              0.88671875,
+              0.6016597510373444,
+              0.8025889967637541,
+              0.9388379204892966,
+              1.0
+            ],
+            "confusion_matrix": [
+              [
+                262,
+                57,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                19,
+                227,
+                10,
+                0,
+                0,
+                0
+              ],
+              [
+                38,
+                57,
+                145,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                248,
+                61,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                18,
+                307,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                320
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R03_seed2026",
+      "report": "rechecks/R03_seed2026.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R03_seed2026",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.6901408450704225,
+            "macro_f1": 0.6626483707333688,
+            "recall_per_class": [
+              0.38198757763975155,
+              0.81640625,
+              0.2863070539419087,
+              0.6407766990291263,
+              0.9357798165137615,
+              1.0
+            ],
+            "confusion_matrix": [
+              [
+                123,
+                142,
+                57,
+                0,
+                0,
+                0
+              ],
+              [
+                15,
+                209,
+                31,
+                1,
+                0,
+                0
+              ],
+              [
+                49,
+                122,
+                69,
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                198,
+                109,
+                0
+              ],
+              [
+                1,
+                3,
+                0,
+                17,
+                306,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                320
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R03_seed2027",
+      "report": "rechecks/R03_seed2027.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R03_seed2027",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.8185915492957746,
+            "macro_f1": 0.8175142396687028,
+            "recall_per_class": [
+              0.6645962732919255,
+              0.9140625,
+              0.7925311203319502,
+              0.6084142394822006,
+              0.9388379204892966,
+              0.996875
+            ],
+            "confusion_matrix": [
+              [
+                214,
+                108,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                21,
+                234,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                31,
+                19,
+                191,
+                0,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                1,
+                188,
+                115,
+                0
+              ],
+              [
+                2,
+                1,
+                0,
+                17,
+                307,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                319
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    },
+    {
+      "run_id": "R03_seed2028",
+      "report": "rechecks/R03_seed2028.json",
+      "passed": true,
+      "runs": [
+        {
+          "run_id": "R03_seed2028",
+          "passed": true,
+          "count": 1775,
+          "max_probability_difference": 0.0,
+          "labels_identical": true,
+          "metrics_recomputed": {
+            "accuracy": 0.7876056338028169,
+            "macro_f1": 0.7772960817149323,
+            "recall_per_class": [
+              0.5838509316770186,
+              0.92578125,
+              0.5062240663900415,
+              0.7281553398058253,
+              0.944954128440367,
+              0.990625
+            ],
+            "confusion_matrix": [
+              [
+                188,
+                130,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                11,
+                237,
+                7,
+                0,
+                1,
+                0
+              ],
+              [
+                30,
+                89,
+                122,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                225,
+                84,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                18,
+                309,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                0,
+                317
+              ]
+            ]
+          },
+          "test_evaluated": false
+        }
+      ]
+    }
+  ]
+}

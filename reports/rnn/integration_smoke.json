@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "새 RNN 전용 학습기 3조건 연결 점검",
+  "fit_count": 60,
+  "validation_count": 30,
+  "test_evaluated": false,
+  "runs": [
+    {
+      "run_id": "R01_seed2026_smoke",
+      "passed": true,
+      "initialization_matched": false,
+      "validation_count": 30,
+      "epochs": 2
+    },
+    {
+      "run_id": "R02_seed2026_smoke",
+      "passed": true,
+      "initialization_matched": false,
+      "validation_count": 30,
+      "epochs": 2
+    },
+    {
+      "run_id": "R03_seed2026_smoke",
+      "passed": true,
+      "initialization_matched": true,
+      "validation_count": 30,
+      "epochs": 2
+    }
+  ]
+}

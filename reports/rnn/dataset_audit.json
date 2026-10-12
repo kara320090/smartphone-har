@@ -1,0 +1,92 @@
+{
+  "data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+  "stats_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+  "standardized_cache": false,
+  "standardization_applications_required": 1,
+  "sample_id_base": 0,
+  "test_evaluated": false,
+  "splits": {
+    "fit": {
+      "shape": [
+        5577,
+        128,
+        9
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "label_counts": [
+        904,
+        817,
+        745,
+        977,
+        1047,
+        1087
+      ],
+      "subjects": [
+        3,
+        5,
+        7,
+        8,
+        11,
+        15,
+        16,
+        17,
+        19,
+        22,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "unique_ids": true
+    },
+    "val": {
+      "shape": [
+        1775,
+        128,
+        9
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "label_counts": [
+        322,
+        256,
+        241,
+        309,
+        327,
+        320
+      ],
+      "subjects": [
+        1,
+        6,
+        14,
+        21,
+        23
+      ],
+      "unique_ids": true
+    }
+  },
+  "fit_statistics_exact": {
+    "mean": true,
+    "std": true
+  },
+  "subject_overlap": [],
+  "id_overlap_count": 0,
+  "source_snapshot": {
+    "path": "C:\\Users\\USER\\Downloads\\smartphone-har-main",
+    "has_git_directory": false,
+    "model_registry_before": [
+      "mlp",
+      "lstm"
+    ],
+    "model_registry_after": [
+      "mlp",
+      "lstm",
+      "rnn",
+      "cnn"
+    ]
+  },
+  "cache_save_implementation": "src(1)/main.py save_processed_cache saves arrays without transform; preprocess.npz stores separate fitted statistics"
+}
