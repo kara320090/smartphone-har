@@ -14,6 +14,8 @@
 
 ## 수업 발표와 공동 논문 준비
 
+**최신 연구 초안 v2:** [하계 논문집을 참고해 연구 질문·오류 해석을 보강한 2쪽 HWP](docs/dcs-team-paper-research-v2/README.md)를 추가했다. [논문 수준 점검과 2쪽 규정](docs/dcs-team-paper-research-v2/PROCEEDINGS_REVIEW_KO.md), [행동군·피험자별 분석](docs/dcs-team-paper-research-v2/RESEARCH_ANALYSIS_KO.md), [21,300행 재분석 근거](reports/team_error_analysis/README.md)를 제공한다. 사후 개발 분석이며 공식 test는 미평가다. 저자 정보와 팀·교수님의 최종 원고 검토가 남아 있다.
+
 **대학생 공식 양식 HWP:** [네 모델·구조 그림·공통 비교표를 넣은 2쪽 한글 초안](docs/dcs-team-paper-20261013/README.md)을 추가했다. 첨부 양식의 본문·장 순서·개체와 제목 서식을 보존하고 저장·재로딩·두 쪽 배치를 확인했다. 저자·소속 등은 확인 필요이며, 최종 대표 및 데이터 설명 검토 후 제출본을 확정한다.
 
 **10월 13일 네 모델 취합:** MLP·CNN·RNN이 main에 합쳐졌다. [15회 예측 재계산·통합 비교표·공통 구조 그림](docs/team-paper/integrated-20261013/README.md)과 [실제 결과를 채운 통합 MD 초안](docs/team-paper/integrated-20261013/PAPER_DRAFT_KO.md)을 추가했다. 기준 네 모델 12회와 RNN 튜닝 R02 3회를 구분했고, 통합 코드 테스트 68개를 통과했다. 이어서 위 공식 양식 HWP 2쪽 편집을 완료했다. 최종 대표·test 규약·저자 정보와 최종 원고 검토는 남아 있다.

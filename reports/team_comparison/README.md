@@ -12,4 +12,6 @@
 
 [통합 비교·그림·논문 초안과 남은 확정 사항](../../docs/team-paper/integrated-20261013/README.md)
 
+[행동·피험자별 사후 오류 분석](../team_error_analysis/README.md) · [연구 질문과 해석을 보강한 HWP v2](../../docs/dcs-team-paper-research-v2/README.md). 기준 12회만 대상으로 추가 분석했으며 공식 test와 새 학습은 없다.
+
 저장소 루트에서 LSTM Release의 `runs/lstm`을 준비한 뒤 `python tools/audit_team_results.py --lstm-runs runs/lstm --output reports/team_comparison`으로 재계산한다. 다른 담당자 예측은 저장소에 있다. 재실행 시 새 `--output` 경로를 권장한다. 이 명령은 학습하거나 test를 평가하지 않는다.

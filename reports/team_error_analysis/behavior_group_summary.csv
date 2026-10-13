@@ -1,0 +1,9 @@
+model,config_id,group,labels,mean_class_f1,seed_sample_sd,definition
+MLP,M01,dynamic,"0,1,2",0.860720182142563,0.02447525240213504,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
+MLP,M01,static,"3,4,5",0.8684941442507947,0.015262297344217364,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
+CNN,C01,dynamic,"0,1,2",0.9115205140666423,0.010716526989405515,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
+CNN,C01,static,"3,4,5",0.8662086331347473,0.029858232522957974,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
+RNN,R01,dynamic,"0,1,2",0.5711083966857362,0.11657573363691602,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
+RNN,R01,static,"3,4,5",0.8671205205232074,0.005318835496594558,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
+LSTM,L01,dynamic,"0,1,2",0.8797724062037079,0.028143011922888345,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
+LSTM,L01,static,"3,4,5",0.8827699879698437,0.05508157580126317,mean of three class F1 values from the full six-class confusion matrix; not a refitted three-class task
