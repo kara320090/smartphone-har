@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="60.9524mm" viewBox="0 0 840 640">
+<title>Four actual HAR baseline architectures</title>
+<rect width="840" height="640" fill="white"/>
+<rect x="18" y="12" width="804" height="68" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="420" y="34" font-family="Malgun Gothic, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central">동일한 표준화 입력 128×9</text>
+<text x="420" y="62" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" dominant-baseline="central">6개 행동 분류 · 기준 M01 / C01 / R01 / L01</text>
+<line x1="46" y1="80" x2="46" y2="495" stroke="black" stroke-width="2"/>
+<rect x="78" y="101" width="744" height="104" fill="white" stroke="black" stroke-width="2"/>
+<line x1="46" y1="147" x2="78" y2="147" stroke="black" stroke-width="2"/>
+<polygon points="78,147 66,141 66,153" fill="black"/>
+<text x="450" y="121" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" dominant-baseline="central">MLP / M01</text>
+<text x="450" y="153" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="normal" text-anchor="middle" dominant-baseline="central">Flatten 1152 → Dense 128 → Dense 64 → 6 logits</text>
+<rect x="78" y="217" width="744" height="104" fill="white" stroke="black" stroke-width="2"/>
+<line x1="46" y1="263" x2="78" y2="263" stroke="black" stroke-width="2"/>
+<polygon points="78,263 66,257 66,269" fill="black"/>
+<text x="450" y="237" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" dominant-baseline="central">CNN / C01</text>
+<text x="450" y="269" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="normal" text-anchor="middle" dominant-baseline="central">Conv 64(k5) → Pool 2 → Conv 128(k3) → Pool 2</text>
+<text x="450" y="295" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" dominant-baseline="central">Conv 128(k3) → GAP → Dense 64 → Dropout 0.3 → 6 logits</text>
+<rect x="78" y="333" width="744" height="104" fill="white" stroke="black" stroke-width="2"/>
+<line x1="46" y1="379" x2="78" y2="379" stroke="black" stroke-width="2"/>
+<polygon points="78,379 66,373 66,385" fill="black"/>
+<text x="450" y="353" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" dominant-baseline="central">RNN / R01</text>
+<text x="450" y="385" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="normal" text-anchor="middle" dominant-baseline="central">SimpleRNN 32 (tanh) → 6 logits</text>
+<rect x="78" y="449" width="744" height="104" fill="white" stroke="black" stroke-width="2"/>
+<line x1="46" y1="495" x2="78" y2="495" stroke="black" stroke-width="2"/>
+<polygon points="78,495 66,489 66,501" fill="black"/>
+<text x="450" y="469" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" dominant-baseline="central">LSTM / L01</text>
+<text x="450" y="501" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="normal" text-anchor="middle" dominant-baseline="central">LSTM 64 → Dense 32 (ReLU) → 6 logits</text>
+<text x="420" y="590" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" dominant-baseline="central">Dense 은닉층·CNN 합성곱: ReLU · GAP: 시간축 평균</text>
+<text x="420" y="616" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" dominant-baseline="central">RNN·LSTM: 구간별 상태 0, 마지막 은닉 상태 사용</text>
+</svg>

@@ -1,0 +1,62 @@
+{
+  "date_korea": "2026-10-13",
+  "format": "native binary HWP",
+  "native_page_count": 2,
+  "saved_and_reloaded": true,
+  "exact_attached_student_template_sha256": "97c51ca165ebe3ded4eccdc6c4b8ea385e2c93689d3cd3c7029849faeeed06ce",
+  "source_results": "reports/team_comparison/baseline_summary.csv",
+  "source_results_sha256": "06597e0cbf866606bb1035d0a9ab754d21b697c2c6c300a678c150dd55ad23ba",
+  "page_size_and_margins_match_attachment": true,
+  "columns": [
+    1,
+    2
+  ],
+  "body_typography": "휴먼명조 10 pt; justified; original template first-line indent and 160% line spacing",
+  "hwpml_body_paramargin": {
+    "Indent": "2000",
+    "Left": "0",
+    "LineSpacing": "160",
+    "LineSpacingType": "Percent",
+    "Next": "560",
+    "Prev": "0",
+    "Right": "0"
+  },
+  "chapter_order": [
+    "1. 연구 배경",
+    "2. 연구 내용",
+    "3. 현실적 제한 조건에 대한 검토",
+    "4. 기대효과 및 활용",
+    "5. 결론",
+    "참고 문헌"
+  ],
+  "figures": 1,
+  "result_tables": 1,
+  "title_table": 1,
+  "objects_treat_as_char": true,
+  "caption_typography": "휴먼명조 9 pt, centered, ordinary paragraph; no native caption control",
+  "caption_table_values_match_recomputed_results": true,
+  "image_bytes_preserved": true,
+  "figure_width_mm": 79.999,
+  "figure_height_mm": 60.953,
+  "blank_paragraphs_around_figure_and_table": true,
+  "footer_page_numbers": false,
+  "all_expected_text_preserved": true,
+  "md_text_matches_hwp": true,
+  "unknown_authorship_fields": "확인 필요",
+  "test_evaluated": false,
+  "baseline_rnn": "R01; R02 tuning reported separately",
+  "visual_qa_pages": 2,
+  "visual_qa_passed": true,
+  "visual_qa_method": "Native Hancom embedded first-page preview; page 2 rendered as a temporary in-memory document with identical styles, margins, columns, and even-page header, and exact native printed line geometry comparison.",
+  "page2_root_paragraphs_compared": 15,
+  "page2_line_geometry_exact_match": true,
+  "preview_resolution": [
+    724,
+    1024
+  ],
+  "preview_limit": "Native embedded previews; source diagram also reviewed at original resolution. Page 2 is a temporary native rendering proven to match the printed geometry of the complete document.",
+  "bytes": 240128,
+  "hwp_sha256": "0d229914b3dad34077752a2c1e31ae101c323abd459f78e53f36574b7a21718e",
+  "application_version": "13, 0, 0, 711",
+  "submitted_to_conference": false
+}
