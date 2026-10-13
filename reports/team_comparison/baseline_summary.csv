@@ -1,0 +1,5 @@
+model,config_id,role,owner,repetitions,parameters,dropout,accuracy_mean,accuracy_sample_sd,macro_f1_mean,macro_f1_sample_sd,evaluation_split,test_evaluated
+MLP,M01,baseline,한윤섭,3,156230,0.0,0.8666666666666667,0.011687029395306407,0.8646071631966789,0.012469865805345932,development validation,False
+CNN,C01,baseline,최승빈,3,85574,0.3,0.8888262910798121,0.011632586415736031,0.8888645736006947,0.012727173056464208,development validation,False
+RNN,R01,baseline,유재윤,3,1542,0.0,0.7355868544600939,0.04968405102516547,0.7191144586044718,0.05863577821902948,development validation,False
+LSTM,L01,baseline,이봉헌,3,21222,0.0,0.8831924882629107,0.019396433928526368,0.8812711970867758,0.019499496599077525,development validation,False

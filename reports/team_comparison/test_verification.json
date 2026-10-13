@@ -1,0 +1,12 @@
+{
+  "date_korea": "2026-10-13",
+  "source_commit": "9d1da37aaac538e0ee6fd91d2a8335795d2e469b",
+  "command_from_repo_root": "python -m pytest -q tests --disable-warnings",
+  "tests": 68,
+  "errors": 0,
+  "failures": 0,
+  "skipped": 0,
+  "seconds": 43.639,
+  "junit_sha256": "cb19e5a36a0e2229a4f0d058e6689da06d1124d7d67b1fc0b40c55a0d91e5e62",
+  "initial_invocation_issue": "Ran outside repository root; module search failed. Re-ran from repository root. Not a model defect."
+}

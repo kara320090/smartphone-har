@@ -14,6 +14,8 @@
 
 ## 수업 발표와 공동 논문 준비
 
+**10월 13일 네 모델 취합:** MLP·CNN·RNN이 main에 합쳐졌다. [15회 예측 재계산·통합 비교표·공통 구조 그림](docs/team-paper/integrated-20261013/README.md)과 [실제 결과를 채운 통합 MD 초안](docs/team-paper/integrated-20261013/PAPER_DRAFT_KO.md)을 추가했다. 기준 네 모델 12회와 RNN 튜닝 R02 3회를 구분했고, 통합 코드 테스트 68개를 통과했다. 최종 대표·test 규약·저자 정보와 전체 HWP 1~2쪽 편집은 남아 있다.
+
 **공동 논문 전체 1~2쪽 취합에는 [LSTM 압축 원고·실제 구조 그림·결과 한 행](docs/team-paper/contributions/lstm-compact/README.md)을 우선 사용한다.** 222자 본문과 그림을 넣은 HWP 및 381자 설정 포함 참고 HWP를 제공한다. 기존 2쪽 HWP는 상세 검토 초안이며, 팀원 결과를 모두 담은 최종 제출본은 취합 후 작성한다.
 
 [**강의자료에 맞춘 LSTM 수업 PPT 20장과 발표 원고**](docs/course-and-paper/README.md) · [커리큘럼 연결](docs/course-and-paper/COURSE_MAPPING_KO.md) · [공동 논문 취합 초안 MD](docs/course-and-paper/TEAM_PAPER_DRAFT_KO.md) · [팀 전달 안내](docs/course-and-paper/TEAM_INTEGRATION_KO.md) · [저장 모델 시연](docs/course-and-paper/RUN_DEMO_KO.md)

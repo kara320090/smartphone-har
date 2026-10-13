@@ -1,0 +1,2 @@
+model,config_id,role,owner,repetitions,parameters,dropout,accuracy_mean,accuracy_sample_sd,macro_f1_mean,macro_f1_sample_sd,evaluation_split,test_evaluated
+RNN,R02,individual_tuning,유재윤,3,5126,0.0,0.7855399061032864,0.060526902433033325,0.7714816823237822,0.06754603122050153,development validation,False

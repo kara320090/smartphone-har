@@ -4,6 +4,7 @@
 
 | 문서 | 용도 |
 |---|---|
+| [네 모델 통합 결과·검증·그림](team-paper/integrated-20261013/README.md) | 10월 13일 main의 MLP·CNN·RNN·LSTM 12회 기준 비교와 R02 3회, 예측 재계산, 통합 MD 초안과 남은 확인 사항 |
 | [LSTM 압축 HWP·구조 그림·결과 한 행](team-paper/contributions/lstm-compact/README.md) | 공동 논문 전체 1~2쪽에 넣을 222자 기여 본문, 80 mm 그림 PNG·SVG, 비교표 CSV, 설정 포함 참고 HWP |
 | [공식 대학생 HWP 취합 초안](dcs-student-paper/README.md) | 사용자 제공 양식의 2쪽 한글 파일·수정용 MD·제출 확인표·배치와 수치 검증 |
 | [현재 LSTM 완료 자료](lstm-report/README.md) | 9회 실험, 22쪽 Word·PDF·MD, 20장 PPT, 질의응답 32개, 재현·추론 명령 |
