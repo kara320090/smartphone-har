@@ -1,0 +1,158 @@
+{
+  "scope": "development validation only; existing fixed configurations and saved predictions",
+  "new_training": false,
+  "test_evaluated": false,
+  "figures": [
+    {
+      "file": "experiment_flow.png",
+      "width_mm": 80,
+      "height_mm": 25,
+      "dpi": 600,
+      "meaning": "Verified development workflow, with validation also used for epoch selection. Arrows indicate procedure only; no independent test evaluation.",
+      "values": {
+        "input_shape": [
+          128,
+          9
+        ],
+        "classes": 6,
+        "fit_subjects": 16,
+        "val_subjects": 5,
+        "fit_windows": 5577,
+        "val_windows": 1775,
+        "seeds": [
+          2026,
+          2027,
+          2028
+        ],
+        "formal_baseline_runs": 12,
+        "normalization": "saved fit-only mean and standard deviation, applied once",
+        "checkpoint_selection": "minimum validation loss"
+      },
+      "sha256": "d9de8f24dc78d0839be07d565e3c5e83e556e37f973d42cbad0a7f9ef9ee6a53"
+    },
+    {
+      "file": "performance_size.png",
+      "width_mm": 80,
+      "height_mm": 47,
+      "dpi": 600,
+      "meaning": "Mean six-class development Macro F1 versus trainable parameter count; x-axis logarithmic, bars show three-seed sample SD, not confidence intervals or device timing.",
+      "values": [
+        {
+          "model": "MLP",
+          "config_id": "M01",
+          "parameters": "156230",
+          "macro_f1_mean": "0.8646071631966789",
+          "macro_f1_sample_sd": "0.012469865805345932"
+        },
+        {
+          "model": "CNN",
+          "config_id": "C01",
+          "parameters": "85574",
+          "macro_f1_mean": "0.8888645736006947",
+          "macro_f1_sample_sd": "0.012727173056464208"
+        },
+        {
+          "model": "RNN",
+          "config_id": "R01",
+          "parameters": "1542",
+          "macro_f1_mean": "0.7191144586044718",
+          "macro_f1_sample_sd": "0.05863577821902948"
+        },
+        {
+          "model": "LSTM",
+          "config_id": "L01",
+          "parameters": "21222",
+          "macro_f1_mean": "0.8812711970867758",
+          "macro_f1_sample_sd": "0.019499496599077525"
+        }
+      ],
+      "sha256": "ecefe9ab7d340ec6d02b4ba5ff88fea1b647eaaf6627d0b0bf59fa44e4185e1a"
+    },
+    {
+      "file": "subject_diagnostics.png",
+      "width_mm": 80,
+      "height_mm": 76,
+      "dpi": 600,
+      "meaning": "Panel a: six-class Macro F1 inside each subject, then mean over three seeds. Panel b: CNN minus LSTM mean differences on all five subjects or each of five omission subsets, without retraining; sample and class composition also change. Headline score retains all five.",
+      "values": {
+        "configs": [
+          "M01",
+          "C01",
+          "R01",
+          "L01"
+        ],
+        "subject_ids": [
+          1,
+          6,
+          14,
+          21,
+          23
+        ],
+        "support_per_seed": [
+          347,
+          325,
+          323,
+          408,
+          372
+        ],
+        "subject_macro_f1_seed_means": [
+          [
+            0.9871248956645625,
+            1.0,
+            0.7839367131065718,
+            0.9860346870175046
+          ],
+          [
+            0.9416318070238241,
+            0.9325853156228354,
+            0.8205410140659307,
+            0.9369519029708532
+          ],
+          [
+            0.6181053650113486,
+            0.6811840845148608,
+            0.5592893497172864,
+            0.6088730211262229
+          ],
+          [
+            0.8132618952432743,
+            0.8558988001321852,
+            0.6083790104076929,
+            0.8909911854451867
+          ],
+          [
+            0.9173034002560602,
+            0.9467635954743077,
+            0.7871490386922032,
+            0.9317990058707266
+          ]
+        ],
+        "omission_order": [
+          "none",
+          "1",
+          "6",
+          "14",
+          "21",
+          "23"
+        ],
+        "cnn_minus_lstm_mean": [
+          0.007593376513918966,
+          0.006319441982210683,
+          0.010708754747711971,
+          -0.004428105566231115,
+          0.020396713309360177,
+          0.005205810959757214
+        ],
+        "no_refitting": true,
+        "headline_subjects": [
+          1,
+          6,
+          14,
+          21,
+          23
+        ]
+      },
+      "sha256": "3d2ae0177ce1d4f390b30c31d4194ca9e77cf9df6891af769413d18f96808dab"
+    }
+  ]
+}

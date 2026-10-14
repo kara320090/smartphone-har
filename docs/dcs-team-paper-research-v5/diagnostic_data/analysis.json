@@ -1,0 +1,96 @@
+{
+  "date_korea": "2026-10-14",
+  "passed": true,
+  "scope": "post-hoc development validation composition diagnostic; no refitting; every one of five subjects omitted in turn",
+  "headline_subjects": [
+    1,
+    6,
+    14,
+    21,
+    23
+  ],
+  "headline_count": 1775,
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "prediction_rows_checked": 21300,
+  "metric_cases_recomputed": 72,
+  "sklearn_independent_metric_checks": 72,
+  "full_scores_match_previous_audit": true,
+  "all_six_labels_present_in_every_retained_subset": true,
+  "prediction_id_subject_label_binding_same_for_all_runs": true,
+  "headline_result_changed": false,
+  "new_training_performed": false,
+  "test_evaluated": false,
+  "evidence": [
+    {
+      "run_id": "M01_seed2026",
+      "file": "reports/mlp_yoonseop/run_evidence/M01_seed2026/validation_predictions.csv",
+      "sha256": "9c080410d96576edaa382e1a179723823bb4904c7b5b3233fe4d6900377193c9"
+    },
+    {
+      "run_id": "M01_seed2027",
+      "file": "reports/mlp_yoonseop/run_evidence/M01_seed2027/validation_predictions.csv",
+      "sha256": "369db50d6346c639d460d490912299fd971c39680a43ff214f5ed507049b104f"
+    },
+    {
+      "run_id": "M01_seed2028",
+      "file": "reports/mlp_yoonseop/run_evidence/M01_seed2028/validation_predictions.csv",
+      "sha256": "83736e1cb87cebfbc824a2b08cde835c8f9d840843031ff94aac6ba9cfaabeab"
+    },
+    {
+      "run_id": "C01_seed2026",
+      "file": "artifacts/cnn_tensorflow/C01_seed2026/validation_predictions.csv",
+      "sha256": "5d9150eb39ca00721ba5ab710dd192a8f67c228d3ae4f861b7cbef83bccc7626"
+    },
+    {
+      "run_id": "C01_seed2027",
+      "file": "artifacts/cnn_tensorflow/C01_seed2027/validation_predictions.csv",
+      "sha256": "0a800aa79773027db119c825fc5d255a9e2c2d5a1b4e91ac975b67b7115cf3d3"
+    },
+    {
+      "run_id": "C01_seed2028",
+      "file": "artifacts/cnn_tensorflow/C01_seed2028/validation_predictions.csv",
+      "sha256": "203bdb0a74f1b147beac3f25b433cf03a0cce7d7b8037a7f3fbd64fcb9bbd8dc"
+    },
+    {
+      "run_id": "R01_seed2026",
+      "file": "reports/rnn/run_evidence/R01_seed2026/validation_predictions.csv",
+      "sha256": "da157750d4df1b4a34e76a479824808ba6f818eab1cf646fbe65a233bfe66948"
+    },
+    {
+      "run_id": "R01_seed2027",
+      "file": "reports/rnn/run_evidence/R01_seed2027/validation_predictions.csv",
+      "sha256": "89db23e4e1bcbcc1b33734fa5ea83d1aa63c0a9b67e52cad667cee86e36afcdd"
+    },
+    {
+      "run_id": "R01_seed2028",
+      "file": "reports/rnn/run_evidence/R01_seed2028/validation_predictions.csv",
+      "sha256": "f1b8ecd3d5846b0eb229cf52d8a3435accdbad39ae727c6ffecad361ebc64cff"
+    },
+    {
+      "run_id": "L01_seed2026",
+      "file": "runs/lstm/L01_seed2026/validation_predictions.csv",
+      "sha256": "36e32d3e42e5a62781c298f482b9d72dc7a289f22b91c26ef961596053c39ad9"
+    },
+    {
+      "run_id": "L01_seed2027",
+      "file": "runs/lstm/L01_seed2027/validation_predictions.csv",
+      "sha256": "36f5e3c6392a5a81d616653dd13e2cc64df15ec0210e559225b93098df0a8c40"
+    },
+    {
+      "run_id": "L01_seed2028",
+      "file": "runs/lstm/L01_seed2028/validation_predictions.csv",
+      "sha256": "1e50a1fd4c0d4b4a6c0c382ac6eddd10eb36e1f527c7e4a67b265d84d580237e"
+    }
+  ],
+  "interpretation_limits": [
+    "Not LOSO cross-validation: no model is retrained.",
+    "Removing a validation subject changes sample count and class composition as well as subject composition.",
+    "Omitted-person scores are diagnostic, not new headline performance or estimates for unseen users.",
+    "All five omissions are reported; low-scoring subjects are retained in the headline result.",
+    "Seed SD is descriptive on fixed validation subsets; no population interval or significance test."
+  ]
+}

@@ -4,7 +4,8 @@
 
 | 문서 | 용도 |
 |---|---|
-| [최신 논문 개정 v4: HWP·PDF·MD](dcs-team-paper-research-v4/README.md) | 타 대학 비교·검증 집단 민감도 72개 대조, 두 쪽 본문·보충 그래프와 예상 질문 19개 |
+| [최신 논문 v5: 그림 3개·핵심 문헌 2개](dcs-team-paper-research-v5/README.md) | 실험 흐름도·성능과 규모 차트·피험자 진단, 공식 두 쪽 HWP·PDF·MD와 그림 설명 |
+| [앞선 논문 개정 v4](dcs-team-paper-research-v4/README.md) | 타 대학 비교·검증 집단 민감도 72개 대조와 예상 질문 19개, 이전 분석 기록 |
 | [앞선 논문 개정 v3](dcs-team-paper-research-v3/README.md) | 하계 5편·HAR 선행 연구 검토, 성능·규모와 개인별 편차의 논증 정리, 이전 원고 |
 | [앞선 연구 질문·오류 분석 HWP v2](dcs-team-paper-research-v2/README.md) | 하계 네 편의 논증 구성 검토와 행동군·피험자별 해석, 이전 기록 |
 | [네 모델 공식 대학생 HWP 2쪽 초안](dcs-team-paper-20261013/README.md) | 첨부 양식의 장 순서·2단·그림·공통 비교표·참고문헌, 두 쪽 배치 검증과 제출 확인표 |
