@@ -4,7 +4,8 @@
 
 | 문서 | 용도 |
 |---|---|
-| [최신 논문 개정 v3: HWP·PDF·MD](dcs-team-paper-research-v3/README.md) | 하계 5편·HAR 선행 연구 검토, 성능·규모와 개인별 편차의 논증 정리, 확정 저자 정보와 예상 질문 15개 |
+| [최신 논문 개정 v4: HWP·PDF·MD](dcs-team-paper-research-v4/README.md) | 타 대학 비교·검증 집단 민감도 72개 대조, 두 쪽 본문·보충 그래프와 예상 질문 19개 |
+| [앞선 논문 개정 v3](dcs-team-paper-research-v3/README.md) | 하계 5편·HAR 선행 연구 검토, 성능·규모와 개인별 편차의 논증 정리, 이전 원고 |
 | [앞선 연구 질문·오류 분석 HWP v2](dcs-team-paper-research-v2/README.md) | 하계 네 편의 논증 구성 검토와 행동군·피험자별 해석, 이전 기록 |
 | [네 모델 공식 대학생 HWP 2쪽 초안](dcs-team-paper-20261013/README.md) | 첨부 양식의 장 순서·2단·그림·공통 비교표·참고문헌, 두 쪽 배치 검증과 제출 확인표 |
 | [네 모델 통합 결과·검증·그림](team-paper/integrated-20261013/README.md) | 10월 13일 main의 MLP·CNN·RNN·LSTM 12회 기준 비교와 R02 3회, 예측 재계산, 통합 MD 초안과 남은 확인 사항 |

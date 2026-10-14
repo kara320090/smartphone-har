@@ -1,0 +1,88 @@
+{
+  "review_date_korea": "2026-10-14",
+  "source_pdf_name": "★ 2026_DCS_하계종합학술대회_발표논문집_최종.pdf",
+  "source_pdf_sha256": "7dcd5bdfdef8a986db255826d91c5a78814d5104a0026fb82eb9a53d21a93a56",
+  "source_pdf_pages": 1012,
+  "selected_complete_papers": 5,
+  "selected_pages_visually_reviewed": 11,
+  "source_pdf_redistributed": false,
+  "selected_papers": [
+    {
+      "title": "머신러닝을 활용한 거래 데이터 기반의 VIP 고객 식별 및 CRM 전략 연구",
+      "printed_pages": [
+        231,
+        232,
+        233
+      ],
+      "pdf_pages_one_based": [
+        309,
+        310,
+        311
+      ]
+    },
+    {
+      "title": "앙상블 머신러닝 기반 스쿼트 자세 유형 분류",
+      "printed_pages": [
+        285,
+        286
+      ],
+      "pdf_pages_one_based": [
+        367,
+        368
+      ]
+    },
+    {
+      "title": "HMD 센서 데이터 기반 머리 움직임 분류를 통한 XR 인터랙션 입력 방식 설계",
+      "printed_pages": [
+        297,
+        298
+      ],
+      "pdf_pages_one_based": [
+        379,
+        380
+      ]
+    },
+    {
+      "title": "N-BEATS에 Time-o1 하이브리드 손실 함수를 적용한 금융 시계열 예측 성능 및 재현성 비교 분석",
+      "printed_pages": [
+        312,
+        313
+      ],
+      "pdf_pages_one_based": [
+        396,
+        397
+      ]
+    },
+    {
+      "title": "머신러닝 기반 신용카드 이상거래 탐지 모델 성능 비교 및 해석 가능성 분석",
+      "printed_pages": [
+        322,
+        323
+      ],
+      "pdf_pages_one_based": [
+        406,
+        407
+      ]
+    }
+  ],
+  "official_sources": {
+    "fall_submission": "https://dcs.or.kr/homepage/custom/submit",
+    "fall_template": "https://dcs.or.kr/board/forms/article/284050",
+    "summer_proceedings": "https://dcs.or.kr/conference/summer2026/notice/article/1086",
+    "summer_award_notice": "https://dcs.or.kr/conference/summer2026/notice/article/1114"
+  },
+  "primary_research_sources": {
+    "original_har": "https://www.esann.org/sites/default/files/proceedings/legacy/es2013-84.pdf",
+    "dataset": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+    "lstm": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+    "wearable_cnn_lstm": "https://doi.org/10.3390/s16010115",
+    "comparative_har": "https://arxiv.org/abs/1604.08880",
+    "person_generalization": "https://www.mdpi.com/1424-8220/20/13/3647"
+  },
+  "new_error_analysis_sha256": "afdbc3fa7d3f8fb86e65783332bea7b7ef4b7feaed566c42f839331aabbdb101",
+  "scope": "post-hoc fixed-model development analysis with all five validation-composition exclusions; no new training, no model selection change, no official test",
+  "award_status_of_selected_papers": "unverified; not identified as award winners",
+  "official_judging_rubric": "not verified; editing criteria are our own",
+  "new_validation_composition_analysis": "reports/subject_composition/analysis.json",
+  "composition_metric_cases": 72
+}
