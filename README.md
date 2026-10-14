@@ -14,7 +14,9 @@
 
 ## 수업 발표와 공동 논문 준비
 
-**최신 연구 초안 v2:** [하계 논문집을 참고해 연구 질문·오류 해석을 보강한 2쪽 HWP](docs/dcs-team-paper-research-v2/README.md)를 추가했다. [논문 수준 점검과 2쪽 규정](docs/dcs-team-paper-research-v2/PROCEEDINGS_REVIEW_KO.md), [행동군·피험자별 분석](docs/dcs-team-paper-research-v2/RESEARCH_ANALYSIS_KO.md), [21,300행 재분석 근거](reports/team_error_analysis/README.md)를 제공한다. 사후 개발 분석이며 공식 test는 미평가다. 저자 정보와 팀·교수님의 최종 원고 검토가 남아 있다.
+**최신 연구 원고 v3 · 10월 14일:** [공식 양식 HWP·PDF·MD와 개정 근거](docs/dcs-team-paper-research-v3/README.md). 하계 관련 논문 5편과 HAR 선행 연구를 검토해 성능·규모 절충과 행동·피험자별 편차를 중심으로 두 쪽을 다시 작성했다. 저자 순서·소속·학생 이메일·지도교수를 반영했고 [발표 설명과 예상 질문 15개](docs/dcs-team-paper-research-v3/PRESENTATION_QA_KO.md)를 제공한다. 기존 결과와 대표 구성은 유지했으며 공식 test는 미평가다. 공개 초안의 사사는 확인 후 기재 예정이고 학교 지원 서류·학번·전화번호는 공개 묶음에 포함하지 않는다.
+
+**앞선 연구 초안 v2:** [연구 질문·오류 해석을 보강한 2쪽 HWP](docs/dcs-team-paper-research-v2/README.md), [행동군·피험자별 분석](docs/dcs-team-paper-research-v2/RESEARCH_ANALYSIS_KO.md), [21,300행 재분석 근거](reports/team_error_analysis/README.md)는 이전 기록으로 보존한다. 저자 정보와 원고를 검토할 때는 최신 v3를 사용한다.
 
 **대학생 공식 양식 HWP:** [네 모델·구조 그림·공통 비교표를 넣은 2쪽 한글 초안](docs/dcs-team-paper-20261013/README.md)을 추가했다. 첨부 양식의 본문·장 순서·개체와 제목 서식을 보존하고 저장·재로딩·두 쪽 배치를 확인했다. 저자·소속 등은 확인 필요이며, 최종 대표 및 데이터 설명 검토 후 제출본을 확정한다.
 
