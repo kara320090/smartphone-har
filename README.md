@@ -14,7 +14,7 @@
 
 ## 수업 발표와 공동 논문 준비
 
-**최신 연구 원고 v5 · 10월 14일:** [공식 두 쪽 HWP·PDF·MD](docs/dcs-team-paper-research-v5/README.md)에 **그림 3개·결과표 1개·핵심 참고문헌 2개**를 배치했다. 실험 흐름, 성능·파라미터 차트, 피험자별 성능과 다섯 구성 진단을 시각적으로 연결한다. [그림 읽는 순서·인용 축소 설명](docs/dcs-team-paper-research-v5/VISUAL_LAYOUT_KO.md), [발표 설명·예상 질문 19개](docs/dcs-team-paper-research-v5/PRESENTATION_QA_KO.md)를 제공한다. 기존 72개 진단·대표 결과·저자 정보는 유지했으며 새 학습·공식 test 평가는 없다. 공개 사사는 확인 후 기재 예정이고 학교 지원 서류·학번·전화번호는 배포하지 않는다. [앞선 v4 분석](docs/dcs-team-paper-research-v4/README.md)과 이전 원고는 보존한다.
+**최신 연구 원고 v6 · 10월 14일:** [두 쪽 HWP·PDF·MD](docs/dcs-team-paper-research-v6/README.md)를 모델 구조도와 간결한 비교표, 양단 폭의 세 패널 결과 그림으로 재편집했다. 성능·모델 규모, 피험자별 편차, 다섯 구성 진단을 한눈에 비교한다. [지면·그림 설명](docs/dcs-team-paper-research-v6/VISUAL_LAYOUT_KO.md), [발표 설명·질의응답 19개](docs/dcs-team-paper-research-v6/PRESENTATION_QA_KO.md)를 제공한다. 본문 10pt·두 쪽·참고문헌 두 개와 기존 대표 결과·저자를 유지했다. 새 학습·공식 test 평가는 없으며 공개 사사는 확인 후 기재 예정이다. 학교 지원 서류·학번·전화번호는 배포하지 않는다. [앞선 v5](docs/dcs-team-paper-research-v5/README.md)와 이전 기록은 보존한다.
 
 **앞선 연구 초안 v2:** [연구 질문·오류 해석을 보강한 2쪽 HWP](docs/dcs-team-paper-research-v2/README.md), [행동군·피험자별 분석](docs/dcs-team-paper-research-v2/RESEARCH_ANALYSIS_KO.md), [21,300행 재분석 근거](reports/team_error_analysis/README.md)는 이전 기록으로 보존한다. 저자 정보와 원고를 검토할 때는 최신 v3를 사용한다.
 
