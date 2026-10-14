@@ -1,0 +1,158 @@
+{
+  "scope": "fixed-configuration development validation; no refitting or official test",
+  "new_training": false,
+  "test_evaluated": false,
+  "figures": [
+    {
+      "file": "baseline_architectures.png",
+      "width_mm": 80,
+      "height_mm": 58,
+      "dpi": 600,
+      "meaning": "Architecture of the actual M01/C01/R01/L01 baselines; layer labels and states are schematic, not measured activations.",
+      "values": {
+        "input_shape": [
+          128,
+          9
+        ],
+        "configs": [
+          "M01",
+          "C01",
+          "R01",
+          "L01"
+        ],
+        "fit_subjects": 16,
+        "val_subjects": 5,
+        "fit_windows": 5577,
+        "val_windows": 1775,
+        "seeds": [
+          2026,
+          2027,
+          2028
+        ],
+        "hidden_dense_activation": "ReLU",
+        "cnn_pool": "size 2 after first two conv layers",
+        "cnn_dense_dropout": 0.3,
+        "other_baseline_dropout": 0,
+        "recurrent_initial_state": "zero independently for each window",
+        "output": "6 logits"
+      },
+      "sha256": "ec5f0eaa7375a9a99a96d67fe2d6aed545bca9a13d5c82b30f8f309f9eb28a90"
+    },
+    {
+      "file": "subject_diagnostics_compact.png",
+      "width_mm": 80,
+      "height_mm": 76,
+      "dpi": 600,
+      "meaning": "Single-column two-panel development diagnostic: within-subject six-class F1 seed means and all five omission CNN-LSTM gaps; no retraining. Baseline metrics retained as provenance for the accompanying table, not plotted here.",
+      "values": {
+        "baseline": [
+          {
+            "model": "MLP",
+            "config_id": "M01",
+            "parameters": "156230",
+            "macro_f1_mean": "0.8646071631966789",
+            "macro_f1_sample_sd": "0.012469865805345932"
+          },
+          {
+            "model": "CNN",
+            "config_id": "C01",
+            "parameters": "85574",
+            "macro_f1_mean": "0.8888645736006947",
+            "macro_f1_sample_sd": "0.012727173056464208"
+          },
+          {
+            "model": "RNN",
+            "config_id": "R01",
+            "parameters": "1542",
+            "macro_f1_mean": "0.7191144586044718",
+            "macro_f1_sample_sd": "0.05863577821902948"
+          },
+          {
+            "model": "LSTM",
+            "config_id": "L01",
+            "parameters": "21222",
+            "macro_f1_mean": "0.8812711970867758",
+            "macro_f1_sample_sd": "0.019499496599077525"
+          }
+        ],
+        "configs": [
+          "M01",
+          "C01",
+          "R01",
+          "L01"
+        ],
+        "subject_ids": [
+          1,
+          6,
+          14,
+          21,
+          23
+        ],
+        "support_per_seed": [
+          347,
+          325,
+          323,
+          408,
+          372
+        ],
+        "subject_macro_f1_seed_means": [
+          [
+            0.9871248956645625,
+            1.0,
+            0.7839367131065718,
+            0.9860346870175046
+          ],
+          [
+            0.9416318070238241,
+            0.9325853156228354,
+            0.8205410140659307,
+            0.9369519029708532
+          ],
+          [
+            0.6181053650113486,
+            0.6811840845148608,
+            0.5592893497172864,
+            0.6088730211262229
+          ],
+          [
+            0.8132618952432743,
+            0.8558988001321852,
+            0.6083790104076929,
+            0.8909911854451867
+          ],
+          [
+            0.9173034002560602,
+            0.9467635954743077,
+            0.7871490386922032,
+            0.9317990058707266
+          ]
+        ],
+        "omission_order": [
+          "none",
+          "1",
+          "6",
+          "14",
+          "21",
+          "23"
+        ],
+        "cnn_minus_lstm_mean": [
+          0.007593376513918966,
+          0.006319441982210683,
+          0.010708754747711971,
+          -0.004428105566231115,
+          0.020396713309360177,
+          0.005205810959757214
+        ],
+        "no_refitting": true,
+        "headline_subjects": [
+          1,
+          6,
+          14,
+          21,
+          23
+        ]
+      },
+      "sha256": "0ed193d80c3ffea0b4673279465dceeb82ed3862d883a6b70b0e0f5c63de61ca"
+    }
+  ]
+}

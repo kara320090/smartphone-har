@@ -1,0 +1,120 @@
+{
+  "status": "supplementary only; not embedded in v7 main HWP",
+  "source_revision": "v6",
+  "figure": {
+    "file": "research_summary.png",
+    "width_mm": 170,
+    "height_mm": 54,
+    "dpi": 600,
+    "meaning": "Full-width three-panel development diagnostic. (a) parameters vs Macro F1 with three-seed sample SD; (b) within-subject six-class F1 seed means, subject 14 outlined; (c) mean CNN-LSTM gaps in all five omission subsets, without retraining. All five people retained in headline results.",
+    "values": {
+      "baseline": [
+        {
+          "model": "MLP",
+          "config_id": "M01",
+          "parameters": "156230",
+          "macro_f1_mean": "0.8646071631966789",
+          "macro_f1_sample_sd": "0.012469865805345932"
+        },
+        {
+          "model": "CNN",
+          "config_id": "C01",
+          "parameters": "85574",
+          "macro_f1_mean": "0.8888645736006947",
+          "macro_f1_sample_sd": "0.012727173056464208"
+        },
+        {
+          "model": "RNN",
+          "config_id": "R01",
+          "parameters": "1542",
+          "macro_f1_mean": "0.7191144586044718",
+          "macro_f1_sample_sd": "0.05863577821902948"
+        },
+        {
+          "model": "LSTM",
+          "config_id": "L01",
+          "parameters": "21222",
+          "macro_f1_mean": "0.8812711970867758",
+          "macro_f1_sample_sd": "0.019499496599077525"
+        }
+      ],
+      "configs": [
+        "M01",
+        "C01",
+        "R01",
+        "L01"
+      ],
+      "subject_ids": [
+        1,
+        6,
+        14,
+        21,
+        23
+      ],
+      "support_per_seed": [
+        347,
+        325,
+        323,
+        408,
+        372
+      ],
+      "subject_macro_f1_seed_means": [
+        [
+          0.9871248956645625,
+          1.0,
+          0.7839367131065718,
+          0.9860346870175046
+        ],
+        [
+          0.9416318070238241,
+          0.9325853156228354,
+          0.8205410140659307,
+          0.9369519029708532
+        ],
+        [
+          0.6181053650113486,
+          0.6811840845148608,
+          0.5592893497172864,
+          0.6088730211262229
+        ],
+        [
+          0.8132618952432743,
+          0.8558988001321852,
+          0.6083790104076929,
+          0.8909911854451867
+        ],
+        [
+          0.9173034002560602,
+          0.9467635954743077,
+          0.7871490386922032,
+          0.9317990058707266
+        ]
+      ],
+      "omission_order": [
+        "none",
+        "1",
+        "6",
+        "14",
+        "21",
+        "23"
+      ],
+      "cnn_minus_lstm_mean": [
+        0.007593376513918966,
+        0.006319441982210683,
+        0.010708754747711971,
+        -0.004428105566231115,
+        0.020396713309360177,
+        0.005205810959757214
+      ],
+      "no_refitting": true,
+      "headline_subjects": [
+        1,
+        6,
+        14,
+        21,
+        23
+      ]
+    },
+    "sha256": "4bf358d47122a2caa8cd210b57db0bfccc25669f6787a10a02e1059341b138ef"
+  }
+}

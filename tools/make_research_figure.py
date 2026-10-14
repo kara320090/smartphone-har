@@ -10,6 +10,7 @@ import numpy as np
 
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--output',type=Path,required=True)
+parser.add_argument('--paper-layout',choices=['full','compact'],default='full',help='full: three wide panels; compact: two single-column diagnostic panels')
 parser.add_argument('--font',type=Path,default=Path('C:/Windows/Fonts/malgun.ttf'))
 args=parser.parse_args()
 repo=Path(__file__).resolve().parents[1]
@@ -65,6 +66,39 @@ for name,y,blocks in lanes:
 ax.text(.56,.835,'같은 사람 분할 · 학습 통계 표준화 · 3 seeds',ha='center',fontsize=6.9,color=grey)
 ax.text(.51,.018,'RNN·LSTM: 구간마다 상태 0 초기화 / 모든 출력은 logits',ha='center',fontsize=6.25,color=grey)
 save(fig,'baseline_architectures',80,58,'Architecture of the actual M01/C01/R01/L01 baselines; layer labels and states are schematic, not measured activations.',{'input_shape':[128,9],'configs':configs,'fit_subjects':16,'val_subjects':5,'fit_windows':5577,'val_windows':1775,'seeds':[2026,2027,2028],'hidden_dense_activation':'ReLU','cnn_pool':'size 2 after first two conv layers','cnn_dense_dropout':.3,'other_baseline_dropout':0,'recurrent_initial_state':'zero independently for each window','output':'6 logits'})
+
+if args.paper_layout=='compact':
+    fig,axs=plt.subplots(2,1,figsize=(80/25.4,76/25.4),layout='constrained',gridspec_kw={'height_ratios':[1.1,1]})
+    ax=axs[0]
+    ax.imshow(values,cmap='Blues',vmin=.5,vmax=1,aspect='auto',interpolation='nearest')
+    ax.set_xticks(range(4),models,fontsize=7.2)
+    ax.set_yticks(range(5),[f'{sid} ({n})' for sid,n in zip(ids,counts)],fontsize=7.0)
+    ax.set_title('(a) 피험자별 Macro F1',fontsize=8.0,weight='bold',loc='left',pad=5)
+    ax.set_ylabel('피험자 ID (n)',fontsize=7.2,labelpad=2)
+    ax.tick_params(length=0)
+    ax.set_xticks(np.arange(-.5,4,1),minor=True);ax.set_yticks(np.arange(-.5,5,1),minor=True)
+    ax.grid(which='minor',color='white',linewidth=.7);ax.tick_params(which='minor',length=0)
+    for (row,col),value in np.ndenumerate(values):
+        ax.text(col,row,f'{value:.3f}',ha='center',va='center',fontsize=7.2,color='white' if value>=.82 else '#253541')
+    ax.add_patch(Rectangle((-.5,1.5),4,1,facecolor='none',edgecolor=red,linewidth=1.0))
+    for spine in ax.spines.values():spine.set_visible(False)
+    ax=axs[1]
+    ax.barh(range(6),gaps,color=[red if value<0 else blue for value in gaps],height=.55)
+    ax.axvline(0,color='#34434C',linewidth=.7)
+    ax.set_xlim(-.012,.029);ax.set_ylim(5.65,-.65)
+    ax.set_yticks(range(6),['전체 5명','1 제외','6 제외','14 제외','21 제외','23 제외'],fontsize=7.0)
+    ax.set_xticks([-.01,0,.01,.02],['-.01','0','.01','.02'])
+    for index,value in enumerate(gaps):
+        ax.text(value+(.0006 if value>=0 else -.0006),index,f'{value:+.3f}',va='center',ha='left' if value>=0 else 'right',fontsize=6.8,color=red if value<0 else '#253541')
+    ax.set_xlabel('평균 F1 차이: CNN - LSTM',fontsize=7.2,labelpad=2)
+    ax.set_title('(b) 검증 구성 민감도',fontsize=8.0,weight='bold',loc='left',pad=5)
+    ax.tick_params(axis='x',labelsize=7.0,length=2);ax.tick_params(axis='y',length=0)
+    ax.grid(axis='x',alpha=.17,linewidth=.6)
+    for side in ['top','right','left']:ax.spines[side].set_visible(False)
+    save(fig,'subject_diagnostics_compact',80,76,'Single-column two-panel development diagnostic: within-subject six-class F1 seed means and all five omission CNN-LSTM gaps; no retraining. Baseline metrics retained as provenance for the accompanying table, not plotted here.',{'baseline':[{k:r[k] for k in ['model','config_id','parameters','macro_f1_mean','macro_f1_sample_sd']} for r in baseline],'configs':configs,'subject_ids':ids,'support_per_seed':counts,'subject_macro_f1_seed_means':values.tolist(),'omission_order':order,'cnn_minus_lstm_mean':gaps,'no_refitting':True,'headline_subjects':ids})
+    (OUT/'VISUAL_FIGURE_DATA.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    print('Created a baseline architecture and a single-column two-panel diagnostic figure.')
+    raise SystemExit(0)
 
 fig=plt.figure(figsize=(170/25.4,54/25.4),layout='constrained')
 grid=fig.add_gridspec(1,3,width_ratios=[1.03,1.10,.96],wspace=.11)
