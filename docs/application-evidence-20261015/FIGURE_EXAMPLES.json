@@ -1,0 +1,47 @@
+{
+  "selection": "First sample in original order for each example type; L02 seed 2026 fixed, no best-run selection",
+  "examples": [
+    {
+      "example_title": "이동 상태 요약",
+      "model": "LSTM",
+      "condition": "L02",
+      "role": "supplementary",
+      "seed": "2026",
+      "sample_id": "train:001130",
+      "subject": "6",
+      "true_label": "1",
+      "predicted_label": "0",
+      "true_three_group": "0",
+      "predicted_three_group": "0",
+      "three_group_error": "False"
+    },
+    {
+      "example_title": "자세의 큰 범주 요약",
+      "model": "LSTM",
+      "condition": "L02",
+      "role": "supplementary",
+      "seed": "2026",
+      "sample_id": "train:001039",
+      "subject": "6",
+      "true_label": "3",
+      "predicted_label": "4",
+      "true_three_group": "1",
+      "predicted_three_group": "1",
+      "three_group_error": "False"
+    },
+    {
+      "example_title": "묶어도 남는 오류",
+      "model": "LSTM",
+      "condition": "L02",
+      "role": "supplementary",
+      "seed": "2026",
+      "sample_id": "train:000030",
+      "subject": "1",
+      "true_label": "3",
+      "predicted_label": "2",
+      "true_three_group": "1",
+      "predicted_three_group": "0",
+      "three_group_error": "True"
+    }
+  ]
+}
