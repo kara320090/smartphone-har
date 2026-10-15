@@ -1,0 +1,198 @@
+{
+  "review_date_korea": "2026-10-15",
+  "passed": true,
+  "scope": "Recomputed nine existing global confusion matrices; aggregated existing audited subject metrics. No new training, inference, or access to official test.",
+  "independent_subject_prediction_reaudit_this_revision": false,
+  "conditions": {
+    "L01": {
+      "units": 64,
+      "dropout": 0.0,
+      "parameters": 21222,
+      "macro_f1_mean": 0.8812711970867758,
+      "macro_f1_seed_sample_sd": 0.019499496599077525,
+      "subject_macro_f1_seed_means": {
+        "1": 0.9860346870175046,
+        "6": 0.9369519029708532,
+        "14": 0.6088730211262229,
+        "21": 0.8909911854451867,
+        "23": 0.9317990058707266
+      },
+      "lowest_subject": "14"
+    },
+    "L02": {
+      "units": 32,
+      "dropout": 0.0,
+      "parameters": 6630,
+      "macro_f1_mean": 0.8911073479977101,
+      "macro_f1_seed_sample_sd": 0.014968954627088225,
+      "subject_macro_f1_seed_means": {
+        "1": 0.9934846811260469,
+        "6": 0.9415564315991092,
+        "14": 0.6597081046346567,
+        "21": 0.8546613291690813,
+        "23": 0.9637157601823821
+      },
+      "lowest_subject": "14"
+    },
+    "L03": {
+      "units": 64,
+      "dropout": 0.3,
+      "parameters": 21222,
+      "macro_f1_mean": 0.855043959451884,
+      "macro_f1_seed_sample_sd": 0.038737988372143844,
+      "subject_macro_f1_seed_means": {
+        "1": 0.9689816903110473,
+        "6": 0.9218127223350695,
+        "14": 0.5928764534689273,
+        "21": 0.8267341222315971,
+        "23": 0.9153946004133093
+      },
+      "lowest_subject": "14"
+    }
+  },
+  "paired_seed_differences": {
+    "L02_minus_L01": {
+      "per_seed": [
+        {
+          "seed": 2026,
+          "delta_macro_f1": 0.0253819715796747
+        },
+        {
+          "seed": 2027,
+          "delta_macro_f1": 0.013039049637781575
+        },
+        {
+          "seed": 2028,
+          "delta_macro_f1": -0.008912568484653272
+        }
+      ],
+      "mean": 0.009836150910934335,
+      "sample_sd": 0.017370169537076454,
+      "positive_seeds": 2
+    },
+    "L03_minus_L01": {
+      "per_seed": [
+        {
+          "seed": 2026,
+          "delta_macro_f1": 0.005277236912592409
+        },
+        {
+          "seed": 2027,
+          "delta_macro_f1": -0.006883896912614373
+        },
+        {
+          "seed": 2028,
+          "delta_macro_f1": -0.07707505290465333
+        }
+      ],
+      "mean": -0.026227237634891765,
+      "sample_sd": 0.04445332982195479,
+      "positive_seeds": 1
+    }
+  },
+  "L02_parameter_reduction_vs_L01_percent": 68.7588351710489,
+  "L01_L02_config_difference": [
+    "units",
+    "experiment_id"
+  ],
+  "L03_pretraining_initialization_matches_L01": true,
+  "L02_initialization_matches_L01": false,
+  "runs_recomputed_from_confusion": [
+    {
+      "run_id": "L01_seed2026",
+      "condition": "L01",
+      "seed": 2026,
+      "macro_f1": 0.8589901259116781,
+      "accuracy": 0.8614084507042253,
+      "parameters": 21222
+    },
+    {
+      "run_id": "L01_seed2027",
+      "condition": "L01",
+      "seed": 2027,
+      "macro_f1": 0.895221673614115,
+      "accuracy": 0.8985915492957747,
+      "parameters": 21222
+    },
+    {
+      "run_id": "L01_seed2028",
+      "condition": "L01",
+      "seed": 2028,
+      "macro_f1": 0.8896017917345342,
+      "accuracy": 0.8895774647887323,
+      "parameters": 21222
+    },
+    {
+      "run_id": "L02_seed2026",
+      "condition": "L02",
+      "seed": 2026,
+      "macro_f1": 0.8843720974913528,
+      "accuracy": 0.8845070422535212,
+      "parameters": 6630
+    },
+    {
+      "run_id": "L02_seed2027",
+      "condition": "L02",
+      "seed": 2027,
+      "macro_f1": 0.9082607232518966,
+      "accuracy": 0.9070422535211268,
+      "parameters": 6630
+    },
+    {
+      "run_id": "L02_seed2028",
+      "condition": "L02",
+      "seed": 2028,
+      "macro_f1": 0.880689223249881,
+      "accuracy": 0.8816901408450705,
+      "parameters": 6630
+    },
+    {
+      "run_id": "L03_seed2026",
+      "condition": "L03",
+      "seed": 2026,
+      "macro_f1": 0.8642673628242705,
+      "accuracy": 0.8664788732394366,
+      "parameters": 21222
+    },
+    {
+      "run_id": "L03_seed2027",
+      "condition": "L03",
+      "seed": 2027,
+      "macro_f1": 0.8883377767015006,
+      "accuracy": 0.887887323943662,
+      "parameters": 21222
+    },
+    {
+      "run_id": "L03_seed2028",
+      "condition": "L03",
+      "seed": 2028,
+      "macro_f1": 0.8125267388298809,
+      "accuracy": 0.8152112676056338,
+      "parameters": 21222
+    }
+  ],
+  "source_sha256": {
+    "reports/lstm/runs.csv": "7677f200a46b8be7edd09f640d85ccca5409077095148f8c820b55567c87c757",
+    "reports/lstm/summary.csv": "5589e3aca196129e2aca2cb06115b24064c204a3b5078b8c3d9c592a9e995ee0",
+    "reports/lstm/paired_differences.csv": "669240d6dd0ec701c10f6fab8b856ecf8e536ef3e7ed122608f2b82547a1f253",
+    "reports/lstm/subject_metrics.csv": "bfc089333f5f0b58ff0bb8efa22a89bfc36b16c8eb64791cd24a1d6c42eba415",
+    "reports/lstm/initialization_audit.json": "c11988eb93568197b9b90fc965309a4dbabca6d617d1246bed8e24663d09f042",
+    "reports/lstm/dataset_audit.json": "c2e8e943a586e6d402711b8baa53c400121d94363262acef1095714b0b0c623a",
+    "reports/lstm/delivery_verification.json": "9840433ab7c903efd21c1ba1aa18a611ebf8b37f23f2f338af794e2e29b83750",
+    "reports/lstm/L01_seed2026_confusion.json": "0f1c303c0f018d451889c823651a2fa816d5c3aab338b171ee8859a7231515f4",
+    "reports/lstm/L01_seed2027_confusion.json": "919446d8d4955194bccbe35e204bb0e4f16aea9ada9feb20b9e98eba8415be39",
+    "reports/lstm/L01_seed2028_confusion.json": "ff7de2aa5778d22ae23f593eab505dd27524653326a61d1445957473242f6871",
+    "reports/lstm/L02_seed2026_confusion.json": "4d8127adbb4e33caf951884f178626f7f3024de79d86e35f25c0cb5173565821",
+    "reports/lstm/L02_seed2027_confusion.json": "5889afcd34eeb245a3f7846155e9dee2592b0fd7fcfe476af85a83a92e348ad8",
+    "reports/lstm/L02_seed2028_confusion.json": "0f66d520da0bfdee2fe6c30effd3872990b5faf1e272e5b22e0a0da8f90dbaf7",
+    "reports/lstm/L03_seed2026_confusion.json": "217b2e13406a982865e862d31d0c506f09b6db83254928e81e77be8f6a91716b",
+    "reports/lstm/L03_seed2027_confusion.json": "b37528ffa5293385a4b35c1ca8f9c62052c363ed6fd7402f2035a2b8bf52c8ae",
+    "reports/lstm/L03_seed2028_confusion.json": "9f55616606fe751459772503e7e661a5695e5f6d76455815c316f1add4546c42",
+    "configs/L01.json": "fdec16d539ce1c4e2cbca4e015d46c11f477ec8355b2d4af0eb546bc58483634",
+    "configs/L02.json": "635ff565cd073053e07c4eec55f563a1754a1ad859d68fa6074daaaa89fa9f69",
+    "configs/L03.json": "55f8e3440421606bba716936510ee2bb95595cfaa51c9a97a36cda55241c7dd0",
+    "docs/LSTM_EXECUTION_PLAN_KO.md": "a910882c78ad3fe4770a7089913471d62cc28b425e73a8ac984ed5889c797088",
+    "docs/dcs-team-paper-research-v7/DCS_TEAM_PAPER_KO.md": "6ae100de905f477dcd1e9c74feacc0e198f3946d0910f823197561327346e7e2"
+  },
+  "interpretation": "Exploratory development evidence. Same-seed labels are not identical weights across different sizes. Seed SD is not a population confidence interval. L02 is not substituted into the four-model baseline ranking."
+}
