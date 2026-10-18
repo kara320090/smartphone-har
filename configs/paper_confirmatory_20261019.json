@@ -1,0 +1,11 @@
+{
+  "conditions": ["FMLP3", "MLP3", "CNN3", "RNN3", "LSTM3"],
+  "seeds": [2026, 2027, 2028],
+  "epochs": 40, "patience": 6, "batch_size": 64, "learning_rate": 0.001,
+  "intra_op_threads": 4, "inter_op_threads": 1,
+  "mapping": [0, 0, 0, 1, 1, 2],
+  "benchmark_warmup": 50, "benchmark_repetitions": 500,
+  "test_authorized": true,
+  "test_condition_selection": "all specified runs, no seed/model selection",
+  "refit_on_fit_plus_validation": false
+}
