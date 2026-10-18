@@ -1,0 +1,46 @@
+{
+  "date_korea": "2026-10-19",
+  "source": "reports/output_granularity/summary.csv",
+  "source_sha256": "39768ee9a21de5873442642f143fbf1c14eb8f93205899e1ef2dd933628df70d",
+  "conditions": [
+    "M01",
+    "C01",
+    "R01",
+    "L01"
+  ],
+  "fine_error_events": [
+    710,
+    592,
+    1408,
+    622
+  ],
+  "within_state_error_events": [
+    709,
+    588,
+    1385,
+    610
+  ],
+  "between_state_error_events": [
+    1,
+    4,
+    23,
+    12
+  ],
+  "mapping_six_to_three": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    2
+  ],
+  "method": "Map each six-class argmax label and ground-truth label identically; no probability aggregation or retraining.",
+  "post_hoc": true,
+  "independent_test": false,
+  "new_training_performed": false,
+  "application_implemented": false,
+  "images": {
+    "sensor_to_activity_summary.png": "277873f59fe825d7e95d7db85a6b83e77275f32415e5a369e90d88ddc8ce8422",
+    "error_composition.png": "fd7b756ec8546b69d1e655100b10c72c4cd3f7f8a94f73b277bfbf41953319a9"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "revision_date_korea": "2026-10-19",
+  "title": "스마트폰 내장 센서 기반 일상 활동 요약을 위한 신경망 비교",
+  "original_student_template_sha256": "97c51ca165ebe3ded4eccdc6c4b8ea385e2c93689d3cd3c7029849faeeed06ce",
+  "existing_source_files": {
+    "reports/output_granularity/analysis.json": "cc43ca9b6b98eff0f7d61ac51a22a2703b543720112ce1d8bba50271b4c892ae",
+    "reports/output_granularity/summary.csv": "39768ee9a21de5873442642f143fbf1c14eb8f93205899e1ef2dd933628df70d",
+    "reports/output_granularity/runs.csv": "eb073ebe418496db26f6fe561d1c02afcf01fb6133806ead1882fc88e2f9c882",
+    "reports/team_comparison/baseline_summary.csv": "06597e0cbf866606bb1035d0a9ab754d21b697c2c6c300a678c150dd55ad23ba",
+    "docs/research-contribution-review-20261015/EVIDENCE.json": "d3357633e6732bfe15e5ed1e56a03ad78e518933ddbec9533fee220600ba828d",
+    "docs/dcs-team-paper-research-v7/PROCEEDINGS_REVIEW_KO.md": "6e8c926b07b79adf1b4bbb571b68055665f17d13dc7e230f66faa2114a132dc1",
+    "docs/dcs-team-paper-research-v7/SOURCE_INDEX.json": "178280cd45362bc58e15bc4077aea95058ca544682e4f5ef368505df9ea4a527"
+  },
+  "prior_full_proceedings_review": "docs/dcs-team-paper-research-v7/PROCEEDINGS_REVIEW_KO.md; 4 complete papers, 8 pages; no new review claimed for this revision",
+  "primary_references": [
+    "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7374316/"
+  ],
+  "new_training_or_test_evaluation": false,
+  "native_document_written_in_this_revision": true,
+  "external_paper_figures_or_text_copied": false,
+  "figure_generator": "tools/make_paper_v8_figures.py"
+}
