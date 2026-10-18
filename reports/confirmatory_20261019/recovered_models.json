@@ -1,0 +1,44 @@
+[
+  {
+    "run": "M01_seed2026",
+    "archive": "yoonseop-mlp-v1-full.zip",
+    "archive_sha256": "19722ba5e84e8f459bb55662aed21aa2fb81f6daacf4221a004fadb92c180928",
+    "model_sha256": "909c150960937b6e0ad385e79e9b9012b8c5a3f3392073450b2e9a20a47b2a13",
+    "bytes": 1902975
+  },
+  {
+    "run": "M01_seed2027",
+    "archive": "yoonseop-mlp-v1-full.zip",
+    "archive_sha256": "19722ba5e84e8f459bb55662aed21aa2fb81f6daacf4221a004fadb92c180928",
+    "model_sha256": "73f06e33a8ebd5ad8e507bd10135ddaec00f8309c3e8b1259a7164d79bfd62df",
+    "bytes": 1902975
+  },
+  {
+    "run": "M01_seed2028",
+    "archive": "yoonseop-mlp-v1-full.zip",
+    "archive_sha256": "19722ba5e84e8f459bb55662aed21aa2fb81f6daacf4221a004fadb92c180928",
+    "model_sha256": "e727a60643ec08b255c112b3d6cd6a2301e4a70a3825cf0fdb7a7d1cbf59c1ba",
+    "bytes": 1902975
+  },
+  {
+    "run": "R01_seed2026",
+    "archive": "yu-jaeyun-rnn-v1-full.zip",
+    "archive_sha256": "b526242d50dd140be516de024b0bb22fc462f0b32ea87d412f134f3033056721",
+    "model_sha256": "f5a69ec25bc0dd0986bd4eb96f13dbe0571edfd3ca787ce71a5b724a3592976a",
+    "bytes": 45274
+  },
+  {
+    "run": "R01_seed2027",
+    "archive": "yu-jaeyun-rnn-v1-full.zip",
+    "archive_sha256": "b526242d50dd140be516de024b0bb22fc462f0b32ea87d412f134f3033056721",
+    "model_sha256": "e6f57ce7775cd55945aa4357ce07677a13511aee5c6ab92f7627f6f82959c313",
+    "bytes": 45274
+  },
+  {
+    "run": "R01_seed2028",
+    "archive": "yu-jaeyun-rnn-v1-full.zip",
+    "archive_sha256": "b526242d50dd140be516de024b0bb22fc462f0b32ea87d412f134f3033056721",
+    "model_sha256": "159de548b5f2d6c2588a1567c5d0a4da5d0946c11c037321bc3bebab801fad4e",
+    "bytes": 45274
+  }
+]

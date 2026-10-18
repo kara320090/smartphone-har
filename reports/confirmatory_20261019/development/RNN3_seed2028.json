@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "run": {
+    "id": "RNN3_seed2028",
+    "condition": "RNN3",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/RNN3_seed2028/model.keras",
+    "validation": "runs/confirmatory_20261019/RNN3_seed2028/validation_predictions.csv"
+  },
+  "windows": 1775,
+  "metrics": {
+    "macro_f1": 0.9975619138297196,
+    "accuracy": 0.9977464788732394,
+    "errors": 4,
+    "count": 1775,
+    "confusion_matrix": [
+      [
+        817,
+        1,
+        1
+      ],
+      [
+        1,
+        635,
+        0
+      ],
+      [
+        0,
+        1,
+        319
+      ]
+    ],
+    "class_metrics": {
+      "0": {
+        "precision": 0.9987775061124694,
+        "recall": 0.9975579975579976,
+        "f1-score": 0.998167379352474,
+        "support": 819.0
+      },
+      "1": {
+        "precision": 0.9968602825745683,
+        "recall": 0.9984276729559748,
+        "f1-score": 0.997643362136685,
+        "support": 636.0
+      },
+      "2": {
+        "precision": 0.996875,
+        "recall": 0.996875,
+        "f1-score": 0.996875,
+        "support": 320.0
+      },
+      "accuracy": 0.9977464788732394,
+      "macro avg": {
+        "precision": 0.9975042628956793,
+        "recall": 0.9976202235046575,
+        "f1-score": 0.9975619138297196,
+        "support": 1775.0
+      },
+      "weighted avg": {
+        "precision": 0.9977475589991763,
+        "recall": 0.9977464788732394,
+        "f1-score": 0.9977466264837228,
+        "support": 1775.0
+      }
+    }
+  },
+  "size": {
+    "parameters": 1443,
+    "weight_array_bytes": 5772,
+    "preprocessing_array_bytes": 72,
+    "stored_model_bytes": 43959
+  },
+  "probability_max_abs_diff": 1.398288361764699e-07,
+  "test_arrays_loaded": false
+}

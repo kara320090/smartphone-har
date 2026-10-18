@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "run": {
+    "id": "FMLP3_seed2027",
+    "condition": "FMLP3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "features18",
+    "model": "runs/confirmatory_20261019/FMLP3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/FMLP3_seed2027/validation_predictions.csv"
+  },
+  "windows": 1775,
+  "metrics": {
+    "macro_f1": 0.9992749755487255,
+    "accuracy": 0.9994366197183099,
+    "errors": 1,
+    "count": 1775,
+    "confusion_matrix": [
+      [
+        819,
+        0,
+        0
+      ],
+      [
+        0,
+        636,
+        0
+      ],
+      [
+        1,
+        0,
+        319
+      ]
+    ],
+    "class_metrics": {
+      "0": {
+        "precision": 0.998780487804878,
+        "recall": 1.0,
+        "f1-score": 0.9993898718730934,
+        "support": 819.0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 636.0
+      },
+      "2": {
+        "precision": 1.0,
+        "recall": 0.996875,
+        "f1-score": 0.9984350547730829,
+        "support": 320.0
+      },
+      "accuracy": 0.9994366197183099,
+      "macro avg": {
+        "precision": 0.9995934959349594,
+        "recall": 0.9989583333333334,
+        "f1-score": 0.9992749755487255,
+        "support": 1775.0
+      },
+      "weighted avg": {
+        "precision": 0.9994373067674339,
+        "recall": 0.9994366197183099,
+        "f1-score": 0.9994363507557464,
+        "support": 1775.0
+      }
+    }
+  },
+  "size": {
+    "parameters": 10883,
+    "weight_array_bytes": 43532,
+    "preprocessing_array_bytes": 360,
+    "stored_model_bytes": 156487
+  },
+  "probability_max_abs_diff": 1.2222267065098436e-07,
+  "test_arrays_loaded": false
+}

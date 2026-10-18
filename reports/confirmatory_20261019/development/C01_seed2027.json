@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "run": {
+    "id": "C01_seed2027",
+    "condition": "C01",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "artifacts/cnn_tensorflow/C01_seed2027/model.keras",
+    "validation": "artifacts/cnn_tensorflow/C01_seed2027/validation_predictions.csv"
+  },
+  "windows": 1775,
+  "metrics": {
+    "macro_f1": 0.897217833969541,
+    "accuracy": 0.8969014084507042,
+    "errors": 183,
+    "count": 1775,
+    "confusion_matrix": [
+      [
+        280,
+        42,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        243,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        1,
+        228,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        194,
+        113,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        327,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        320
+      ]
+    ],
+    "class_metrics": {
+      "0": {
+        "precision": 0.9120521172638436,
+        "recall": 0.8695652173913043,
+        "f1-score": 0.890302066772655,
+        "support": 322.0
+      },
+      "1": {
+        "precision": 0.8496503496503497,
+        "recall": 0.94921875,
+        "f1-score": 0.8966789667896679,
+        "support": 256.0
+      },
+      "2": {
+        "precision": 1.0,
+        "recall": 0.946058091286307,
+        "f1-score": 0.9722814498933902,
+        "support": 241.0
+      },
+      "3": {
+        "precision": 1.0,
+        "recall": 0.627831715210356,
+        "f1-score": 0.7713717693836978,
+        "support": 309.0
+      },
+      "4": {
+        "precision": 0.7431818181818182,
+        "recall": 1.0,
+        "f1-score": 0.8526727509778357,
+        "support": 327.0
+      },
+      "5": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 320.0
+      },
+      "accuracy": 0.8969014084507042,
+      "macro avg": {
+        "precision": 0.9174807141826685,
+        "recall": 0.8987789623146613,
+        "f1-score": 0.897217833969541,
+        "support": 1775.0
+      },
+      "weighted avg": {
+        "precision": 0.915048859614029,
+        "recall": 0.8969014084507042,
+        "f1-score": 0.8944928319620123,
+        "support": 1775.0
+      }
+    }
+  },
+  "size": {
+    "parameters": 85574,
+    "weight_array_bytes": 342296,
+    "preprocessing_array_bytes": 72,
+    "stored_model_bytes": 1072680
+  },
+  "probability_max_abs_diff": 4.54601423394152e-07,
+  "test_arrays_loaded": false
+}

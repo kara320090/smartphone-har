@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "run": {
+    "id": "L01_seed2026",
+    "condition": "L01",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/lstm/L01_seed2026/model.keras",
+    "validation": "runs/lstm/L01_seed2026/validation_predictions.csv"
+  },
+  "windows": 1775,
+  "metrics": {
+    "macro_f1": 0.8589901259116782,
+    "accuracy": 0.8614084507042253,
+    "errors": 246,
+    "count": 1775,
+    "confusion_matrix": [
+      [
+        268,
+        53,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        236,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        18,
+        218,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        160,
+        148,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        327,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        320
+      ]
+    ],
+    "class_metrics": {
+      "0": {
+        "precision": 0.9146757679180887,
+        "recall": 0.8322981366459627,
+        "f1-score": 0.8715447154471545,
+        "support": 322.0
+      },
+      "1": {
+        "precision": 0.7687296416938111,
+        "recall": 0.921875,
+        "f1-score": 0.8383658969804618,
+        "support": 256.0
+      },
+      "2": {
+        "precision": 0.9954337899543378,
+        "recall": 0.9045643153526971,
+        "f1-score": 0.9478260869565217,
+        "support": 241.0
+      },
+      "3": {
+        "precision": 1.0,
+        "recall": 0.517799352750809,
+        "f1-score": 0.6823027718550106,
+        "support": 309.0
+      },
+      "4": {
+        "precision": 0.6884210526315789,
+        "recall": 1.0,
+        "f1-score": 0.8154613466334164,
+        "support": 327.0
+      },
+      "5": {
+        "precision": 0.9968847352024922,
+        "recall": 1.0,
+        "f1-score": 0.9984399375975039,
+        "support": 320.0
+      },
+      "accuracy": 0.8614084507042253,
+      "macro avg": {
+        "precision": 0.8940241645667181,
+        "recall": 0.8627561341249116,
+        "f1-score": 0.8589901259116782,
+        "support": 1775.0
+      },
+      "weighted avg": {
+        "precision": 0.8925840723366533,
+        "recall": 0.8614084507042253,
+        "f1-score": 0.8567173813188903,
+        "support": 1775.0
+      }
+    }
+  },
+  "size": {
+    "parameters": 21222,
+    "weight_array_bytes": 84888,
+    "preprocessing_array_bytes": 72,
+    "stored_model_bytes": 286422
+  },
+  "probability_max_abs_diff": 1.9237045623121674e-07,
+  "test_arrays_loaded": false
+}

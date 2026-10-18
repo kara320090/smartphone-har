@@ -1,0 +1,50 @@
+{
+  "run": {
+    "id": "L01_seed2027",
+    "condition": "L01",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/lstm/L01_seed2027/model.keras",
+    "validation": "runs/lstm/L01_seed2027/validation_predictions.csv"
+  },
+  "summary": {
+    "prepared_call": {
+      "median_ms": 4.6493,
+      "p95_ms": 5.2184349999999995
+    },
+    "window_to_output": {
+      "median_ms": 4.86345,
+      "p95_ms": 5.46039
+    }
+  },
+  "size": {
+    "parameters": 21222,
+    "weight_array_bytes": 84888,
+    "preprocessing_array_bytes": 72,
+    "stored_model_bytes": 286422
+  },
+  "rss_start_bytes": 366137344,
+  "sampled_peak_rss_bytes": 366473216,
+  "rss_scope": "entire fresh process; not model-only or allocator peak",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "numpy": "2.2.6",
+    "cpu_count": 32,
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ]
+  },
+  "warmup": 50,
+  "repetitions": 500,
+  "batch": 1,
+  "test_arrays_loaded": false,
+  "finished_unix": 1792348568.03181
+}

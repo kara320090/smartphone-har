@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="10.894" timestamp="2026-10-19T03:21:08.053146+09:00" hostname="DESKTOP-62R2S7U"><testcase classname="" name="tests.test_cnn" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\soma\Documents\Codex\2026-09-28\https-github-com-kara320090-smartphone-har\outputs\smartphone-har\tests\test_cnn.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+outputs\smartphone-har\tests\test_cnn.py:5: in &lt;module&gt;
+    from src.models.cnn import build_cnn
+E   ModuleNotFoundError: No module named 'src'</error></testcase></testsuite></testsuites>

@@ -1,0 +1,292 @@
+[
+  {
+    "id": "FMLP3_seed2026",
+    "condition": "FMLP3",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 3,
+    "input": "features18",
+    "model": "runs/confirmatory_20261019/FMLP3_seed2026/model.keras",
+    "validation": "runs/confirmatory_20261019/FMLP3_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "FMLP3_seed2027",
+    "condition": "FMLP3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "features18",
+    "model": "runs/confirmatory_20261019/FMLP3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/FMLP3_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "FMLP3_seed2028",
+    "condition": "FMLP3",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 3,
+    "input": "features18",
+    "model": "runs/confirmatory_20261019/FMLP3_seed2028/model.keras",
+    "validation": "runs/confirmatory_20261019/FMLP3_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "MLP3_seed2026",
+    "condition": "MLP3",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/MLP3_seed2026/model.keras",
+    "validation": "runs/confirmatory_20261019/MLP3_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "MLP3_seed2027",
+    "condition": "MLP3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/MLP3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/MLP3_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "MLP3_seed2028",
+    "condition": "MLP3",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/MLP3_seed2028/model.keras",
+    "validation": "runs/confirmatory_20261019/MLP3_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "CNN3_seed2026",
+    "condition": "CNN3",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/CNN3_seed2026/model.keras",
+    "validation": "runs/confirmatory_20261019/CNN3_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "CNN3_seed2027",
+    "condition": "CNN3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/CNN3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/CNN3_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "CNN3_seed2028",
+    "condition": "CNN3",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/CNN3_seed2028/model.keras",
+    "validation": "runs/confirmatory_20261019/CNN3_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "RNN3_seed2026",
+    "condition": "RNN3",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/RNN3_seed2026/model.keras",
+    "validation": "runs/confirmatory_20261019/RNN3_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "RNN3_seed2027",
+    "condition": "RNN3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/RNN3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/RNN3_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "RNN3_seed2028",
+    "condition": "RNN3",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/RNN3_seed2028/model.keras",
+    "validation": "runs/confirmatory_20261019/RNN3_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "LSTM3_seed2026",
+    "condition": "LSTM3",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/LSTM3_seed2026/model.keras",
+    "validation": "runs/confirmatory_20261019/LSTM3_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "LSTM3_seed2027",
+    "condition": "LSTM3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/LSTM3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/LSTM3_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "LSTM3_seed2028",
+    "condition": "LSTM3",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/LSTM3_seed2028/model.keras",
+    "validation": "runs/confirmatory_20261019/LSTM3_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "M01_seed2026",
+    "condition": "M01",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/confirmed_sources/M01_seed2026/model.keras",
+    "validation": "reports/mlp_yoonseop/run_evidence/M01_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "M01_seed2027",
+    "condition": "M01",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/confirmed_sources/M01_seed2027/model.keras",
+    "validation": "reports/mlp_yoonseop/run_evidence/M01_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "M01_seed2028",
+    "condition": "M01",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/confirmed_sources/M01_seed2028/model.keras",
+    "validation": "reports/mlp_yoonseop/run_evidence/M01_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "C01_seed2026",
+    "condition": "C01",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "artifacts/cnn_tensorflow/C01_seed2026/model.keras",
+    "validation": "artifacts/cnn_tensorflow/C01_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "C01_seed2027",
+    "condition": "C01",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "artifacts/cnn_tensorflow/C01_seed2027/model.keras",
+    "validation": "artifacts/cnn_tensorflow/C01_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "C01_seed2028",
+    "condition": "C01",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "artifacts/cnn_tensorflow/C01_seed2028/model.keras",
+    "validation": "artifacts/cnn_tensorflow/C01_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "R01_seed2026",
+    "condition": "R01",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/confirmed_sources/R01_seed2026/model.keras",
+    "validation": "reports/rnn/run_evidence/R01_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "R01_seed2027",
+    "condition": "R01",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/confirmed_sources/R01_seed2027/model.keras",
+    "validation": "reports/rnn/run_evidence/R01_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "R01_seed2028",
+    "condition": "R01",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/confirmed_sources/R01_seed2028/model.keras",
+    "validation": "reports/rnn/run_evidence/R01_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "L01_seed2026",
+    "condition": "L01",
+    "seed": 2026,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/lstm/L01_seed2026/model.keras",
+    "validation": "runs/lstm/L01_seed2026/validation_predictions.csv"
+  },
+  {
+    "id": "L01_seed2027",
+    "condition": "L01",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/lstm/L01_seed2027/model.keras",
+    "validation": "runs/lstm/L01_seed2027/validation_predictions.csv"
+  },
+  {
+    "id": "L01_seed2028",
+    "condition": "L01",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 6,
+    "input": "sequence",
+    "model": "runs/lstm/L01_seed2028/model.keras",
+    "validation": "runs/lstm/L01_seed2028/validation_predictions.csv"
+  },
+  {
+    "id": "LR3",
+    "condition": "LR3",
+    "seed": null,
+    "kind": "linear",
+    "classes": 3,
+    "input": "features18",
+    "model": "reports/paper_controls_20261019/LR3_model.json",
+    "validation": "reports/paper_controls_20261019/LR3_predictions.csv"
+  },
+  {
+    "id": "LR6",
+    "condition": "LR6",
+    "seed": null,
+    "kind": "linear",
+    "classes": 6,
+    "input": "features18",
+    "model": "reports/paper_controls_20261019/LR6_model.json",
+    "validation": "reports/paper_controls_20261019/LR6_predictions.csv"
+  }
+]

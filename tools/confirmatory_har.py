@@ -30,7 +30,7 @@ GROUP = np.array(CFG['mapping'], dtype=np.int64)
 REP = ROOT / 'reports/confirmatory_20261019'
 RUN = ROOT / 'runs/confirmatory_20261019'
 PROTOCOL = ROOT / 'docs/paper-confirmatory-20261019/PROTOCOL_KO.md'
-DATA = Path('C:/Users/soma/Desktop/processed_data.npz')
+DATA = Path(os.environ.get('HAR_PROCESSED_DATA', 'C:/Users/soma/Desktop/processed_data.npz'))
 STATS = ROOT / 'data/preprocess.npz'
 OLDLR = ROOT / 'reports/paper_controls_20261019'
 
@@ -237,11 +237,13 @@ def benchmark(runid):
     print('benchmark',runid,summary['window_to_output'],flush=True)
 
 def code_files():
-    return [Path(__file__),ROOT/'tools/paper_controls.py',CFG_PATH,PROTOCOL,*sorted((ROOT/'src').rglob('*.py'))]
+    return [Path(__file__),ROOT/'tools/paper_controls.py',ROOT/'scripts/confirmatory_jobs.py',PROTOCOL,
+            *sorted((ROOT/'configs').glob('*.json')),*sorted((ROOT/'src').rglob('*.py'))]
 
 def freeze():
     if (REP/'FINAL_LOCK.json').exists():raise FileExistsError('Lock already exists')
     files=set(code_files()+[STATS,OLDLR/'LR3_model.json',OLDLR/'LR6_model.json',REP/'inventory.json'])
+    files.update((REP/'training_sources').glob('*'))
     for e in items():
         for rel in [e['model'],e['validation']]:files.add(ROOT/rel)
         for name in [f"development/{e['id']}.json",f"benchmark/{e['id']}.json",f"benchmark/{e['id']}_samples.csv"]:
@@ -280,7 +282,7 @@ def load_test():
 
 def validate_official_source():
     x,y,s,ids=load_test()
-    original=ROOT.parents[1]/'work/uci-har/UCI HAR Dataset'
+    original=Path(os.environ.get('HAR_OFFICIAL_ROOT', str(ROOT.parents[1]/'work/uci-har/UCI HAR Dataset')))
     files=[]
     for split in ('train','test'):
         labels=np.loadtxt(original/split/f'y_{split}.txt',dtype=np.int64)-1
