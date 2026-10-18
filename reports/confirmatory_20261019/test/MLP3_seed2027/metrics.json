@@ -1,0 +1,78 @@
+{
+  "run": {
+    "id": "MLP3_seed2027",
+    "condition": "MLP3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/MLP3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/MLP3_seed2027/validation_predictions.csv"
+  },
+  "size": {
+    "parameters": 156035,
+    "weight_array_bytes": 624140,
+    "preprocessing_array_bytes": 72,
+    "stored_model_bytes": 1900508
+  },
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "finished_unix": 1792348770.0716925,
+  "levels": {
+    "three": {
+      "macro_f1": 0.9928286967629022,
+      "accuracy": 0.9925347811333559,
+      "errors": 22,
+      "count": 2947,
+      "confusion_matrix": [
+        [
+          1374,
+          13,
+          0
+        ],
+        [
+          4,
+          1014,
+          5
+        ],
+        [
+          0,
+          0,
+          537
+        ]
+      ],
+      "class_metrics": {
+        "0": {
+          "precision": 0.9970972423802612,
+          "recall": 0.9906272530641672,
+          "f1-score": 0.9938517179023508,
+          "support": 1387.0
+        },
+        "1": {
+          "precision": 0.9873417721518988,
+          "recall": 0.9912023460410557,
+          "f1-score": 0.9892682926829268,
+          "support": 1023.0
+        },
+        "2": {
+          "precision": 0.9907749077490775,
+          "recall": 1.0,
+          "f1-score": 0.995366079703429,
+          "support": 537.0
+        },
+        "accuracy": 0.9925347811333559,
+        "macro avg": {
+          "precision": 0.9917379740937458,
+          "recall": 0.993943199701741,
+          "f1-score": 0.9928286967629022,
+          "support": 2947.0
+        },
+        "weighted avg": {
+          "precision": 0.9925587490851949,
+          "recall": 0.9925347811333559,
+          "f1-score": 0.9925366070396796,
+          "support": 2947.0
+        }
+      }
+    }
+  }
+}

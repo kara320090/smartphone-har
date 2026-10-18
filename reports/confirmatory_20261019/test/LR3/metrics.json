@@ -1,0 +1,78 @@
+{
+  "run": {
+    "id": "LR3",
+    "condition": "LR3",
+    "seed": null,
+    "kind": "linear",
+    "classes": 3,
+    "input": "features18",
+    "model": "reports/paper_controls_20261019/LR3_model.json",
+    "validation": "reports/paper_controls_20261019/LR3_predictions.csv"
+  },
+  "size": {
+    "parameters": 57,
+    "weight_array_bytes": 456,
+    "preprocessing_array_bytes": 360,
+    "stored_model_bytes": 3355
+  },
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "finished_unix": 1792348873.1118858,
+  "levels": {
+    "three": {
+      "macro_f1": 0.9994336884412286,
+      "accuracy": 0.999321343739396,
+      "errors": 2,
+      "count": 2947,
+      "confusion_matrix": [
+        [
+          1387,
+          0,
+          0
+        ],
+        [
+          2,
+          1021,
+          0
+        ],
+        [
+          0,
+          0,
+          537
+        ]
+      ],
+      "class_metrics": {
+        "0": {
+          "precision": 0.9985601151907847,
+          "recall": 1.0,
+          "f1-score": 0.9992795389048992,
+          "support": 1387.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9980449657869013,
+          "f1-score": 0.9990215264187867,
+          "support": 1023.0
+        },
+        "2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 537.0
+        },
+        "accuracy": 0.999321343739396,
+        "macro avg": {
+          "precision": 0.9995200383969283,
+          "recall": 0.999348321928967,
+          "f1-score": 0.9994336884412286,
+          "support": 2947.0
+        },
+        "weighted avg": {
+          "precision": 0.9993223209262364,
+          "recall": 0.999321343739396,
+          "f1-score": 0.9993212561885015,
+          "support": 2947.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "run": {
+    "id": "CNN3_seed2027",
+    "condition": "CNN3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/CNN3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/CNN3_seed2027/validation_predictions.csv"
+  },
+  "size": {
+    "parameters": 85379,
+    "weight_array_bytes": 341516,
+    "preprocessing_array_bytes": 72,
+    "stored_model_bytes": 1070038
+  },
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "finished_unix": 1792348782.9361706,
+  "levels": {
+    "three": {
+      "macro_f1": 0.9974492725399372,
+      "accuracy": 0.9969460468272819,
+      "errors": 9,
+      "count": 2947,
+      "confusion_matrix": [
+        [
+          1387,
+          0,
+          0
+        ],
+        [
+          9,
+          1014,
+          0
+        ],
+        [
+          0,
+          0,
+          537
+        ]
+      ],
+      "class_metrics": {
+        "0": {
+          "precision": 0.9935530085959885,
+          "recall": 1.0,
+          "f1-score": 0.9967660797700323,
+          "support": 1387.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9912023460410557,
+          "f1-score": 0.9955817378497791,
+          "support": 1023.0
+        },
+        "2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 537.0
+        },
+        "accuracy": 0.9969460468272819,
+        "macro avg": {
+          "precision": 0.9978510028653295,
+          "recall": 0.9970674486803519,
+          "f1-score": 0.9974492725399372,
+          "support": 2947.0
+        },
+        "weighted avg": {
+          "precision": 0.9969657356371348,
+          "recall": 0.9969460468272819,
+          "f1-score": 0.9969442383648994,
+          "support": 2947.0
+        }
+      }
+    }
+  }
+}

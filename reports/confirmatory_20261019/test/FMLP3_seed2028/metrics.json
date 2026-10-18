@@ -1,0 +1,78 @@
+{
+  "run": {
+    "id": "FMLP3_seed2028",
+    "condition": "FMLP3",
+    "seed": 2028,
+    "kind": "keras",
+    "classes": 3,
+    "input": "features18",
+    "model": "runs/confirmatory_20261019/FMLP3_seed2028/model.keras",
+    "validation": "runs/confirmatory_20261019/FMLP3_seed2028/validation_predictions.csv"
+  },
+  "size": {
+    "parameters": 10883,
+    "weight_array_bytes": 43532,
+    "preprocessing_array_bytes": 360,
+    "stored_model_bytes": 156487
+  },
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "finished_unix": 1792348756.3277478,
+  "levels": {
+    "three": {
+      "macro_f1": 0.9986768670327343,
+      "accuracy": 0.998642687478792,
+      "errors": 4,
+      "count": 2947,
+      "confusion_matrix": [
+        [
+          1387,
+          0,
+          0
+        ],
+        [
+          3,
+          1019,
+          1
+        ],
+        [
+          0,
+          0,
+          537
+        ]
+      ],
+      "class_metrics": {
+        "0": {
+          "precision": 0.9978417266187051,
+          "recall": 1.0,
+          "f1-score": 0.9989196975153043,
+          "support": 1387.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9960899315738025,
+          "f1-score": 0.9980411361410382,
+          "support": 1023.0
+        },
+        "2": {
+          "precision": 0.9981412639405205,
+          "recall": 1.0,
+          "f1-score": 0.9990697674418605,
+          "support": 537.0
+        },
+        "accuracy": 0.998642687478792,
+        "macro avg": {
+          "precision": 0.9986609968530752,
+          "recall": 0.9986966438579342,
+          "f1-score": 0.9986768670327343,
+          "support": 2947.0
+        },
+        "weighted avg": {
+          "precision": 0.9986455152888373,
+          "recall": 0.998642687478792,
+          "f1-score": 0.9986420657761412,
+          "support": 2947.0
+        }
+      }
+    }
+  }
+}

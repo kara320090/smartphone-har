@@ -1,0 +1,13 @@
+{
+  "locked_evaluation": 1792348690.259095,
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "summary_sha256": "7e7409d2b3931b3d12c071a35f6a4064c65aad4a202926d3cbcc5e31a7e4e32b",
+  "test_predictions": 85463,
+  "protocol": "docs/paper-confirmatory-20261019/PROTOCOL_KO.md",
+  "data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+  "sources": [
+    "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+    "https://www.mdpi.com/1424-8220/18/11/3629",
+    "https://www.mdpi.com/1424-8220/20/11/3090"
+  ]
+}

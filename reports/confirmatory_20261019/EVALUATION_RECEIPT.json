@@ -1,0 +1,11 @@
+{
+  "freeze_commit": "7e9de99047c5280129c2bdeeff2a21f1bd846b7f",
+  "freeze_was_pushed_before_test": true,
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "models": 29,
+  "predictions": 85463,
+  "metric_recomputations": 42,
+  "fresh_process_replays": 29,
+  "post_test_model_changes": false,
+  "post_test_changes": "Paper text, layout, result figures, documentation, packaging only"
+}

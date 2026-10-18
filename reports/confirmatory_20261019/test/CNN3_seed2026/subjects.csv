@@ -1,0 +1,10 @@
+run_id,level,subject,count,accuracy,macro_f1,errors
+CNN3_seed2026,three,2,302,1.0,1.0,0
+CNN3_seed2026,three,4,317,1.0,1.0,0
+CNN3_seed2026,three,9,288,0.9756944444444444,0.9709688241936242,7
+CNN3_seed2026,three,10,294,0.9489795918367347,0.9551935600235423,15
+CNN3_seed2026,three,12,320,1.0,1.0,0
+CNN3_seed2026,three,13,327,1.0,1.0,0
+CNN3_seed2026,three,18,364,1.0,1.0,0
+CNN3_seed2026,three,20,354,1.0,1.0,0
+CNN3_seed2026,three,24,381,1.0,1.0,0

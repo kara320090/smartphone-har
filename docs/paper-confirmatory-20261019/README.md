@@ -1,5 +1,7 @@
 # 공식 test 평가를 위한 추가 대조
 
+**완료 · 2026-10-19:** 추가 학습 15회, 29개 모델 공식 test·전체 재예측, 지표 42건 재계산을 통과했다. [개정 논문 v10](../dcs-team-paper-research-v10/README.md) · [전체 결과](../../reports/confirmatory_20261019/summary.csv). 아래 순서는 실제 실행 프로토콜이며 기존 결과 재검증에는 `replay`를 사용한다.
+
 [고정 계획](PROTOCOL_KO.md) · [과정 기록](PROCESS_LOG_KO.md) · [코드](../../tools/confirmatory_har.py)
 
 새 신경망 15회, 기존 신경망 12개, 선형 모델 2개를 사용한다. 기존 모델의 개발 결과를 본 뒤 추가 조건을 정했으며, 연구 전체의 사전등록이나 새 알고리즘 개발로 표현하지 않는다.

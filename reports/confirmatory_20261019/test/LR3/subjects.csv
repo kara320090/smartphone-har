@@ -1,0 +1,10 @@
+run_id,level,subject,count,accuracy,macro_f1,errors
+LR3,three,2,302,1.0,1.0,0
+LR3,three,4,317,1.0,1.0,0
+LR3,three,9,288,0.9930555555555556,0.994139085894405,2
+LR3,three,10,294,1.0,1.0,0
+LR3,three,12,320,1.0,1.0,0
+LR3,three,13,327,1.0,1.0,0
+LR3,three,18,364,1.0,1.0,0
+LR3,three,20,354,1.0,1.0,0
+LR3,three,24,381,1.0,1.0,0

@@ -1,0 +1,78 @@
+{
+  "run": {
+    "id": "RNN3_seed2027",
+    "condition": "RNN3",
+    "seed": 2027,
+    "kind": "keras",
+    "classes": 3,
+    "input": "sequence",
+    "model": "runs/confirmatory_20261019/RNN3_seed2027/model.keras",
+    "validation": "runs/confirmatory_20261019/RNN3_seed2027/validation_predictions.csv"
+  },
+  "size": {
+    "parameters": 1443,
+    "weight_array_bytes": 5772,
+    "preprocessing_array_bytes": 72,
+    "stored_model_bytes": 43959
+  },
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "finished_unix": 1792348796.5393965,
+  "levels": {
+    "three": {
+      "macro_f1": 0.9873359070093158,
+      "accuracy": 0.9850695622667119,
+      "errors": 44,
+      "count": 2947,
+      "confusion_matrix": [
+        [
+          1383,
+          3,
+          1
+        ],
+        [
+          40,
+          983,
+          0
+        ],
+        [
+          0,
+          0,
+          537
+        ]
+      ],
+      "class_metrics": {
+        "0": {
+          "precision": 0.971890372452565,
+          "recall": 0.9971160778658976,
+          "f1-score": 0.9843416370106761,
+          "support": 1387.0
+        },
+        "1": {
+          "precision": 0.9969574036511156,
+          "recall": 0.9608993157380255,
+          "f1-score": 0.9785963165754107,
+          "support": 1023.0
+        },
+        "2": {
+          "precision": 0.9981412639405205,
+          "recall": 1.0,
+          "f1-score": 0.9990697674418605,
+          "support": 537.0
+        },
+        "accuracy": 0.9850695622667119,
+        "macro avg": {
+          "precision": 0.9889963466814004,
+          "recall": 0.9860051312013077,
+          "f1-score": 0.9873359070093158,
+          "support": 2947.0
+        },
+        "weighted avg": {
+          "precision": 0.9853753747074512,
+          "recall": 0.9850695622667119,
+          "f1-score": 0.9850309967786671,
+          "support": 2947.0
+        }
+      }
+    }
+  }
+}

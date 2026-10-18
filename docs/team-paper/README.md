@@ -1,10 +1,14 @@
 # 스마트폰 행동 인식 공동 논문 작성 안내
 
-**사사 수정 v9.1 · 10월 19일:** 사용자 요청에 따라 최신 공개 한글·PDF·MD에 컴퓨터비전 논문의 사사 문구를 그대로 반영했다. 연구 본문·결과·그림은 v9와 같다. [수정본 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v9.1).
+**최신 공동 원고 v10 · 2026-10-19:** [공식 test와 보완 실험을 반영한 2페이지 HWP·PDF·MD](../dcs-team-paper-research-v10/README.md). 추가 학습 15회와 고정한 29개 모델의 공식 test 9명·2,947구간 평가를 완료했다. LR3 Macro F1 0.9994(오류 2건), 동일 특징 FMLP3 0.9986±0.0002. 직접 3상태 학습·입력 통제·CPU 실측과 재현 근거를 함께 제공한다. [전체 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10).
+
+> 아래 v9.1 이하의 “test 미평가” 등은 당시 수행 기록이다. 현재 논문 결과는 v10을 따른다.
+
+**이전 사사 수정 v9.1 · 10월 19일:** 사용자 요청에 따라 최신 공개 한글·PDF·MD에 컴퓨터비전 논문의 사사 문구를 그대로 반영했다. 연구 본문·결과·그림은 v9와 같다. [수정본 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v9.1).
 
 수정일 2026년 10월 19일 · 취합 담당 이봉헌 · 최신 역할 배정 반영
 
-**최신 공동 원고 v9:** [출력 수준·분류기 복잡도 두 쪽 원고](../dcs-team-paper-research-v9/README.md). 고정 선형 기준선 두 조건과 60개 매핑 대조를 추가해 목적별 모델 선택을 결론으로 제시한다. [타 대학 논문 비교와 개정 근거](../dcs-team-paper-research-v9/PROCEEDINGS_COMPARISON_KO.md)도 함께 확인한다. 공식 test·실제 앱은 미검증이며 공동저자·지도교수 검토와 사사 확정이 남아 있다.
+**이전 공동 원고 v9:** [출력 수준·분류기 복잡도 두 쪽 원고](../dcs-team-paper-research-v9/README.md). 고정 선형 기준선 두 조건과 60개 매핑 대조를 추가해 목적별 모델 선택을 결론으로 제시한다. [타 대학 논문 비교와 개정 근거](../dcs-team-paper-research-v9/PROCEEDINGS_COMPARISON_KO.md)도 함께 확인한다. 공식 test·실제 앱은 미검증이며 공동저자·지도교수 검토와 사사 확정이 남아 있다.
 
 **앞선 공동 원고:** [활동 상태 요약 중심 v8 두 쪽 HWP·PDF·MD](../dcs-team-paper-research-v8/README.md). 기준 네 모델의 결과와 실제 오류 구성을 활용 기준으로 연결했다. 저자·소속·학생 이메일을 확인해 반영했으며 사사·공동저자 및 지도교수의 최종 검토·학회 투고는 남아 있다. 아래 이전 초안과 취합 대기 문구는 수행 기록이다.
 

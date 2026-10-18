@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "frozen_files_verified": 271,
+  "text_files_checked": 241,
+  "specified_private_student_number_and_phone_absent": true,
+  "credential_patterns_absent": true,
+  "support_forms_not_selected": true,
+  "pip_requirements_have_no_local_or_credential_urls": true,
+  "prior_freeze_commit_byte_check": {
+    "tracked": 155,
+    "untracked": 117,
+    "differences": [
+      {
+        "path": "reports/confirmatory_20261019/training_sources/README.md",
+        "only_crlf": true,
+        "frozen_commit_sha256": "5cad2e6fda144b7ce951c4e326e3ca69f39d7ae463fab34dc866d141393ed7d3",
+        "local_sha256": "6286ec29f4839aeebb4fcaef8a12a356fef59921f3192aae8ff2f059e6bca0a6"
+      }
+    ]
+  }
+}

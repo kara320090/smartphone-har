@@ -1,0 +1,10 @@
+run_id,level,subject,count,accuracy,macro_f1,errors
+RNN3_seed2026,three,2,302,1.0,1.0,0
+RNN3_seed2026,three,4,317,1.0,1.0,0
+RNN3_seed2026,three,9,288,0.96875,0.9732559228392171,9
+RNN3_seed2026,three,10,294,0.9421768707482994,0.949002485048398,17
+RNN3_seed2026,three,12,320,1.0,1.0,0
+RNN3_seed2026,three,13,327,1.0,1.0,0
+RNN3_seed2026,three,18,364,1.0,1.0,0
+RNN3_seed2026,three,20,354,0.9915254237288136,0.992996632996633,3
+RNN3_seed2026,three,24,381,1.0,1.0,0

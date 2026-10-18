@@ -27,3 +27,8 @@ reports/rnn/run_evidence/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-
 reports/rnn/*.csv -text
 reports/rnn/*.json -text
 reports/rnn/*.xml -text
+
+# Preserve byte-level manifests for the frozen evaluation and paper release.
+reports/confirmatory_20261019/** -text
+docs/dcs-team-paper-research-v10/** -text
+docs/dcs-team-paper-research-v10/figures/*.svg whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
