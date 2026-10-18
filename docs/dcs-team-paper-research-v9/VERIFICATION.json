@@ -1,5 +1,5 @@
 {
-  "revision": "v9",
+  "revision": "v9.1",
   "date_korea": "2026-10-19",
   "title": "스마트폰 활동 요약을 위한 행동 구분 수준과 분류기 복잡도 분석",
   "format": "native binary HWP",
@@ -49,7 +49,12 @@
   "different_tasks_not_six_class_improvement": true,
   "app_implemented": false,
   "support_applicability_confirmed": false,
-  "acknowledgement_status": "pending confirmation",
-  "hwp_sha256": "f1d4e5c49511b80f6f3f6623d34c384506aa5338ce603fd04cb6622fcf4c491d",
-  "pdf_sha256": "e855a7ed0be85d4e7abcf49b4529238fefabfda627bf8c03efdf1ab898f69dad"
+  "acknowledgement_status": "verbatim ComputerVision paper wording selected by user",
+  "hwp_sha256": "716ba89be9bf078d2a62f10cf9c29ec3123dba3394e0eba9a88121e070a4fa9d",
+  "pdf_sha256": "609f7059249036d7496283d018f20fbdccba738e577053f08820efc2a6fcaf87",
+  "research_revision": "v9",
+  "acknowledgement_matches_source": true,
+  "source_acknowledgement_hwp_sha256": "4f88fcd6cb8c855fa1d7dae6192ab83c103c6c04817830219bd6a98128eb6002",
+  "acknowledgement_only_change_verified": true,
+  "new_training_this_acknowledgement_revision": false
 }

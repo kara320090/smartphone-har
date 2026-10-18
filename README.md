@@ -1,5 +1,7 @@
 # Smartphone HAR
 
+**사사 수정 v9.1 · 10월 19일:** 사용자 요청에 따라 최신 공개 한글·PDF·MD에 컴퓨터비전 논문의 사사 문구를 그대로 반영했다. 연구 본문·결과·그림은 v9와 같다. [수정본 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v9.1).
+
 스마트폰 센서 구간으로 걷기·계단 오르기·계단 내려가기·앉기·서기·눕기를 분류하는 팀 프로젝트다. LSTM 구현·검증·9회 실험과 이전 MLP 수행 기록을 보관한다.
 
 **현재 배정: 데이터 정회서 / MLP 한윤섭 / CNN 최승빈 / RNN 유재윤 / LSTM 이봉헌. 전처리 완료.** 최신 작업·원고 기준은 [공동 논문 안내](docs/team-paper/README.md)를 따른다. 아래 MLP 실험·보고서는 이봉헌이 이전에 수행한 기록이며 새 LSTM 결과를 뜻하지 않는다.

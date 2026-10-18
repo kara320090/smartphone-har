@@ -1,5 +1,7 @@
 # 스마트폰 행동 인식 공동 논문 작성 안내
 
+**사사 수정 v9.1 · 10월 19일:** 사용자 요청에 따라 최신 공개 한글·PDF·MD에 컴퓨터비전 논문의 사사 문구를 그대로 반영했다. 연구 본문·결과·그림은 v9와 같다. [수정본 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v9.1).
+
 수정일 2026년 10월 19일 · 취합 담당 이봉헌 · 최신 역할 배정 반영
 
 **최신 공동 원고 v9:** [출력 수준·분류기 복잡도 두 쪽 원고](../dcs-team-paper-research-v9/README.md). 고정 선형 기준선 두 조건과 60개 매핑 대조를 추가해 목적별 모델 선택을 결론으로 제시한다. [타 대학 논문 비교와 개정 근거](../dcs-team-paper-research-v9/PROCEEDINGS_COMPARISON_KO.md)도 함께 확인한다. 공식 test·실제 앱은 미검증이며 공동저자·지도교수 검토와 사사 확정이 남아 있다.

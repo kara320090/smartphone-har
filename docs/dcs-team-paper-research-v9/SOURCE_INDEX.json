@@ -53,5 +53,8 @@
   "new_linear_fits": 2,
   "new_neural_training": false,
   "test_evaluated": false,
-  "native_document_written_in_this_revision": true
+  "native_document_written_in_this_revision": true,
+  "acknowledgement_revision": "v9.1",
+  "acknowledgement_source_record": "ACKNOWLEDGEMENT_SOURCE.json",
+  "acknowledgement_source_record_sha256": "92a8ea46b18cb5594ccf1e672220ed08c648a51293a7a6e93b318bbe2074dd6f"
 }
