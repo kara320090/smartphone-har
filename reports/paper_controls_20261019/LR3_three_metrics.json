@@ -1,0 +1,56 @@
+{
+  "macro_f1": 1.0,
+  "accuracy": 1.0,
+  "errors": 0,
+  "count": 1775,
+  "confusion_matrix": [
+    [
+      819,
+      0,
+      0
+    ],
+    [
+      0,
+      636,
+      0
+    ],
+    [
+      0,
+      0,
+      320
+    ]
+  ],
+  "class_metrics": {
+    "0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 819.0
+    },
+    "1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 636.0
+    },
+    "2": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 320.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1775.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1775.0
+    }
+  }
+}

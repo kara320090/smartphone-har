@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="226.8pt" height="138.24pt" viewBox="0 0 226.8 138.24" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-19T02:29:49.169057</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 138.24
+L 226.8 138.24
+L 226.8 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 29.161944 24.81961
+L 197.638056 24.81961
+Q 200.749752 24.81961 200.749752 22.922957
+L 200.749752 6.936883
+Q 200.749752 5.04023 197.638056 5.04023
+L 29.161944 5.04023
+Q 26.050248 5.04023 26.050248 6.936883
+L 26.050248 22.922957
+Q 26.050248 24.81961 29.161944 24.81961
+z
+" clip-path="url(#p9f3920b4e2)" style="fill: #eef3f8; stroke: #3d5265; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 10.269504 62.07529
+L 105.398496 62.07529
+Q 108.510192 62.07529 108.510192 60.178637
+L 108.510192 37.418803
+Q 108.510192 35.52215 105.398496 35.52215
+L 10.269504 35.52215
+Q 7.157808 35.52215 7.157808 37.418803
+L 7.157808 60.178637
+Q 7.157808 62.07529 10.269504 62.07529
+z
+" clip-path="url(#p9f3920b4e2)" style="fill: #eef3f8; stroke: #3d5265; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 122.512824 62.07529
+L 215.419176 62.07529
+Q 218.530872 62.07529 218.530872 60.178637
+L 218.530872 37.418803
+Q 218.530872 35.52215 215.419176 35.52215
+L 122.512824 35.52215
+Q 119.401128 35.52215 119.401128 37.418803
+L 119.401128 60.178637
+Q 119.401128 62.07529 122.512824 62.07529
+z
+" clip-path="url(#p9f3920b4e2)" style="fill: #eef3f8; stroke: #3d5265; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 25.827984 95.94409
+L 89.840016 95.94409
+Q 92.951712 95.94409 92.951712 94.047437
+L 92.951712 76.706611
+Q 92.951712 74.809958 89.840016 74.809958
+L 25.827984 74.809958
+Q 22.716288 74.809958 22.716288 76.706611
+L 22.716288 94.047437
+Q 22.716288 95.94409 25.827984 95.94409
+z
+" clip-path="url(#p9f3920b4e2)" style="fill: #eef3f8; stroke: #3d5265; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 111.399624 95.94409
+L 164.298456 95.94409
+Q 167.410152 95.94409 167.410152 94.047437
+L 167.410152 76.706611
+Q 167.410152 74.809958 164.298456 74.809958
+L 111.399624 74.809958
+Q 108.287928 74.809958 108.287928 76.706611
+L 108.287928 94.047437
+Q 108.287928 95.94409 111.399624 95.94409
+z
+" clip-path="url(#p9f3920b4e2)" style="fill: #eef3f8; stroke: #3d5265; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 175.856184 95.94409
+L 219.864456 95.94409
+Q 222.976152 95.94409 222.976152 94.047437
+L 222.976152 76.706611
+Q 222.976152 74.809958 219.864456 74.809958
+L 175.856184 74.809958
+Q 172.744488 74.809958 172.744488 76.706611
+L 172.744488 94.047437
+Q 172.744488 95.94409 175.856184 95.94409
+z
+" clip-path="url(#p9f3920b4e2)" style="fill: #eef3f8; stroke: #3d5265; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 10.269504 131.845018
+L 216.530496 131.845018
+Q 219.642192 131.845018 219.642192 129.948365
+L 219.642192 112.607539
+Q 219.642192 110.710886 216.530496 110.710886
+L 10.269504 110.710886
+Q 7.157808 110.710886 7.157808 112.607539
+L 7.157808 129.948365
+Q 7.157808 131.845018 10.269504 131.845018
+z
+" clip-path="url(#p9f3920b4e2)" style="fill: #e5f2ee; stroke: #3d5265; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'; text-anchor: middle" x="113.4" y="16.759764" transform="rotate(-0 113.4 16.759764)">학습 통계로 표준화한 센서 구간 128×9</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'" transform="translate(39.103531 46.08097)">시계열 입력</text>
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'" transform="translate(17.54025 55.176157)">MLP · CNN · RNN · LSTM</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'" transform="translate(130.383969 46.08097)">채널 평균·표준편차 18개</text>
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'" transform="translate(130.274594 55.176157)">학습 자료로 특징 표준화</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 79.15691 25.243648
+Q 68.947057 30.035472 59.54689 34.447284
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 62.67642 34.525015
+L 59.54689 34.447284
+L 61.486793 31.990299
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 147.64309 25.243648
+Q 157.852943 30.035472 167.25311 34.447284
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 165.313207 31.990299
+L 167.25311 34.447284
+L 164.12358 34.525015
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'; text-anchor: middle" x="57.834" y="87.206868" transform="rotate(-0 57.834 87.206868)">6종 예측</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'; text-anchor: middle" x="137.84904" y="87.206868" transform="rotate(-0 137.84904 87.206868)">LR6: 6종</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'; text-anchor: middle" x="197.86032" y="87.206868" transform="rotate(-0 197.86032 87.206868)">LR3: 3상태</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 57.834 63.343451
+Q 57.834 68.442404 57.834 72.64693
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 59.234 69.84693
+L 57.834 72.64693
+L 56.434 69.84693
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 154.807523 62.910334
+Q 146.741272 68.441478 139.412681 73.466797
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 142.513661 73.037938
+L 139.412681 73.466797
+L 140.930182 70.728697
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 183.088121 62.962427
+Q 190.079309 68.441236 196.366496 73.368338
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 195.02618 70.539282
+L 196.366496 73.368338
+L 193.299062 72.743157
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7px; font-family: 'Malgun Gothic'; text-anchor: middle" x="113.4" y="123.107796" transform="rotate(-0 113.4 123.107796)">3상태: 이동 / 앉거나 서 있음 / 누워 있음</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 57.834 97.215559
+Q 57.834 103.665823 57.834 109.22166
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 59.234 106.42166
+L 57.834 109.22166
+L 56.434 106.42166
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 137.84904 97.215559
+Q 137.84904 103.665823 137.84904 109.22166
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 139.24904 106.42166
+L 137.84904 109.22166
+L 136.44904 106.42166
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 197.86032 97.215559
+Q 197.86032 103.665823 197.86032 109.22166
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 199.26032 106.42166
+L 197.86032 109.22166
+L 196.46032 106.42166
+" style="fill: none; stroke: #34495e; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 6.5px; font-family: 'Malgun Gothic'; text-anchor: middle" x="93.39624" y="105.365317" transform="rotate(-0 93.39624 105.365317)">6종→3상태 매핑</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9f3920b4e2">
+   <rect x="2.268" y="1.3824" width="222.264" height="135.4752"/>
+  </clipPath>
+ </defs>
+</svg>

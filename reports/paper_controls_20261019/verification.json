@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "linear_fits": 2,
+  "linear_seed_repetitions": false,
+  "linear_validation_rows": 3550,
+  "grouping_metric_checks": 720,
+  "grouping_maps": 60,
+  "semantic_mapping_id": 59,
+  "prediction_sources": [
+    {
+      "file": "reports/mlp_yoonseop/run_evidence/M01_seed2026/validation_predictions.csv",
+      "sha256": "9c080410d96576edaa382e1a179723823bb4904c7b5b3233fe4d6900377193c9"
+    },
+    {
+      "file": "reports/mlp_yoonseop/run_evidence/M01_seed2027/validation_predictions.csv",
+      "sha256": "369db50d6346c639d460d490912299fd971c39680a43ff214f5ed507049b104f"
+    },
+    {
+      "file": "reports/mlp_yoonseop/run_evidence/M01_seed2028/validation_predictions.csv",
+      "sha256": "83736e1cb87cebfbc824a2b08cde835c8f9d840843031ff94aac6ba9cfaabeab"
+    },
+    {
+      "file": "artifacts/cnn_tensorflow/C01_seed2026/validation_predictions.csv",
+      "sha256": "5d9150eb39ca00721ba5ab710dd192a8f67c228d3ae4f861b7cbef83bccc7626"
+    },
+    {
+      "file": "artifacts/cnn_tensorflow/C01_seed2027/validation_predictions.csv",
+      "sha256": "0a800aa79773027db119c825fc5d255a9e2c2d5a1b4e91ac975b67b7115cf3d3"
+    },
+    {
+      "file": "artifacts/cnn_tensorflow/C01_seed2028/validation_predictions.csv",
+      "sha256": "203bdb0a74f1b147beac3f25b433cf03a0cce7d7b8037a7f3fbd64fcb9bbd8dc"
+    },
+    {
+      "file": "reports/rnn/run_evidence/R01_seed2026/validation_predictions.csv",
+      "sha256": "da157750d4df1b4a34e76a479824808ba6f818eab1cf646fbe65a233bfe66948"
+    },
+    {
+      "file": "reports/rnn/run_evidence/R01_seed2027/validation_predictions.csv",
+      "sha256": "89db23e4e1bcbcc1b33734fa5ea83d1aa63c0a9b67e52cad667cee86e36afcdd"
+    },
+    {
+      "file": "reports/rnn/run_evidence/R01_seed2028/validation_predictions.csv",
+      "sha256": "f1b8ecd3d5846b0eb229cf52d8a3435accdbad39ae727c6ffecad361ebc64cff"
+    },
+    {
+      "file": "runs/lstm/L01_seed2026/validation_predictions.csv",
+      "sha256": "36e32d3e42e5a62781c298f482b9d72dc7a289f22b91c26ef961596053c39ad9"
+    },
+    {
+      "file": "runs/lstm/L01_seed2027/validation_predictions.csv",
+      "sha256": "36f5e3c6392a5a81d616653dd13e2cc64df15ec0210e559225b93098df0a8c40"
+    },
+    {
+      "file": "runs/lstm/L01_seed2028/validation_predictions.csv",
+      "sha256": "1e50a1fd4c0d4b4a6c0c382ac6eddd10eb36e1f527c7e4a67b265d84d580237e"
+    }
+  ],
+  "post_hoc": true,
+  "new_neural_training": false,
+  "test_arrays_loaded": false,
+  "test_evaluated": false,
+  "no_validation_hyperparameter_search": true,
+  "source_data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+  "source_stats_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+  "protocol_sha256": "51f12490c7d4f75ba82b4ae8a9ae8fae919c0c889e6ed8cfea414ded1d1adc42",
+  "code_sha256": "d3daeb2ed290e656c7b1a967752f914e3ee6e433066ce58d59a9589ca31837fe",
+  "summary": [
+    {
+      "model": "LR6",
+      "level": "six",
+      "classifier_parameters": 114,
+      "fits": 1,
+      "macro_f1": 0.7741516886243861,
+      "accuracy": 0.7904225352112676,
+      "errors": 372,
+      "count": 1775
+    },
+    {
+      "model": "LR6",
+      "level": "three",
+      "classifier_parameters": 114,
+      "fits": 1,
+      "macro_f1": 0.9985485638555445,
+      "accuracy": 0.9988732394366198,
+      "errors": 2,
+      "count": 1775
+    },
+    {
+      "model": "LR3",
+      "level": "three",
+      "classifier_parameters": 57,
+      "fits": 1,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "errors": 0,
+      "count": 1775
+    }
+  ],
+  "mapping_ranks": [
+    {
+      "config": "M01",
+      "semantic_f1": 0.9998447877568583,
+      "semantic_rank": 1,
+      "ties": 1,
+      "mapping_min": 0.8456614126689614,
+      "mapping_median": 0.8806270504113036,
+      "mapping_max": 0.9998447877568583,
+      "alternative_median": 0.8803824988479451
+    },
+    {
+      "config": "C01",
+      "semantic_f1": 0.999379096030969,
+      "semantic_rank": 1,
+      "ties": 1,
+      "mapping_min": 0.8590777084512673,
+      "mapping_median": 0.8994999955915308,
+      "mapping_max": 0.999379096030969,
+      "alternative_median": 0.8985270752761648
+    },
+    {
+      "config": "R01",
+      "semantic_f1": 0.9960450188731973,
+      "semantic_rank": 1,
+      "ties": 1,
+      "mapping_min": 0.6784341735553507,
+      "mapping_median": 0.7774817311306201,
+      "mapping_max": 0.9960450188731973,
+      "alternative_median": 0.7774634445373242
+    },
+    {
+      "config": "L01",
+      "semantic_f1": 0.9980304013137314,
+      "semantic_rank": 1,
+      "ties": 1,
+      "mapping_min": 0.8615198373606416,
+      "mapping_median": 0.8949693519215907,
+      "mapping_max": 0.9980304013137314,
+      "alternative_median": 0.8945471452864086
+    }
+  ]
+}

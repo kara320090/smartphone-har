@@ -1,0 +1,4 @@
+model,level,classifier_parameters,fits,macro_f1,accuracy,errors,count
+LR6,six,114,1,0.7741516886243861,0.7904225352112676,372,1775
+LR6,three,114,1,0.9985485638555445,0.9988732394366198,2,1775
+LR3,three,57,1,1.0,1.0,0,1775

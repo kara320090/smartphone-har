@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "separate_process": true,
+  "checks": [
+    {
+      "condition": "LR6",
+      "windows": 1775,
+      "max_abs_probability_difference": 0.0
+    },
+    {
+      "condition": "LR3",
+      "windows": 1775,
+      "max_abs_probability_difference": 0.0
+    }
+  ],
+  "test_arrays_loaded": false
+}

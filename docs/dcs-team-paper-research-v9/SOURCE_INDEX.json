@@ -1,0 +1,57 @@
+{
+  "revision_date_korea": "2026-10-19",
+  "title": "스마트폰 활동 요약을 위한 행동 구분 수준과 분류기 복잡도 분석",
+  "original_student_template_sha256": "97c51ca165ebe3ded4eccdc6c4b8ea385e2c93689d3cd3c7029849faeeed06ce",
+  "sources_sha256": {
+    "reports/output_granularity/analysis.json": "cc43ca9b6b98eff0f7d61ac51a22a2703b543720112ce1d8bba50271b4c892ae",
+    "reports/output_granularity/summary.csv": "39768ee9a21de5873442642f143fbf1c14eb8f93205899e1ef2dd933628df70d",
+    "reports/team_comparison/baseline_summary.csv": "06597e0cbf866606bb1035d0a9ab754d21b697c2c6c300a678c150dd55ad23ba",
+    "reports/paper_controls_20261019/verification.json": "0c52028cc24ec8b0fd9868ef4e1aa457453fb48373431ef70c535448d2458bdc",
+    "reports/paper_controls_20261019/reload_verification.json": "62b99f72163b6e3dc513b124c50f162f2d341b69bab0219b66a7b7ad70a6ce24",
+    "reports/paper_controls_20261019/execution_start.json": "12e0d5f2d8e3ab7d99d9ac8614042abffc28950cee27de6def9a62d55d7d3acd",
+    "reports/paper_controls_20261019/linear_summary.csv": "96bb5e33231ed851dbf13977ed5ac8f917f9f9e586ffb1b62b47210d23d48539",
+    "reports/paper_controls_20261019/all_mapping_summary.csv": "405ff279f2f77f839b7f6d12179e4def68b2d867cecb318c5c8a323c5fe31b0a",
+    "reports/paper_controls_20261019/mapping_rank_summary.csv": "f1a03828d40f966f471c0a9aaa7d270b2b2d38ead6ff6905960b46b4a62dabc2",
+    "docs/paper-controls-20261019/PROTOCOL_KO.md": "51f12490c7d4f75ba82b4ae8a9ae8fae919c0c889e6ed8cfea414ded1d1adc42",
+    "tools/paper_controls.py": "d3daeb2ed290e656c7b1a967752f914e3ee6e433066ce58d59a9589ca31837fe",
+    "tools/make_paper_v9_figures.py": "5339897d5910ee842d4eb69a5b6c7db414eee8181bb0ffb31a79baa61744585f"
+  },
+  "proceedings_review": {
+    "papers": 4,
+    "full_pages": 8,
+    "source": "User-supplied 2026 DCS summer proceedings",
+    "sha256": "7dcd5bdfdef8a986db255826d91c5a78814d5104a0026fb82eb9a53d21a93a56",
+    "one_based_pdf_page_pairs": [
+      [
+        367,
+        368
+      ],
+      [
+        379,
+        380
+      ],
+      [
+        396,
+        397
+      ],
+      [
+        406,
+        407
+      ]
+    ],
+    "notes": "PROCEEDINGS_COMPARISON_KO.md",
+    "third_party_full_text_or_figures_redistributed": false
+  },
+  "primary_references": [
+    "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7374316/"
+  ],
+  "additional_algorithm_documentation": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html",
+  "executed_sklearn_version": "1.7.2",
+  "protocol_commit_before_execution": "3216845",
+  "study_design_post_hoc": true,
+  "new_linear_fits": 2,
+  "new_neural_training": false,
+  "test_evaluated": false,
+  "native_document_written_in_this_revision": true
+}

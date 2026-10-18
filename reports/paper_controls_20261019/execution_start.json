@@ -1,0 +1,44 @@
+{
+  "protocol_sha256": "51f12490c7d4f75ba82b4ae8a9ae8fae919c0c889e6ed8cfea414ded1d1adc42",
+  "script_sha256": "d3daeb2ed290e656c7b1a967752f914e3ee6e433066ce58d59a9589ca31837fe",
+  "params": {
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "tol": 1e-08,
+    "fit_intercept": true,
+    "class_weight": null
+  },
+  "penalty": "L2 default for lbfgs",
+  "data_provenance": {
+    "preprocessing": "team_sequence_npz_v1",
+    "sample_row_number_base": 0,
+    "data_sha256": "00e8eae9edbcf37e1b01bb5a76b4f1da7bd21ca8d42a9beeccf4a483e7d3e459",
+    "source_stats_sha256": "42b1b895d420a21ed7cce3b3636a4cbed96350953b27057c0670db9062d79fb2",
+    "data_filename": "processed_data.npz",
+    "source_stats_filename": "preprocess.npz",
+    "input_state": "unstandardized",
+    "standardization_applications": 1,
+    "statistics_refitted": false,
+    "statistics_match_full_fit": true,
+    "loaded_array_keys": [
+      "fit_Xs",
+      "fit_y",
+      "fit_subject",
+      "fit_sample_id",
+      "val_Xs",
+      "val_y",
+      "val_subject",
+      "val_sample_id"
+    ],
+    "test_arrays_loaded": false,
+    "fit_row_binding_sha256": "211711f96549daf6f1fa20a8064158a3116628e22a9a5bfaab753d62e06d94f2",
+    "validation_row_binding_sha256": "5a05b4e2a736990867d8e30f5373be6aae885d9f38c5ab90bd8cdcb2a201fceb"
+  },
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "sklearn": "1.7.2",
+  "started_unix": 1792344219.2849884,
+  "post_hoc_design": true
+}
