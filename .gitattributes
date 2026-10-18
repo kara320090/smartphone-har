@@ -32,3 +32,5 @@ reports/rnn/*.xml -text
 reports/confirmatory_20261019/** -text
 docs/dcs-team-paper-research-v10/** -text
 docs/dcs-team-paper-research-v10/figures/*.svg whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+docs/dcs-team-paper-research-v10-1/** -text
+docs/dcs-team-paper-research-v10-1/figures/*.svg whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

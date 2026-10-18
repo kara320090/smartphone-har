@@ -1,0 +1,37 @@
+{
+  "reviewed_version": "v10",
+  "revised_version": "v10.1",
+  "new_training": false,
+  "new_test_evaluation": false,
+  "checked_existing_paired_comparisons": 12,
+  "positive_pairs": 11,
+  "negative_pair": {
+    "base": "L01",
+    "direct": "LSTM3",
+    "seed": "2027",
+    "direct_minus_mapped_f1": "-0.0011445072758212715"
+  },
+  "result_source_sha256": "7e7409d2b3931b3d12c071a35f6a4064c65aad4a202926d3cbcc5e31a7e4e32b",
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "source_paper_pdf_sha256": "11ea9ecd177cfa531abf2b3727910c78db28a7f45e2b1f0afe2ae9c5298be192",
+  "comparison_proceedings_sha256": "7dcd5bdfdef8a986db255826d91c5a78814d5104a0026fb82eb9a53d21a93a56",
+  "comparison_pdf_pages": [
+    367,
+    368,
+    379,
+    380,
+    396,
+    397,
+    406,
+    407
+  ],
+  "references": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6263870/",
+    "https://pubmed.ncbi.nlm.nih.gov/32486068/"
+  ],
+  "frozen_files_unchanged": 271,
+  "table_values_unchanged": true,
+  "figure_bytes_unchanged": true,
+  "requested_completion_wording_removed": true,
+  "old_v10_preserved": true
+}
