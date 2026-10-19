@@ -1,0 +1,225 @@
+[
+  {
+    "slide": 1,
+    "title": "스마트폰 활동 요약을 위한 출력 수준별 분류 성능과 추론 비용 비교",
+    "seconds": 20,
+    "script": "안녕하세요. 선문대학교 AI소프트웨어학과 이봉헌입니다. 스마트폰 활동 요약을 위한 출력 수준별 분류 성능과 추론 비용 비교를 발표하겠습니다. 활동 기록에서 필요한 구분 수준에 맞춰 분류기를 선택할 근거를 살펴봤습니다.",
+    "explain": "논문 v10.1의 제목과 저자 순서를 유지했다. 본문 12장 목표 7분, 부록 8장은 질문에 따라 선택한다. 학회 대학생 분야는 포스터 발표이므로 이 PPT는 설명과 리허설 자료로 활용한다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md",
+      "https://dcs.or.kr/homepage/custom/submit"
+    ]
+  },
+  {
+    "slide": 2,
+    "title": "활동 기록에서 필요한 출력",
+    "seconds": 35,
+    "script": "스마트폰 센서로 활동을 기록할 때 모든 서비스가 같은 출력을 요구하지는 않습니다. 현재 이동 중인지, 앉거나 서 있는지, 누워 있는지를 요약하려면 세 상태가 필요합니다. 반면 좌식 시간이나 계단 이용을 구분하려면 여섯 행동의 세부 정보를 보존해야 합니다. 저희는 이 출력 요구가 모델 선택에 어떤 차이를 만드는지 비교했습니다.",
+    "explain": "활용 예시는 분류 결과를 연결할 출력 설계다. 기록 앱의 효과나 하루 지속시간 측정 결과로 제시하지 않는다. 누워 있음은 자세 라벨이다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md",
+      "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones"
+    ]
+  },
+  {
+    "slide": 3,
+    "title": "연구 질문과 기여",
+    "seconds": 30,
+    "script": "기여는 세 비교를 같은 평가 틀에서 연결한 데 있습니다. 같은 세 상태를 예측할 때 병합과 직접 학습을 비교했고, 동일한 통계 특징에서 선형 모델과 MLP를 대조했습니다. 여기에 파라미터와 처리 시간을 함께 보고했습니다. 새로운 분류기 구조보다는 실제 출력 요구에 맞는 구성을 고를 실험적 근거에 초점을 맞췄습니다.",
+    "explain": "6종과 3상태는 다른 분류 목표다. 직접 학습의 차이는 같은 3상태 점수에서 비교한다. 관련 선행연구와의 연결은 부록 6에서 설명한다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/summary.csv"
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "데이터와 사람 단위 분리",
+    "seconds": 35,
+    "script": "UCI HAR의 허리 착용 스마트폰 데이터를 사용했습니다. 한 구간은 50헤르츠의 128시점, 즉 2.56초이며, 인접 구간은 절반씩 겹칩니다. 학습 16명, 검증 5명, 공식 테스트 9명으로 사람을 분리했습니다. 표준화 통계는 학습 데이터에서 가져왔고, 사람과 원 행의 중복을 검사했습니다. 테스트는 모델과 조건을 고정한 뒤 평가했습니다.",
+    "explain": "공식 train 7,352구간을 fit·validation으로 분리했다. 같은 사람의 중첩 창이 서로 다른 분할로 넘어가지 않는다. 원본 신호·라벨·사람 정보와 캐시를 대조했다. 9채널은 9개의 물리 센서를 뜻하지 않는다.",
+    "sources": [
+      "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/AUDIT.json",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/official_source_check.json"
+    ]
+  },
+  {
+    "slide": 5,
+    "title": "출력 목표와 입력 특징의 대조",
+    "seconds": 40,
+    "script": "첫 번째 방법은 여섯 행동을 학습한 모델의 최종 예측을 세 상태로 바꿉니다. 확률을 그룹별로 더하는 방식이 아니라 여섯 클래스 argmax의 라벨을 매핑합니다. 두 번째는 처음부터 세 상태를 직접 학습합니다. 별도로 아홉 채널의 평균과 표준편차, 총 열여덟 특징을 만들고 LR과 특징 MLP에 동일하게 제공했습니다. 신경망은 세 seed를 모두 보고했습니다.",
+    "explain": "6종 argmax 병합과 그룹 확률 합산은 다른 의사결정 규칙이다. 고정 비교에서는 전자를 사용했다. 특징 표준화 통계도 LR3·FMLP3에서 동일하다. LR float64, MLP float32 및 최적화 차이를 포함한 구성 대조다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/paper-confirmatory-20261019/PROTOCOL_KO.md"
+    ]
+  },
+  {
+    "slide": 6,
+    "title": "직접 학습의 평균 F1이 네 NN에서 높았다",
+    "seconds": 40,
+    "script": "동일한 세 상태 과제에서 직접 학습의 평균 F1이 네 신경망 모두에서 높았습니다. MLP는 0.9796에서 0.9918, LSTM은 0.9866에서 0.9959로 높아졌습니다. CNN은 이미 병합 점수가 높아서 차이가 작습니다. 이 결과는 출력 목표에 맞춘 학습의 이점을 보여줍니다. 여섯 클래스와 세 클래스의 숫자를 바로 비교해 모델 자체가 좋아졌다고 해석하지는 않습니다.",
+    "explain": "같은 사람이 포함된 test에서 세 seed의 평균을 비교한다. 구조·최적화 설정을 포함한 실증적 결과이고 유의성이나 모든 데이터셋의 우월성을 주장하지 않는다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/summary.csv"
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "같은 seed 12쌍 중 11쌍에서 F1 증가",
+    "seconds": 35,
+    "script": "평균만으로 결론을 내리지 않고 같은 seed의 차이를 확인했습니다. 열두 쌍 중 열한 쌍이 증가했고, LSTM의 2027 seed는 약 0.0011 감소했습니다. 따라서 직접 학습이 매번 더 좋다고 말하지 않습니다. 이 고정 조건에서 평균 개선 경향을 관찰했다는 결론입니다. 세 seed의 변동도 새로운 사람 전체에 대한 신뢰구간과 구분했습니다.",
+    "explain": "양수 개수는 paired_differences.csv에서 계산했다. 음수 항목도 그대로 보존했다. 3seed 반복을 근거로 통계적 유의성·동등성 결론을 내리지 않는다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/paired_differences.csv"
+    ]
+  },
+  {
+    "slide": 8,
+    "title": "18개 통계 특징의 LR3도 높은 성능을 보였다",
+    "seconds": 35,
+    "script": "동일한 열여덟 특징을 사용한 결과입니다. LR3는 F1 0.9994, 특징 MLP는 평균 0.9986을 기록했습니다. 파라미터는 각각 57개와 10,883개입니다. 이 세 상태 요약 과제에서는 통계 특징과 선형 분류만으로도 높은 성능을 얻었습니다. 복잡한 모델을 선택하기 전에 간단한 구성의 성능과 비용을 비교할 이유를 보여줍니다.",
+    "explain": "LR3의 57은 18×3+3이다. 표준편차 특징 계산 자체는 원 시계열에 대한 비선형 변환이다. LR3는 단일 학습, FMLP3는 seed 3회다. 0.00085 수준의 차이를 통계적 우월성으로 표현하지 않는다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/summary.csv"
+    ]
+  },
+  {
+    "slide": 9,
+    "title": "준비된 구간의 CPU 처리 비용",
+    "seconds": 35,
+    "script": "같은 PC에서 이미 준비된 한 구간을 처리하는 시간을 측정했습니다. 표준화, 특징 계산, 분류, 결과 반환까지 포함해 LR3는 중앙값 0.073밀리초, 특징 MLP는 1.043밀리초였습니다. 각 실행의 중앙값을 다시 중앙값으로 집계했습니다. 이 값은 입력을 모으는 2.56초와 별개인 PC 처리 비용이며, NumPy와 TensorFlow 구현 차이도 포함합니다.",
+    "explain": "CPU intra 4/inter 1, 고정 validation 첫 구간, 순차 benchmark. 수집·UCI 필터링·구간화·초기 로딩 제외. 스마트폰 장치의 응답시간이나 배터리 성능으로 확대하지 않는다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/summary.csv",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/benchmark_runs.csv"
+    ]
+  },
+  {
+    "slide": 10,
+    "title": "LR3의 오류는 2개 구간에서 발생",
+    "seconds": 30,
+    "script": "높은 전체 점수에서도 오류를 확인했습니다. LR3는 공식 테스트 2,947구간 중 두 구간을 틀렸습니다. 모두 사람 9의 앉기 구간을 이동으로 예측한 경우입니다. 두 원 행은 서로 인접하고 중첩하므로 독립된 실패 사건 두 번이라고 해석하지 않습니다. 이처럼 점수와 함께 오류가 어느 사람과 구간에 있는지 추적할 수 있게 남겼습니다.",
+    "explain": "Accuracy=2945/2947=0.9993213437, Macro F1=0.9994336884. 오류 원인은 이 예측만으로 자세·센서 이동 등으로 확정하지 않는다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/test/LR3/metrics.json",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/test/LR3/predictions.csv"
+    ]
+  },
+  {
+    "slide": 11,
+    "title": "실제 센서 구간의 상태 태그 예시",
+    "seconds": 40,
+    "script": "여기는 실제 테스트 구간의 신체 가속도 세 축입니다. 원래 걷기인 이 구간에 고정된 LR3가 이동이라는 태그를 반환했습니다. 이런 구간별 출력을 활동 요약 모듈의 상태 표시에 연결하는 활용 설계입니다. 카메라나 GPS 없이 센서 입력을 사용합니다. 좌식 시간이나 계단 이용처럼 세부 정보가 필요한 서비스는 해당 라벨을 유지해 선택합니다.",
+    "explain": "고정 LR3 예측 파일에서 원 행 순서상 첫 정분류 이동 표본 test:000079를 예시로 선택했다. 정답과 예측을 이미 저장한 파일에서 읽었으며 재튜닝하지 않았다. 입력은 UCI 처리 후 팀 표준화 전의 body_acc_xyz, 단위 g이며 시간 좌표는 0~2.54초(128샘플 창 길이 2.56초)다. 하나의 정분류 예시는 전체 성능 근거와 구분한다. 실제 결과는 슬라이드 8·10 및 부록 1에 제시했다. 앱 운영 효과나 하루 지속시간 수치로 제시하지 않는다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md",
+      "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/test/LR3/predictions.csv"
+    ]
+  },
+  {
+    "slide": 12,
+    "title": "결론",
+    "seconds": 45,
+    "script": "정리하겠습니다. 허리 착용 스마트폰의 공식 테스트에서, 열여덟 통계 특징의 선형 모델은 57개 파라미터로 세 상태 F1 0.9994를 기록했습니다. 준비된 구간의 PC 처리 시간은 0.073밀리초였습니다. 같은 목표의 병합과 직접 학습, 같은 특징의 LR과 MLP, 그리고 처리 비용을 함께 비교했습니다. 저희 연구는 활동 기록에서 필요한 정보를 먼저 정하고, 그 목표에 맞는 분류 구성을 선택할 실험적 근거를 제시합니다. 감사합니다.",
+    "explain": "수치는 v10.1과 동일하다. 세 상태 F1을 여섯 행동 성능으로 표현하지 않는다. 정확한 사사 문구를 그대로 수록했다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/summary.csv"
+    ]
+  },
+  {
+    "slide": 13,
+    "title": "공식 test 전체 결과",
+    "seconds": 0,
+    "script": "여섯 행동의 평균 F1은 CNN이 0.9053으로 이 구성들 중 가장 높았습니다. 세 상태 직접 학습에서는 LR3가 0.9994입니다. 필요한 출력에 따라 보는 결과 열이 달라집니다.",
+    "explain": "표의 모든 수치는 summary.csv에서 직접 읽어 반올림했다. SD는 seed에 따른 표본 표준편차(ddof=1)이며 LR에는 붙이지 않는다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/summary.csv"
+    ]
+  },
+  {
+    "slide": 14,
+    "title": "사람별 LR3 성능",
+    "seconds": 0,
+    "script": "LR3의 오류는 사람 9에게 집중되어 있습니다. 사람별 표본 수를 함께 보고하며, 전체 구간 점수와 사람별 점수의 단순 평균을 구분했습니다.",
+    "explain": "사람 9는 288구간이며 오류 2개다. 새 사람 모집단에 대한 확률적 보장이나 신뢰구간을 제공하는 표가 아니다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/test_subjects.csv"
+    ]
+  },
+  {
+    "slide": 15,
+    "title": "고정 모델 구성과 규모",
+    "seconds": 0,
+    "script": "RNN의 유닛 수는 32, LSTM은 64입니다. 이번 결과는 이 고정 구성의 성능 비교이며 같은 파라미터 예산에서 순환 구조만 바꾼 대조로 해석하지 않습니다.",
+    "explain": "LR3 18×3+3=57. FMLP3 18×128+128+128×64+64+64×3+3=10,883. LSTM3는 4×64×(9+64+1)+64×32+32+32×3+3=21,123. LSTM stateful=False, return_sequences=False.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/summary.csv",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/src/models/lstm.py"
+    ]
+  },
+  {
+    "slide": 16,
+    "title": "학습 선택과 공식 test 고정",
+    "seconds": 0,
+    "script": "epoch는 validation loss로 골랐고 공식 테스트는 선택 기준으로 쓰지 않았습니다. 고정한 29개 모델 전체를 평가했습니다. 초기 개발 비교와 그 뒤의 고정 평가를 구분했습니다.",
+    "explain": "29개는 기존 여섯 행동 NN 12개, 직접 세 상태 NN 15개, LR3·LR6 두 개다. fit+val 합동 재학습은 하지 않았으며 test 전 모델·파일 hash를 공개 commit에 고정했다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/FINAL_LOCK.json",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/AUDIT.json",
+      "https://github.com/kara320090/smartphone-har/commit/7e9de99047c5280129c2bdeeff2a21f1bd846b7f"
+    ]
+  },
+  {
+    "slide": 17,
+    "title": "시간과 메모리 수치의 범위",
+    "seconds": 0,
+    "script": "각 실행의 500회 중앙값을 구한 뒤 실행 간 중앙값을 보고했습니다. LR3는 한 적합이고 신경망은 세 실행입니다. 816바이트는 수치 배열의 합계로, 실행 프로그램 전체 메모리가 아닙니다.",
+    "explain": "Python 3.11.9, TF 2.21.0, Keras 3.15.1, NumPy 2.2.6. CPU 식별값 Intel64 Family 6 Model 183 Stepping 1. LR NumPy, NN tf.function 호출과 반환을 사용한다. 첫 trace 제외.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/benchmark_runs.csv",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/test/LR3/metrics.json"
+    ]
+  },
+  {
+    "slide": 18,
+    "title": "선행연구와 이번 비교의 위치",
+    "seconds": 0,
+    "script": "계층 분류와 통계 특징의 효용에는 선행연구가 있습니다. 저희는 활동 요약이 요구하는 출력 수준을 명시하고, 병합 대 직접 학습과 동일 특징의 LR 대 MLP를 공식 사람 분리 테스트 및 처리 비용과 연결했습니다.",
+    "explain": "최초 알고리즘이나 선행연구보다 높은 성능의 주장이 아니다. 데이터셋과 조건이 다른 논문의 점수는 직접 순위 비교하지 않는다.",
+    "sources": [
+      "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6263870/",
+      "https://www.mdpi.com/1424-8220/20/11/3090",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md"
+    ]
+  },
+  {
+    "slide": 19,
+    "title": "공개된 재현 근거",
+    "seconds": 0,
+    "script": "모델과 예측을 함께 보존해 같은 수치를 다시 계산할 수 있도록 했습니다. test 예측 행은 29모델 곱하기 2,947구간입니다. 같은 여섯 행동 예측을 세 상태로도 평가하므로 지표 조합 수는 42개입니다.",
+    "explain": "저장 모델의 다른 프로세스 재로딩과 지표 재계산을 통과했다. 테스트 수나 해시는 모든 소프트웨어 결함이 없다는 보증이 아니라 결과 추적성의 근거다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/AUDIT.json",
+      "https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10",
+      "https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.1"
+    ]
+  },
+  {
+    "slide": 20,
+    "title": "팀 역할과 발표자의 수행 내용",
+    "seconds": 0,
+    "script": "저는 LSTM 담당으로 구현과 수학 검산, 아홉 번의 개발 실험을 수행했습니다. 논문 단계에서는 직접 세 상태 LSTM 학습과 공통 보완 대조, 고정 평가의 취합을 연결했습니다. 기존 MLP·CNN·RNN의 구현 기여는 각 담당자에게 귀속됩니다.",
+    "explain": "작은 NumPy LSTM의 수동 역전파, 자동미분·중앙차분을 대조한 검산과 실제 Keras HAR 학습을 구분한다. 의도적 미분 누락은 검증기 대조 사례이며 실제 학습 오류 수리로 꾸미지 않는다. AI 보조로 작성한 코드·문서와 실제 실행 근거를 구분해 설명한다.",
+    "sources": [
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/docs/LSTM_EXECUTION_PLAN_KO.md",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/lstm/math_verification.json",
+      "https://github.com/kara320090/smartphone-har/blob/8b68cb251084ac7ced2557d9472f0889a1d5a45b/reports/confirmatory_20261019/AUDIT.json"
+    ]
+  }
+]
