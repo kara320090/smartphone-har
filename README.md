@@ -1,6 +1,8 @@
 # Smartphone HAR
 
-**최신 원고 v10.1 · 심사 관점 검토:** [타 대학 네 편·8쪽 비교와 심사 쟁점 14개, 개정 2페이지 원고](docs/dcs-team-paper-research-v10-1/README.md). v10의 실험·test 수치를 유지하고 기여·적용 범위·결론을 정리했다. 같은 seed 11/12쌍의 증가와 LSTM 예외, LR 오류 방향을 본문에 반영했다. [개정본 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.1).
+**최신 원고·발표 v10.2 · 지도교수 피드백 반영:** [2페이지 한글·PDF·MD와 피드백 반영표](docs/dcs-team-paper-research-v10-2/README.md), [PPT 20장·대본·예상 질문 38개](docs/dcs-conference-presentation-v10-2/README.md). 직접 3상태의 높은 F1 분포를 명시하고, 필요한 행동 정보와 처리 비용을 함께 비교하는 결론으로 정리했다. 지도교수 이메일과 CPU·GPU·버전을 추가했으며 학교 사사 안내의 번호를 대조했다. 고정 실험·공식 test 수치는 유지한다. [v10.2 묶음](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.2).
+
+**이전 원고 v10.1 · 심사 관점 검토:** [타 대학 네 편·8쪽 비교와 심사 쟁점 14개, 개정 2페이지 원고](docs/dcs-team-paper-research-v10-1/README.md). v10의 실험·test 수치를 유지하고 기여·적용 범위·결론을 정리했다. 같은 seed 11/12쌍의 증가와 LSTM 예외, LR 오류 방향을 본문에 반영했다. [개정본 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.1).
 
 **공식 test 평가 원고 v10 · 2026-10-19:** [공식 test와 보완 실험을 반영한 2페이지 HWP·PDF·MD](docs/dcs-team-paper-research-v10/README.md). 추가 학습 15회와 고정한 29개 모델의 공식 test 9명·2,947구간 평가를 완료했다. LR3 Macro F1 0.9994(오류 2건), 동일 특징 FMLP3 0.9986±0.0002. 직접 3상태 학습·입력 통제·CPU 실측과 재현 근거를 함께 제공한다. [전체 Release](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10).
 

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "pages": 2,
+  "native_hwp_reloaded": true,
+  "source_template_preserved": true,
+  "all_expected_text_present_in_hwp_and_pdf": true,
+  "figure_count": 2,
+  "visual_all_pages_checked": true,
+  "formal_test_audit_passed": true,
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9",
+  "summary_sha256": "7e7409d2b3931b3d12c071a35f6a4064c65aad4a202926d3cbcc5e31a7e4e32b",
+  "hwp_sha256": "9cd01518cda6d5e17b219c58d1fdec6d5f356a73120f23275a687d57f9a96bf5",
+  "pdf_sha256": "30767deb439a5061bc71bac4912afd65c51c9b71d0b3fbd7eadedcdbfbdc4855",
+  "acknowledgement_verbatim_from_authorized_cv_source": true
+}
