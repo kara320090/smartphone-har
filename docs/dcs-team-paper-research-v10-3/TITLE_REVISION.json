@@ -1,0 +1,13 @@
+{
+  "revision": "v10.3",
+  "date": "2026-10-23",
+  "title": "스마트폰 센서 기반 활동 요약을 위한 분류 목표와 모델 구성 비교",
+  "previous_title": "스마트폰 활동 요약을 위한 출력 수준별 분류 성능과 추론 비용 비교",
+  "source_revision": "v10.2",
+  "change": "Title harmonization in paper, poster speech, slides and speaker notes",
+  "paper_body_changed": false,
+  "experimental_results_changed": false,
+  "paper_source_sha256": "9cd01518cda6d5e17b219c58d1fdec6d5f356a73120f23275a687d57f9a96bf5",
+  "summary_sha256": "7e7409d2b3931b3d12c071a35f6a4064c65aad4a202926d3cbcc5e31a7e4e32b",
+  "lock_sha256": "f123673fea57ee08b34cfa5d85de75927478e85f9ee0d8e4553d88f4f8a0eea9"
+}

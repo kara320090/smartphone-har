@@ -1,0 +1,18 @@
+{
+  "date_korea": "2026-10-19",
+  "revision": "v10.3",
+  "change": "Funding number matches both Korean and English text of user-provided school document; exact prior wording retained",
+  "wording": "본 연구는 2026년도 과학기술정보통신부 및 정보통신기획평가원의 ‘SW중심대학지원사업’의 연구 결과로 수행되었습니다(2024-0-00023).",
+  "user_request": "컴퓨터비전에서 만든 논문의 사사 문구를 그대로 사용",
+  "source_hwp_name": "VisionMachine_DCS_논문_선행연구보강본.hwp",
+  "source_hwp_sha256": "4f88fcd6cb8c855fa1d7dae6192ab83c103c6c04817830219bd6a98128eb6002",
+  "source_markdown_sha256": "b7092a01473e03d9559d77d9a09990c022ff31c79880e99ccd3afede27dfcae1",
+  "source_hwp_read_with_hancom": true,
+  "funding_independently_verified": false,
+  "research_content_changed": true,
+  "school_paper_already_identical": true,
+  "inherited_from": "docs/dcs-team-paper-research-v10/ACKNOWLEDGEMENT_SOURCE.json",
+  "school_document_rechecked": true,
+  "school_number_matches": true,
+  "school_document_sha256": "ded0b6e87c3178adcf48270253609a9ce4d33d001f2ad56b595f25c5f6f45082"
+}
