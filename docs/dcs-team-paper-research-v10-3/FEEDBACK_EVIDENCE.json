@@ -1,0 +1,54 @@
+{
+  "revision": "v10.2",
+  "source_revision": "v10.1",
+  "supervisor_email": "indimoa@gmail.com",
+  "supervisor_email_basis": "user-supplied professor feedback",
+  "template_has_abstract_section": false,
+  "template_sha256": "97c51ca165ebe3ded4eccdc6c4b8ea385e2c93689d3cd3c7029849faeeed06ce",
+  "hardware_rechecked": {
+    "cpu": [
+      {
+        "Name": "13th Gen Intel(R) Core(TM) i9-13980HX",
+        "Manufacturer": "GenuineIntel",
+        "NumberOfCores": 24,
+        "NumberOfLogicalProcessors": 32
+      }
+    ],
+    "graphics": [
+      {
+        "Name": "StarDesk Virtual Display Adapter",
+        "DriverVersion": "18.43.12.322"
+      },
+      {
+        "Name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "DriverVersion": "32.0.15.9174"
+      },
+      {
+        "Name": "Intel(R) UHD Graphics",
+        "DriverVersion": "32.0.101.7092"
+      }
+    ],
+    "captured_at": "2026-10-19T18:41:00.9948846+09:00"
+  },
+  "frozen_benchmark_environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "numpy": "2.2.6",
+    "cpu_count": 32,
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ]
+  },
+  "gpu_used_in_common_evaluation": false,
+  "new_training": false,
+  "new_test_evaluation": false,
+  "funding_number": "2024-0-00023",
+  "funding_number_matches_school_korean_and_english": true,
+  "school_ack_source_sha256": "ded0b6e87c3178adcf48270253609a9ce4d33d001f2ad56b595f25c5f6f45082",
+  "individual_support_approval_confirmed": false
+}
