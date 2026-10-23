@@ -1,0 +1,26 @@
+{
+  "revision": "v10.4",
+  "date": "2026-10-23",
+  "text_changes": [
+    {
+      "before": "그림 2. 3상태 성능과 CPU 처리 비용",
+      "after": "그림 2. 직접 3상태의 성능과 CPU 처리 시간"
+    },
+    {
+      "before": "3상태 F1이 높은 구간에 밀집해 작은 점수 차이를 모델 우월성으로 해석하지 않는다. 동일 특징 LR3·FMLP3의 파라미터는 57·10,883개, 처리 시간은 약 14.2배 차이였다. 이는 고정 구성의 관측 비용이며 통계적 성능 동등성이나 스마트폰 성능을 뜻하지 않는다. 평가 범위는 허리 착용 6동작이고, seed SD는 고정 test의 학습 변동이다.",
+      "after": "직접 3상태 F1은 0.9905~0.9994, 처리 시간은 0.073~4.943ms였다(그림 2). 같은 18특징의 LR3·FMLP3는 파라미터가 57·10,883개이고, 시간 비(FMLP3/LR3)는 반올림 전 약 14.2다. 작은 F1 차이는 우월성·동등성의 근거가 아니다. 시간은 해당 PC의 관측값이다. 허리 착용 6동작을 평가했고, seed SD는 고정 test의 학습 변동이다."
+    }
+  ],
+  "embedded_images_match_source_files": [
+    {
+      "file": "evaluation_design.png",
+      "embedded_png_sha256": "b74fec793b06020986019d16268d5893a6ebda13040b763ce341e00f3c19bdff"
+    },
+    {
+      "file": "accuracy_cost.png",
+      "embedded_png_sha256": "e5c2a63cb6dea5e304eb90d54da43f86f491ae90277e801554f4af9e6fe85272"
+    }
+  ],
+  "experimental_results_changed": false,
+  "source_v10_3_pdf_sha256": "26e75adee3dbd4760189b990708add220d5ff1cb1a1317dc6cc8d95f35d224a3"
+}

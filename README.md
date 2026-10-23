@@ -1,8 +1,10 @@
 # Smartphone HAR
 
+**최신 논문 v10.4 · 그림 2 보완:** [2페이지 HWP·PDF·본문](docs/dcs-team-paper-research-v10-4/README.md). 정확한 F1 수치와 선형 CPU 시간 막대, 동일 특징 두 구성의 비용 비를 함께 표시했다. 실험 결과는 유지한다. [그림 개정 근거](docs/dcs-team-paper-research-v10-4/FIGURE_REVISION_KO.md) · [다운로드](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.4).
+
 **학술대회 실제 포스터 v10.3-r1 · 2026-10-23:** [A0 세로 인쇄용 PDF·편집 가능한 PPTX·현장 설명문](docs/dcs-poster-v10-3/README.md). [심사 관점 검토 17항목](docs/dcs-poster-v10-3/REVIEW_KO.md)을 반영해 연구 기여·활용·집계 및 비용 범위를 명확히 했다. 저장 예측 85,463행과 시간 원자료 재계산 결과는 논문과 일치한다. [보완 포스터 다운로드](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-conference-poster-v10.3-r1).
 
-**최신 제목 확정본 v10.3 · 2026-10-23:** 「스마트폰 센서 기반 활동 요약을 위한 분류 목표와 모델 구성 비교」. [2페이지 논문 HWP·PDF·MD](docs/dcs-team-paper-research-v10-3/README.md), [포스터 발표 대본·PPT·예상 질문](docs/dcs-conference-presentation-v10-3/README.md)의 제목을 통일했다. [다운로드](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.3).
+**제목 확정 기록 v10.3 · 2026-10-23:** 「스마트폰 센서 기반 활동 요약을 위한 분류 목표와 모델 구성 비교」. [2페이지 논문 HWP·PDF·MD](docs/dcs-team-paper-research-v10-3/README.md), [포스터 발표 대본·PPT·예상 질문](docs/dcs-conference-presentation-v10-3/README.md)의 제목을 통일했다. [다운로드](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.3).
 
 **이전 원고·발표 v10.2 · 지도교수 피드백 반영:** [2페이지 한글·PDF·MD와 피드백 반영표](docs/dcs-team-paper-research-v10-2/README.md), [PPT 20장·대본·예상 질문 38개](docs/dcs-conference-presentation-v10-2/README.md). 직접 3상태의 높은 F1 분포를 명시하고, 필요한 행동 정보와 처리 비용을 함께 비교하는 결론으로 정리했다. 지도교수 이메일과 CPU·GPU·버전을 추가했으며 학교 사사 안내의 번호를 대조했다. 고정 실험·공식 test 수치는 유지한다. [v10.2 묶음](https://github.com/kara320090/smartphone-har/releases/tag/bongheon-team-research-paper-v10.2).
 
