@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checked_on": "2026-10-23",
+  "scope": "Saved predictions and benchmark samples recomputed; no model refit or new test predictions",
+  "models": 29,
+  "prediction_rows": 85463,
+  "run_level_metric_combinations": 42,
+  "summary_rows": 16,
+  "paired_differences": 12,
+  "positive_pairs": 11,
+  "lr3_error_ids": [
+    "test:000791",
+    "test:000792"
+  ],
+  "lr3_error_subject": 9,
+  "example_id": "test:000079",
+  "printed_table_matches_paper": true,
+  "poster_latency_matches_saved_benchmark_samples": true,
+  "error_windows_overlap_exactly_64_timepoints_all_9_channels": true,
+  "trace_matches_original_test_window": true,
+  "source_sha256": {
+    "reports/confirmatory_20261019/summary.csv": "7e7409d2b3931b3d12c071a35f6a4064c65aad4a202926d3cbcc5e31a7e4e32b",
+    "reports/confirmatory_20261019/test_runs.csv": "3f2c7d787874e7ffadbd19c97920dac907b06ba4100a4de505a4a6541cb9cc11",
+    "reports/confirmatory_20261019/paired_differences.csv": "07ae035abdf7474089cab69b07d6634b7e700a7928cda39cc7f9fd1c3aee89cc",
+    "reports/confirmatory_20261019/benchmark_runs.csv": "e045cc91194c58e1c038aa48ae7b551236fe26b38ecf0aaaa3e42a9ee78e31b5",
+    "docs/dcs-team-paper-research-v10-3/DCS_TEAM_PAPER_KO.md": "3d21ec8193dd32c555281be99c23cbb3edbd503c90b775a37c69f0dcf7bdfb54"
+  }
+}

@@ -625,5 +625,8 @@
     "docs/dcs-team-paper-research-v10-1/DCS_TEAM_PAPER_KO.md": "6e26bff998d19bbf68eee22e1b789aee263c5e2da52b6b0d4d571dc97086c8a5",
     "docs/dcs-team-paper-research-v10-3/DCS_TEAM_PAPER_KO.md": "3d21ec8193dd32c555281be99c23cbb3edbd503c90b775a37c69f0dcf7bdfb54",
     "docs/dcs-conference-presentation-v10-3/PRESENTATION_DATA.json": "35977d06d9ff9ef14066b51e34b5594b2928d09a2aedf4650592b47e3b83be33"
-  }
+  },
+  "poster_revision": "v10.3-r1",
+  "paper_revision": "v10.3",
+  "review_evidence": "REVIEW_EVIDENCE.json"
 }
